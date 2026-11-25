@@ -2,11 +2,15 @@
 
 > 让 AI 参与做的游戏，少一点 AI 味。
 
+[![ci](https://github.com/y22t19053/game-de-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/y22t19053/game-de-ai/actions/workflows/ci.yml)
+![node](https://img.shields.io/badge/node-%E2%89%A522-informational)
+![license](https://img.shields.io/badge/license-MIT-blue)
+
 一套「AI 做游戏」的验收装置，三样东西：
 
 | 目录 | 是什么 | 拿什么证明它有用 |
 |---|---|---|
-| [`skills/game-de-ai/`](skills/game-de-ai/) | 视觉与文案的工作流（Markdown skill，给 AI 用） | 15 条铁律、分流三档、A–H 主流程、59 份制度档案 |
+| [`skills/`](skills/) | 七个作业规范（Markdown skill，给 AI 用）：需求、视觉、文案、视角、物料、摸底、交付 | 15 条铁律、分流三档、A–H 主流程、59 份制度档案 |
 | [`court/`](court/) | 交付法庭：零依赖 Node，证据 / 争议 / 陪审 / 裁决 / 任务全留痕 | 20 个案卷、53 条证据、468 条哈希链日志、27 个测试 |
 | [`docs/`](docs/) | 把它们接起来的三份规范 | 多执行端并行 / 三类证据 / 交付闸门 |
 
@@ -73,15 +77,27 @@ CLI 参数顺序是 **组 → 动作 → 选项**：`case list --root court` 对
 - token 成本未插桩。`metrics show` 里的 `"tokens": "unavailable"` 就是它诚实的地方，不编数字。
 - 逾期任务只记录不通知，无跨案依赖，无双人并发写测试（单人使用场景，写入串行）。
 
-## skills/game-de-ai
+## skills/：七个作业规范
 
-视觉与文案的工作流：定艺术方向、做 UI、产素材、改玩家可见文案、判断「这算不算 AI 味」。给 AI 用，不给玩家看。
+按一个项目的生命周期排，详见 [`skills/README.md`](skills/README.md)。
+
+| 阶段 | 技能 | 一句话 |
+|---|---|---|
+| 动手前 | `prompt-contract` | 把一句「优化一下」变成 9 字段任务书 |
+| 动手前 | `project-audit` | 只读摸底：「文档 vs 现实」冲突表，0 行改动 |
+| 做的过程 | `game-de-ai` | 视觉与文案主流程：定向 → 规范 → 素材 → 实施 → 真实预览 |
+| 做的过程 | `poster-brief` | 当天要发的海报：4 行 brief → 出图 → 只调四层 |
+| 做的过程 | `voice-deai` | 文案「太 AI 味」：逐句对照 + 七项自检 |
+| 做的过程 | `pov-guard` | 对话与旁白的视角边界：角色不知道的事不许他知道 |
+| 收尾 | `delivery-gate` | 想说「做完了」之前，先答四问证据表 |
+
+`game-de-ai` 是主流程，其余六个管边界。它们都靠 agent 自觉；`court/` 是这套规范的强制版——**技能靠自觉，法庭靠代码拒绝**。
 
 - 15 条铁律：先有命题再有像素 / 一款游戏一个身份 / 指不回方向的装饰删掉 / 不碰玩法 / 必须真实预览截图 / 一次只改一个维度 / 明确「不要什么」清单 / 用户拍板 / 素材必须进清单 / 经验回写 / 三案差异 ≥4 维 / 门下省先独立成文 / 文案也是身份 / 改文案不补事实 / AI 检测器分数不是标准
 - 分流三档（轻 / 中 / 重），重档按「省—部」分工：礼部考据、兵部构图、工部实施、刑部裁决规范例外
 - 主流程 A–H：项目理解 → 艺术指导 → **方向确认（必须停等用户拍板）** → 视觉规范 → 素材生产 → 前端实施 → 真实预览 → 经验沉淀
-- `references/history/`：59 份制度档案（古代官僚制度怎么变成可执行流程），写自己的流程时当史料库查
-- 安装：把 `skills/game-de-ai/` 放进你的 agent 的 skills 目录 —— DeepSeek Harness `~/.dsh/skills/`，Claude Code `.claude/skills/`
+- `skills/game-de-ai/references/history/`：59 份制度档案（古代官僚制度怎么变成可执行流程），写自己的流程时当史料库查
+- 安装：把技能目录放进 agent 的 skills 目录 —— DeepSeek Harness `~/.dsh/skills/`，Claude Code `.claude/skills/`
 
 ## docs
 

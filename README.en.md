@@ -2,11 +2,15 @@
 
 > Make the games AI helps you build a little less AI-flavored.
 
+[![ci](https://github.com/y22t19053/game-de-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/y22t19053/game-de-ai/actions/workflows/ci.yml)
+![node](https://img.shields.io/badge/node-%E2%89%A522-informational)
+![license](https://img.shields.io/badge/license-MIT-blue)
+
 An acceptance apparatus for "AI-assisted game development". Three parts:
 
 | Path | What it is | What backs it |
 |---|---|---|
-| [`skills/game-de-ai/`](skills/game-de-ai/) | A visual & copy workflow the agent follows (Markdown skill, Chinese) | 15 iron rules, 3 tiers, A–H pipeline, 59 institutional archives |
+| [`skills/`](skills/) | Seven operating specs the agent follows (Markdown, Chinese): scoping, art, copy, POV, promo assets, audits, delivery | 15 iron rules, 3 tiers, A–H pipeline, 59 institutional archives |
 | [`court/`](court/) | A delivery court: zero-dependency Node, every claim gets evidence, every ruling gets a reason | 20 case files, 53 evidence items, 468 hash-chained log entries, 27 tests |
 | [`docs/`](docs/) | The specs that connect them | multi-agent parallelism / evidence tiers / shipping gates |
 
@@ -69,11 +73,11 @@ Weaknesses belong in the docs, not in a post-mortem.
 - Token cost is not instrumented. `"tokens": "unavailable"` is the honest value; we do not invent one.
 - Overdue tasks are logged, not notified. No cross-case dependencies, no concurrent-writer tests.
 
-## The skill
+## The skills
 
-A visual and copy workflow for the agent: art direction, UI, asset production, player-facing copy, and "does this look AI-generated". Chinese-language; the history archive is a 59-document source library on how historical bureaucracies turned procedure into executable rules.
+Seven Markdown specs, ordered by project lifecycle: `prompt-contract` (turn a vague ask into a 9-field task brief) · `project-audit` (read-only "docs vs reality" diff) · `game-de-ai` (art direction → spec → assets → implementation → real screenshots) · `poster-brief` (promo art from a 4-line brief) · `voice-deai` (de-AI the player-facing copy) · `pov-guard` (nobody knows what they cannot know) · `delivery-gate` (four questions before you say "done").
 
-Install: drop `skills/game-de-ai/` into your agent's skills directory (`~/.dsh/skills/` for DeepSeek Harness, `.claude/skills/` for Claude Code).
+Install: drop a skill directory into your agent's skills dir (`~/.dsh/skills/` for DeepSeek Harness, `.claude/skills/` for Claude Code). The skills rely on discipline; `court/` is the enforced version — **skills ask, the court refuses**.
 
 ## Docs
 
