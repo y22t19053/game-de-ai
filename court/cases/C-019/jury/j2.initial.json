@@ -1,0 +1,11 @@
+{
+  "juror": "j2",
+  "onFundamentals": "conditional",
+  "basis": "公网 WebSocket 加同机双浏览器只能说明协议通路可用，跨网络真机没有证据，把它写成完整联机是不对的，因此支持有条件通过。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+  "at": "2026-11-17T13:26:43.030Z",
+  "sha": "c85ee5208b16e3a33f1452770f7e40f4c958beee8edfdfb7351efb818be1d9bf"
+}

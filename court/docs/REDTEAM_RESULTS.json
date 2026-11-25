@@ -1,0 +1,169 @@
+{
+  "generated": "2026-11-15T10:28:54.798Z",
+  "schema": "v0.1.1",
+  "total": 23,
+  "blocked": 21,
+  "rows": [
+    {
+      "id": "A1a",
+      "name": "方案作者自任法官",
+      "how": "case.author 与 judge 同一人",
+      "blocked": true,
+      "note": "JUDGE_IS_AUTHOR [JUDGE_IS_AUTHOR] 方案作者不得担任本案法官"
+    },
+    {
+      "id": "A1b",
+      "name": "控方自任法官",
+      "how": "书状作者作法官",
+      "blocked": true,
+      "note": "JUDGE_IS_ADVOCATE [JUDGE_IS_ADVOCATE] 已提交书状的人不得担任本案法官"
+    },
+    {
+      "id": "A2a",
+      "name": "把模型推论标为已独立验证",
+      "how": "submitEvidence kind=inference + verified=true",
+      "blocked": true,
+      "note": "EVIDENCE_LAUNDERING [EVIDENCE_LAUNDERING] 模型推论不得标记为已独立验证"
+    },
+    {
+      "id": "A2b",
+      "name": "提交不存在的证据文件",
+      "how": "source 指向不存在的路径",
+      "blocked": true,
+      "note": "EVIDENCE_SOURCE_MISSING [EVIDENCE_SOURCE_MISSING] 证据来源文件不存在：C:\\Users\\11ee11\\AppData\\"
+    },
+    {
+      "id": "A3",
+      "name": "执行人自行验收",
+      "how": "verifier 与 owner 同一人",
+      "blocked": true,
+      "note": "SELF_VERIFICATION [SELF_VERIFICATION] 执行者不得自行验收"
+    },
+    {
+      "id": "A4",
+      "name": "用篇幅占优压制对方",
+      "how": "书状写 800 字只主张 1 条",
+      "blocked": false,
+      "note": "纪律层不设字数上限（已知弱点 I-01）；披露手段＝judgeSummary 里 unclaimedChars=832，供法官先读结构（840 字 / 1 条主张）"
+    },
+    {
+      "id": "A5",
+      "name": "论点挂不存在的证据编号",
+      "how": "findings 指向 E999",
+      "blocked": true,
+      "note": "EVIDENCE_NOT_FOUND [EVIDENCE_NOT_FOUND] 引用了不存在的证据 E999"
+    },
+    {
+      "id": "A6a",
+      "name": "跨项目绑定先例",
+      "how": "把其他项目的先例当本研究约束",
+      "blocked": true,
+      "note": "PRECEDENT_CROSS_PROJECT [PRECEDENT_CROSS_PROJECT] 跨项目先例不得作为绑定先例（小泽的规则不能自动成为其他作品的法律）"
+    },
+    {
+      "id": "A6b",
+      "name": "引用失效先例",
+      "how": "scope=overruled 的先例",
+      "blocked": true,
+      "note": "PRECEDENT_DEAD [PRECEDENT_DEAD] 先例 P-102 已失效/被推翻，不得引用"
+    },
+    {
+      "id": "A7a",
+      "name": "裁决后再次裁决（不改判程序）",
+      "how": "直接再调 rule",
+      "blocked": true,
+      "note": "ALREADY_RULED [ALREADY_RULED] 本案已有裁决；变更须走 reconsider"
+    },
+    {
+      "id": "A7b",
+      "name": "未裁决先派任务",
+      "how": "新案直接 createTask",
+      "blocked": true,
+      "note": "NO_RULING [NO_RULING] 尚无裁决，不得派生执行任务"
+    },
+    {
+      "id": "A8a",
+      "name": "任务不带验收标准",
+      "how": "acceptance 缺失或过短",
+      "blocked": true,
+      "note": "TASK_NEEDS_ACCEPTANCE [TASK_NEEDS_ACCEPTANCE] 任务必须写可被第三方执行的验收标准（≥10 字），否则\"验收\"会退化成点"
+    },
+    {
+      "id": "A8b",
+      "name": "报告只写「完成了」",
+      "how": "submitTask report 过短",
+      "blocked": true,
+      "note": "TASK_NEEDS_REPORT [TASK_NEEDS_REPORT] 交付需要说明（不得只报\"完成\"）"
+    },
+    {
+      "id": "A9",
+      "name": "陪审有少数意见但裁决不记",
+      "how": "minorityRecorded 缺省",
+      "blocked": true,
+      "note": "MINORITY_NOT_RECORDED [MINORITY_NOT_RECORDED] 必须记录少数意见（即便为\"无\"）"
+    },
+    {
+      "id": "A10a",
+      "name": "篡改审计日志一条",
+      "how": "改 caseId 破坏哈希链",
+      "blocked": true,
+      "note": "AUDIT LOG_HASH_MISMATCH"
+    },
+    {
+      "id": "A10b",
+      "name": "篡改陪审投票内容",
+      "how": "改终票立场但不改 sha",
+      "blocked": true,
+      "note": "AUDIT JURY_SEAL_BROKEN"
+    },
+    {
+      "id": "A11",
+      "name": "批量申报把闸门刷绿（收敛力缺失）",
+      "how": "登记员一次登记大量候选证据，让「未声明值＝0」成立",
+      "blocked": false,
+      "note": "制度层不挡「数量」，这是 C-001 裁决已认定的设计边界（闸门只保溯源力、不保收敛力）；披露手段＝judgeSummary 的证据计数与「全申报也可绿灯」反例必须并列"
+    },
+    {
+      "id": "A12a",
+      "name": "验收报假材料路径",
+      "how": "artifacts 指向不存在文件",
+      "blocked": true,
+      "note": "VERIFY_ARTIFACT_MISSING [VERIFY_ARTIFACT_MISSING] 验收人声称打开的材料不存在：C:\\Users\\11ee11\\AppD"
+    },
+    {
+      "id": "A12b",
+      "name": "验收不写清单只写结论",
+      "how": "checks 缺项",
+      "blocked": true,
+      "note": "VERIFY_CHECKLIST_INCOMPLETE [VERIFY_CHECKLIST_INCOMPLETE] 验收清单缺项：contentRechecked 必须为 tr"
+    },
+    {
+      "id": "A13",
+      "name": "读书状后再补密封初判",
+      "how": "想用终票倒推初判",
+      "blocked": true,
+      "note": "INITIAL_TOO_LATE [INITIAL_TOO_LATE] 已有控辩书状入卷，初判不再算「读书状前形成」；若确系先写后录，须给 ≥20 字的迟"
+    },
+    {
+      "id": "A14",
+      "name": "引用已撤回的证据",
+      "how": "书状 claim 绑 withdrawn 证据",
+      "blocked": true,
+      "note": "EVIDENCE_NOT_ADMITTED [EVIDENCE_NOT_ADMITTED] 证据 E002 当前状态 withdrawn，不得在书状/裁决/陪审意见"
+    },
+    {
+      "id": "A15",
+      "name": "把未插桩的成本写成 0",
+      "how": "tokens=0 且 unavailable 未登记",
+      "blocked": true,
+      "note": "AUDIT COST_ZERO_WITHOUT_SOURCE"
+    },
+    {
+      "id": "A16",
+      "name": "主张不绑证据",
+      "how": "claims.evidenceIds 为空",
+      "blocked": true,
+      "note": "NO_EVIDENCE_CITED [NO_EVIDENCE_CITED] 必须至少引用一条已采信证据"
+    }
+  ]
+}

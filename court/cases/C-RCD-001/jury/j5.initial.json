@@ -1,0 +1,11 @@
+{
+  "juror": "j5",
+  "onFundamentals": "conditional",
+  "basis": "顺序可接受，但美术不能无限延后，必须给出可验证的并行触发条件与时间点",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "j5 在书状入卷后补录初判，判断依据来自提案本身而非控辩书状，接受审计披露",
+  "at": "2026-11-22T09:50:21.087Z",
+  "sha": "a7b1afd88380980f8bcb306ea19c4c1520829cd3fe4fa0d300919b2914502fba"
+}

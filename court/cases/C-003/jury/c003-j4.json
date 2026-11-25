@@ -1,0 +1,19 @@
+{
+  "juror": "c003-j4",
+  "onFundamentals": "conditional",
+  "reason": "玩家能感知的是后厨物件感，但半新半旧风险真实",
+  "minority": "其余 16 处不承诺等于同文件两套按钮并存，玩家会看到半新半旧",
+  "contextId": "unknown",
+  "supports": [
+    "E003",
+    "E004",
+    "E006"
+  ],
+  "against": [
+    "E005"
+  ],
+  "noCounter": null,
+  "wouldChange": "8 人读数偏好 A 达 6/8，或 B 被认成小泽则改判 A",
+  "at": "2026-11-15T09:55:10.048Z",
+  "sha": "f32cc16df4684e79f4d8d714229a9dd8849cc23b3ed3b7f39928f0a4de02a7d6"
+}

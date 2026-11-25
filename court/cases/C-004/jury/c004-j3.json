@@ -1,0 +1,18 @@
+{
+  "juror": "c004-j3",
+  "onFundamentals": "conditional",
+  "reason": "只批 390 页脚与可复算的排版项，B 驳回",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E006",
+    "E002"
+  ],
+  "against": [
+    "E001"
+  ],
+  "noCounter": null,
+  "wouldChange": "正式版实装印章，或出现用户认可该章的记录，即改判容许 B 试点",
+  "at": "2026-11-15T10:06:33.105Z",
+  "sha": "06d519da2aa82af392ce333c85c2cc0b6e1aaf811d1fa8042d13c51f94c31b2f"
+}

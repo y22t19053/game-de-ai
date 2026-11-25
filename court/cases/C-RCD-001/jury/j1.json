@@ -1,0 +1,16 @@
+{
+  "juror": "j1",
+  "onFundamentals": "approve",
+  "reason": "活人感是身份问题，美术是完成度问题；先身份后完成度，程序化材质可临时兜底",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "反方未给出硬件窗口的确切截止时间",
+  "wouldChange": "若 D 盘在一周内到位，则应改成美术与活人感并行",
+  "at": "2026-11-22T09:49:12.171Z",
+  "sha": "ad377f0dbf4cc4f5c894a98aedc597b23d355e472a7ea1d359d15d0f4d42f542"
+}

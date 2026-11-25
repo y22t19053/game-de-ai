@@ -1,0 +1,7 @@
+# schema v1｜fixture｜G2 台账
+
+{"n":1,"sentence":"第 1 次开工前写下的一句","written_at":"2026-11-15T01:00:00Z","ui_file":"src/ui/a.tsx","minutes_spent":4}
+{"n":2,"sentence":"第 2 次开工前写下的一句","written_at":"2026-11-15T02:00:00Z","ui_file":"src/ui/b.tsx","minutes_spent":5}
+{"n":2,"type":"handoff_read","read_of":1,"read_at":"2026-11-15T02:30:00Z","sha":"sha20000","sha_date":"2026-11-15T10:00:00Z"}
+{"n":3,"sentence":"第 3 次开工前写下的一句","written_at":"2026-11-15T03:00:00Z","ui_file":"src/ui/c.tsx","minutes_spent":6}
+{"n":3,"type":"handoff_read","read_of":2,"read_at":"2026-11-15T03:30:00Z","sha":"sha30000","sha_date":"2026-11-15T11:00:00Z"}

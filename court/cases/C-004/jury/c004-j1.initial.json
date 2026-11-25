@@ -1,0 +1,11 @@
+{
+  "juror": "c004-j1",
+  "onFundamentals": "conditional",
+  "basis": "J1 初判\n立场：reject（有反证）\n依据\n1）正式版 index.html 无 stamp/已阅/seal；v2.css:24 --stamp #8c4a3a 已绑 :417/:596；\"已阅\"章只在原型 index.html:49；#9c3b2e 仅提案。\n2）自算 ΔL* 7.19（#ddd3ba→#cabfa3）/5.99（#e3d5b6→#d4c4a2），非 2.1；#b03a2a 对纸 4.58→4.05，反降。\n清单A：A3 该否（数假）；A4 自否；A1 8px 不符（gap18）；A2 不可发生。\n改判：改标原型并撤 B/A3/A4、A1/A2 实测、25% 盲标排序（E003）→conditional。\n",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判文件已于 2026-11-15T09:53:20.469Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+  "at": "2026-11-15T09:55:20.583Z",
+  "sha": "aac1ac9917a17cee5d3237f5f8c04828945bb128d8645f2ef4f451243e3dd6c3"
+}

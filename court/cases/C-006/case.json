@@ -1,0 +1,458 @@
+{
+  "id": "C-006",
+  "title": "骰子宇宙 2.0：移动端单格 41–46px 未达 44px 触控线——改几何、改方向，还是接受并标注",
+  "type": "high",
+  "schema": "v0.1.1",
+  "project": "diceverse",
+  "author": "lead",
+  "summary": "2.0 的 3D 等距场景在 844×390 下单格 41–46px，门下 C1 判 44px 为硬线；三条互斥路径待质证",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\docs\\proposals\\C006_TOUCH.md",
+  "proposalSha": "8e94e9d72c335f0dd8529cbe03da2fd98a3e58602059d0917ab964e2625a1293",
+  "stage": "executing",
+  "openedAt": "2026-11-15T15:12:37.165Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "prosecution",
+      "submittedAt": "2026-11-15T15:13:04.594Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\docs\\V2_MENXIA_REVIEW.md",
+      "version": null,
+      "claim": "门下省在 844x390 下实算三案单格为 28.74/36.13/35.03 px，全部低于 44 px，并将触控立为放行条件 C1",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-lin",
+      "registeredAt": "2026-11-15T15:13:13.888Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T15:13:18.092Z",
+      "decisionReason": "来源可核、与本案争点直接相关，采信",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "prosecution",
+      "submittedAt": "2026-11-15T15:13:04.676Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\docs\\P6_MOBILE_CHECKLIST.md",
+      "version": null,
+      "claim": "工部实测 844x390 下单格 41-46 px，仍未稳定达到 44 px，真机 15 条验收全空",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-lin",
+      "registeredAt": "2026-11-15T15:13:13.970Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T15:13:18.174Z",
+      "decisionReason": "来源可核、与本案争点直接相关，采信",
+      "contentHash": null
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "defense",
+      "submittedAt": "2026-11-15T15:13:04.752Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\src\\three\\IsoScene.ts",
+      "version": null,
+      "claim": "移动端机位档已实现：applyViewportProfile 按场地高度算 camDist，pitch 切到 MOBILE_PITCH，未改任何规则层代码",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-lin",
+      "registeredAt": "2026-11-15T15:13:14.047Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T15:13:18.253Z",
+      "decisionReason": "来源可核、与本案争点直接相关，采信",
+      "contentHash": null
+    },
+    {
+      "id": "E004",
+      "state": "admitted",
+      "submittedBy": "defense",
+      "submittedAt": "2026-11-15T15:13:04.827Z",
+      "kind": "external",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\docs\\VISUAL_LANGUAGE.md",
+      "version": null,
+      "claim": "1.0 曾把 44 px 写进 --cell-min 并实测通过，说明该线在本项目内是可执行的而非口号",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-lin",
+      "registeredAt": "2026-11-15T15:13:14.125Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T15:13:18.349Z",
+      "decisionReason": "来源可核、与本案争点直接相关，采信",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "41-46px 是否构成「移动端可用」",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002"
+      ],
+      "at": "2026-11-15T15:14:16.240Z"
+    },
+    {
+      "id": "D02",
+      "point": "改几何是否应由视觉需求驱动规则层",
+      "raisedBy": "defense",
+      "evidenceIds": [
+        "E003"
+      ],
+      "at": "2026-11-15T15:14:16.315Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "qingcha",
+      "contextId": "unknown",
+      "text": "本案争点不是「44px 是不是好数字」，而是：当 3D 盘与 44px 触控在 844×390 上不能同时满足时，哪一条是产品底线。\n\n控方主张：触控优先，甲案（接受 41–46px 并标注）不成立。\n\n理由三条：\n\n一、41–46px 不是一个「近似合格」的数字，而是一个**没有下限的数字**。44px 之所以成为线，是因为它对应手指触点的真实分布；给 44 加一个 ±3px 的浮动区间，等于把标准变成「看情况」。E002 记录的是 41–46，其中最坏的那一档 41 比门下算出的 28.74 只好了 12px，仍然低于任何一家平台的可用门槛。\n\n二、E002 同时记录了一件事：真机 15 条验收全空。也就是说，本案的提案方在**没有任何真机数据**的前提下，要求法庭批准一个「手机能点」的结论。这在本庭的规则里是不成立的——没有测量就没有主张。\n\n三、E004 说明 44px 在本项目里不是外来口号：1.0 已经把它写进 `--cell-min` 并实测通过（地图节点 44×44、战斗格 44.5×44.5）。**同一支队伍在 1.0 做到过，在 2.0 做不到，这不是能力问题，是取舍问题**——而取舍需要有人承担后果，不能让「标注为已知限制」替玩家承担。\n\n控方不要求立刻改几何（那是乙案，代价大），只要求：在拿到真机失败率之前，**不得对外宣称移动端可用**；且若失败率超过 10%，立即转乙案。\n\n—— 检察方 qingcha\n",
+      "claims": [
+        {
+          "text": "41-46px 没有下限、最坏档仍远低于可用门槛",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        },
+        {
+          "text": "真机 15 条验收全空，无测量即无主张",
+          "evidenceIds": [
+            "E002"
+          ]
+        },
+        {
+          "text": "1.0 在同项目内做到过 44px，说明是取舍问题而非能力问题",
+          "evidenceIds": [
+            "E004"
+          ]
+        }
+      ],
+      "lengthChars": 626,
+      "filedAt": "2026-11-15T15:14:00.234Z",
+      "sha": "40f40c6607ad42e1ba6f7f79634c2c86b7620d5e3a15b9e6e03b98f86a2987b1"
+    },
+    {
+      "side": "defense",
+      "author": "biangu",
+      "contextId": "unknown",
+      "text": "辩方主张：甲案成立，但必须加一条硬止损线；同时反对控方把「没有真机数据」当成「不能开工」的理由。\n\n一、控方说「没有测量就没有主张」，这话对一半。**本案要裁的不是「手机能不能点」，而是「在拿到真机数据之前，工程该怎么走」**。如果答案是「停下来等真机」，那么整个 2.0 的移动端适配就会卡在一个我拿不到的资源上（E002：真机验收需要人手，不是代码）。制度不能把自己的验收环节变成停工理由。\n\n二、E003 是关键证据：移动端机位档只改了渲染层（`applyViewportProfile` 的 pitch 与 camDist），**规则层一行没动**。这意味着甲案是可逆的、可随时被乙案取代的——它不是一次性押注，而是一个可撤回的临时状态。反过来，乙案要动 8×8 战场与 15×13 场地，那是 95 项测试背后的几何，代价由规则层承担。\n\n三、控方举 E004 说 1.0 做到过 44px。这正是辩方的论据：1.0 的 44px 是在**2D DOM 里**做到的（`--cell-min: 44px` 能直接生效），2.0 是 3D 透视投影，单格像素由相机距离与俯角决定，两者不是同一类问题。拿 1.0 的数字要求 3D 是范畴错误。\n\n四、辩方承认的最坏情况：41px 确实低。所以辩方接受绑定止损线——真机点选失败率 >15% 即转乙案，并且在此之前所有对外材料统一写「移动端未验收」，不许写「兼容」。\n\n一句话：甲案不是「就这样了」，是「先按可逆方式往前走，用真机数据决定是否翻盘」。\n\n—— 辩护方 biangu\n",
+      "claims": [
+        {
+          "text": "本案要裁的是拿到真机数据前工程怎么走，不是手机能不能点",
+          "evidenceIds": [
+            "E002"
+          ]
+        },
+        {
+          "text": "机位档只动渲染层、规则层一行未改，甲案可逆",
+          "evidenceIds": [
+            "E003"
+          ]
+        },
+        {
+          "text": "1.0 的 44px 来自 2D DOM，与 3D 透视投影不同类",
+          "evidenceIds": [
+            "E004"
+          ]
+        }
+      ],
+      "lengthChars": 669,
+      "filedAt": "2026-11-15T15:14:00.316Z",
+      "sha": "8de79e98d38e0a1037cf8a9bd2995b65ed218c79303cd1795866f44d07f45c76"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "41px 的最坏档出现在什么画面条件下？是真机还是模拟器？",
+      "askedBy": "qingcha",
+      "answeredBy": "biangu",
+      "answer": "出现在 844x390 浏览器模拟、场地取满画布时；没有真机，E002 已写明真机 15 条全空",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-15T15:14:21.691Z"
+    },
+    {
+      "round": 2,
+      "question": "若真机失败率超过 15% 转乙案，谁来执行、谁来验收？",
+      "askedBy": "qingcha",
+      "answeredBy": "biangu",
+      "answer": "承旨中枢拆任务给工部，验收人不得是执行人；本条写进裁决附条件，未达标不得上线正式条目",
+      "evidenceIds": [],
+      "at": "2026-11-15T15:14:21.765Z"
+    },
+    {
+      "round": 3,
+      "question": "如果真机验收一直拿不到，这条止损线会不会变成永久免死金牌？",
+      "askedBy": "qingcha",
+      "answeredBy": "biangu",
+      "answer": "会。所以附条件里必须写有效期：两周内拿不到真机数据即按失败率 100% 处理，转乙案",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-15T15:14:46.393Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "juror-f",
+      "onFundamentals": "approve",
+      "reason": "可逆性论证成立：机位档只动渲染层，且已绑定止损线与有效期",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "控方未能否认机位档可逆，也未给出真机数据",
+      "wouldChange": "真机失败率超过 15% 且拒绝转乙案则改判",
+      "at": "2026-11-15T15:15:21.159Z",
+      "sha": "d9ce49ce6112001412edb9892457d5d84e260c99e261f51babf61fd99230f117"
+    },
+    {
+      "juror": "juror-g",
+      "onFundamentals": "conditional",
+      "reason": "接受甲案但必须写死未验收前不得宣称兼容，并给有效期",
+      "minority": "若移动端列为首发平台则甲案不足",
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [
+        "E001"
+      ],
+      "noCounter": null,
+      "wouldChange": "真机失败率超过 10% 或两周无数据则改判乙案",
+      "at": "2026-11-15T15:15:21.241Z",
+      "sha": "1bdad7ff7a2f60310a3782bd57dc5c458e4f961e4bc98e3e20b29bdc449a0544"
+    },
+    {
+      "juror": "juror-h",
+      "onFundamentals": "conditional",
+      "reason": "两条互斥承诺必须有一条让步，甲案让步的是宣传口径而不是几何",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "控方未能否认机位档的可逆性",
+      "wouldChange": "若移动端被列为首发平台则改判乙案",
+      "at": "2026-11-15T15:15:21.319Z",
+      "sha": "d7150af3274436c6326a33d7169b5669005cf002badcc97b04c1eae1acb4ae5a"
+    },
+    {
+      "juror": "juror-i",
+      "onFundamentals": "approve",
+      "reason": "止损线加有效期后，甲案是我能接受的最不坏选择",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "控方未提出乙案的具体测试代价估算",
+      "wouldChange": "若乙案工期低于一天则改判乙案",
+      "at": "2026-11-15T15:16:04.164Z",
+      "sha": "fbb1ba60a054beaf15c5cf43b384231751b9a2a80a1463e05b22888279f43995"
+    },
+    {
+      "juror": "juror-j",
+      "onFundamentals": "reject",
+      "reason": "可逆性不能替代可用性，玩家点不中就是点不中，两周等待期对一个已上线产品太长",
+      "minority": "认为应立即转乙案，不接受两周观察期",
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [
+        "E003"
+      ],
+      "noCounter": null,
+      "wouldChange": "若两周内真机失败率低于 5% 则改判",
+      "at": "2026-11-15T15:16:04.243Z",
+      "sha": "8b7f2602d2de0ad1602998def622646cb59149ad43006f0ded26f3f971e29f3a"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "juror-f",
+      "onFundamentals": "approve",
+      "basis": "先看它是否真的影响玩家能不能点到，而不是先看谁的成本更低；甲案只有在真机数据支撑时才成立",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+      "at": "2026-11-15T15:15:05.901Z",
+      "sha": "a709513c64b4188271198e95a3ceafb7a7eeb4d59a478573f899b07933a5e24b"
+    },
+    {
+      "juror": "juror-g",
+      "onFundamentals": "reject",
+      "basis": "先看有没有实测数据；没有真机失败率之前，任何「接受」都是自证清白",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+      "at": "2026-11-15T15:15:05.981Z",
+      "sha": "238e7d9356d574db4fd5deaf17e2b4680c3528797523717d67f4b53c8a355563"
+    },
+    {
+      "juror": "juror-h",
+      "onFundamentals": "conditional",
+      "basis": "两条互斥承诺必须有一条让步，条件式同意甲案但必须绑定真机止损线",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+      "at": "2026-11-15T15:15:06.057Z",
+      "sha": "5fc9cd06ad6829cd9b5a8ba9b23fd6ee2e8da93d47c7468ee7915620ba6827e5"
+    },
+    {
+      "juror": "juror-i",
+      "onFundamentals": "approve",
+      "basis": "我先看止损线有没有到期日。一个可以说随时撤回、却永远不会到期的可逆状态，在工程上等于永久例外，这是我判断的第一条依据。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+      "at": "2026-11-15T15:15:58.812Z",
+      "sha": "60677aaa07eb0fa163035a92379d44e63025e8280d615ab64cfa27329c1b3978"
+    },
+    {
+      "juror": "juror-j",
+      "onFundamentals": "reject",
+      "basis": "我先看玩家实际能不能点中。可逆性说的是以后可以改，可用性说的是现在能不能用；拿前者替代后者，是把成本推给玩家。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+      "at": "2026-11-15T15:15:58.905Z",
+      "sha": "b06482b1d15ea616706b11beaf1609ca65230196a30bb1cd5527ff202eabd04a"
+    }
+  ],
+  "redteam": [
+    {
+      "vector": "角色同一底模：检察方与辩护方都由 lead 一个模型扮演",
+      "attempt": "允许辩护方引 E004 反打控方，看它会不会替控方说话",
+      "outcome": "partial",
+      "weakness": "辩方确实用控方的证据反打，但两方语气与立场仍出自同一判断框架",
+      "fixed": false,
+      "evidencePath": null,
+      "at": "2026-11-15T15:14:11.084Z",
+      "sandboxed": true
+    },
+    {
+      "vector": "证据自证：四份证据里三份出自承旨中枢自己",
+      "attempt": "把 E003 换成可执行代码路径而非自述",
+      "outcome": "partial",
+      "weakness": "代码可核，但「41-46px」这个数字仍然是自家工具量的",
+      "fixed": false,
+      "evidencePath": null,
+      "at": "2026-11-15T15:14:11.177Z",
+      "sandboxed": true
+    }
+  ],
+  "ruling": {
+    "judge": "judge-chen",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "41-46px 无真机数据支撑，任何「可用」宣称不成立",
+        "evidenceIds": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "severity": "major",
+        "claim": "机位档只改渲染层，甲案可逆但必须有时效",
+        "evidenceIds": [
+          "E003"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "44px 在 1.0 的 2D 界面成立过，不构成对 3D 的直接约束",
+        "evidenceIds": [
+          "E004"
+        ]
+      }
+    ],
+    "conditions": [
+      "真机数据到手前，对外材料不得出现「移动端兼容」字样",
+      "两周内拿不到真机数据即按失败率 100% 处理，转乙案并重走中书门下"
+    ],
+    "reason": "本庭认为，争议的核心不是 44 这个数字，而是**在两项互斥承诺之间，谁承担让步的后果**。\n\nE001 与 E002 合并证明了一个事实：2.0 的 3D 透视投影在 844×390 上把单格压到 41–46 px，且这一数字**没有真机数据支撑**。E003 证明另一件事：实现这一结果的机位档只改渲染层，规则层未被动过。E004 说明 44 px 在本项目内不是外来口号，1.0 的 2D 界面做到过。\n\n三点合起来，本庭的裁决逻辑是：\n\n一、控方关于「无测量即无主张」的论点成立，但它推出的结论过强。本案要裁的是**在拿到真机数据前的工程姿态**，不是「手机可用」这一事实判断。把验收环节变成停工理由，等于让制度自己卡死自己。\n\n二、辩方关于「可逆性」的论点成立，但它回避了一件事：可逆状态可以被无限延长。交叉询问第三轮问出的正是这一点——止损线若没有有效期，就是免死金牌。\n\n三、因此本庭采**甲案（接受并标注）**，但把它的可逆性写死为**有到期日的临时状态**：真机数据到手之前，任何对外材料不得出现「移动端兼容」；两周内拿不到数据，按失败率 100% 处理，强制转乙案（改战场几何 8×8→7×7、场地 15×13→13×11），并重新走中书门下。\n\n四、本庭同时否掉乙案作为**当下**执行项：它会动到 95 项测试背后的几何，代价由规则层承担，而规则层独立于渲染层是本项目从 1.0 起的纪律。也否掉丙案：回退 2D 盘直接摧毁 2.0 的核心承诺。\n\n五、本庭记录一条保留意见（juror-g）：若移动端被列为首发平台而非附加项，甲案不足以担保体验，应直接乙案。此意见不构成对本案的判断，但对接下来的平台策略有约束力。\n\n六、关于制度本身：本案的控辩双方、陪审、法官都出自同一套模型，四份证据里三份由承旨中枢自己提交（红队已记录两条）。本庭不认为这使本案无效，但**它使「独立」这个词在本案里只对程序成立，不对判断成立**——这一点必须写进裁决，不许当没发生。\n",
+    "roundsChosen": 3,
+    "roundsWhy": "第三轮才问出止损线有效期这一关键，两轮不足以收敛",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-15T15:16:08.632Z",
+    "sha": "2a5a411ea4dec8d733cdee33799fa928de00e187b1ebc6e91ac7e3baae31cbbf"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "真机实测点选失败率（844×390 至少三次：点地面走、点 NPC、战斗点敌人），并把失败率写进 docs/P6_MOBILE_CHECKLIST.md",
+      "owner": "lead",
+      "deadline": "2026-11-29T00:00:00.000Z",
+      "acceptance": "三个动作各测 10 次，记录成功/失败次数与失败时的截图；失败率 >15% 需同时提交转乙案的工单",
+      "evidencePath": null,
+      "status": "pending",
+      "createdAt": "2026-11-15T15:16:13.066Z",
+      "submittedAt": null,
+      "verifiedAt": null,
+      "verifier": null,
+      "report": null,
+      "overdueReason": null,
+      "cancelReason": null
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

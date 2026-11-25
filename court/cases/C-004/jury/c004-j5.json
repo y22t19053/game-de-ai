@@ -1,0 +1,19 @@
+{
+  "juror": "c004-j5",
+  "onFundamentals": "conditional",
+  "reason": "多个数字不可复算（ΔL 实为 5.99/7.19，8px 实为 6/18），须先订正",
+  "minority": "A1 可证：390 宽三段必然折行且末项孤行，无需再等测点",
+  "contextId": "unknown",
+  "supports": [
+    "E006",
+    "E002",
+    "E003"
+  ],
+  "against": [
+    "E001"
+  ],
+  "noCounter": null,
+  "wouldChange": "提案补 A2 测点与 2.1 口径、同机三视口基线图，B 附可测验收",
+  "at": "2026-11-15T10:06:33.112Z",
+  "sha": "1631c0b9c76c5fe8452008077223c634199b78d52f237b0f1996bc7f63d05e1f"
+}

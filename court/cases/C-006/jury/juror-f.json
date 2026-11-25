@@ -1,0 +1,15 @@
+{
+  "juror": "juror-f",
+  "onFundamentals": "approve",
+  "reason": "可逆性论证成立：机位档只动渲染层，且已绑定止损线与有效期",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "控方未能否认机位档可逆，也未给出真机数据",
+  "wouldChange": "真机失败率超过 15% 且拒绝转乙案则改判",
+  "at": "2026-11-15T15:15:21.159Z",
+  "sha": "d9ce49ce6112001412edb9892457d5d84e260c99e261f51babf61fd99230f117"
+}

@@ -1,0 +1,11 @@
+{
+  "juror": "c003-j2",
+  "onFundamentals": "conditional",
+  "basis": "# J2\n\n**立场：conditional**\n\n**依据**：`ui/styles.css:21-22` 硬影已 token 化、全站仅 2 处引用，\"全站投影\"不成立；`radius:999px|50%` 71 次是胶囊与正圆（E001 radius_top 前二）。两处\"结构问题\"皆计数假象，E003 已证同口径把小泽判差。\n\n**最担心**：\"结构没有身份\"未检验，A/B 皆建其上；口径数的是变量名与胶囊圆（R3 §0.4）。\n\n**改判**：B 真机截图→approve B 单屏；390 宽对比<4.5:1 或点击物<40px→approve 精简 A；缩略图盲测可分→reject。\n",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判文件已于 2026-11-15T09:49:09.782Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+  "at": "2026-11-15T09:51:53.262Z",
+  "sha": "15586f8ae7d5f8617a70127f0f94d486aba44c4ae3ade2dd79f95e200705da68"
+}

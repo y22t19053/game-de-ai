@@ -1,0 +1,229 @@
+{
+  "id": "C-016",
+  "title": "两端一致与秘密隔离：界面层证据",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\remote-ui-check.mjs",
+  "proposalSha": "0debfb619892e8d21ac0a8a1a37fcbd938a98cd6df00ffe76a29756c9daa86c7",
+  "stage": "executing",
+  "openedAt": "2026-11-17T05:32:18.343Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:32:18.429Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\L4-ui-duel.log",
+      "version": null,
+      "claim": "两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T05:32:18.508Z",
+      "sourceRef": null,
+      "decidedBy": "judge-remote",
+      "decidedAt": "2026-11-17T05:32:18.588Z",
+      "decisionReason": "证据来自本轮实际运行输出，路径可复核，采信。",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "本轮证据是否足以支撑「远程可对战」这一结论",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:18.835Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "本轮实测结论：两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+      "claims": [
+        {
+          "text": "两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 60,
+      "filedAt": "2026-11-17T05:32:18.671Z",
+      "sha": "015a2b89a2f211e94a20ee6f745def868a80524c889a21462d4c206f4186dc27"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "反方立场：同机测试不能代表跨网络；公网隧道的可用性不代表生产可用。",
+      "claims": [
+        {
+          "text": "同机或隧道证据不足以支撑跨网络结论",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 33,
+      "filedAt": "2026-11-17T05:32:18.753Z",
+      "sha": "957113cd537f30032edf6570869d8d9535d8468a3db5dd13b13d4bf2fb545e1a"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "这 13 项里有多少项真的经过公网？",
+      "askedBy": "prosecution",
+      "answeredBy": "yuanzhen",
+      "answer": "全部经过隧道，但两端在同一台机器上。",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:18.915Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:19.238Z",
+      "sha": "0697ea170d2706bfe7cf901ad22e967a8f2ba75b27f296de2253669ed27eb99d"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:19.318Z",
+      "sha": "1c9a09a45c3ff161e4de365a72f447eea80e195be56bfd023dbe4cfcb266ed0b"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:19.406Z",
+      "sha": "721549a067102515a613f2a21fb1372566be166ab826454c740abfdf9315b362"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:18.992Z",
+      "sha": "82e367abc7ecd6413f381e4a2020f5254e4761ea713d351cb7acab1311f2455f"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:19.072Z",
+      "sha": "ad38d9a5f5744da2f352285ff1b64bb5c2f88fa10090dbd8d2e06b017451d93c"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:19.151Z",
+      "sha": "dbebaa74e6f61537ec1e4bfeacf1509f5912a3ab41c7fe2c312183af97be59bf"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-remote",
+    "verdict": "approved",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "两个独立浏览器走完整界面可完成一次同房交互",
+        "evidenceIds": [
+          "E001"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "演出与可操作之间存在竞态窗口（点 disabled 牌无反馈）",
+        "evidenceIds": [
+          "E001"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "界面层走通，且秘密隔离在视图、序列化与事件三侧都成立；竞态窗口是体验缺陷但不破坏状态一致性。",
+    "roundsChosen": 0,
+    "roundsWhy": "本轮只走一轮质询：争点单一，反方立场已在书状中给出。",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-17T05:32:19.503Z",
+    "sha": "1f933dbdc6fbb8e92a33a34c6f2c9650bc90ad35e98805a643ac3184fa0444dc"
+  },
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

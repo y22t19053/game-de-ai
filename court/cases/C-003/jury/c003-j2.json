@@ -1,0 +1,19 @@
+{
+  "juror": "c003-j2",
+  "onFundamentals": "conditional",
+  "reason": "结构身份靠 100% 全尺寸可判，但范围与覆盖面未闭合，只批试点",
+  "minority": "34 处 .btn 只有 18 处在承诺的 2 屏内，余 16 处并存两套按钮且无验收覆盖",
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E003",
+    "E006"
+  ],
+  "against": [
+    "E004"
+  ],
+  "noCounter": null,
+  "wouldChange": "两天试点出 100% 双档实拍且盲测能点名压杆与项号则转 approve B",
+  "at": "2026-11-15T09:55:10.034Z",
+  "sha": "eb9fb973ddd17817720eade8a20c4da81e099052466ac281fdd7b89004cf4c50"
+}

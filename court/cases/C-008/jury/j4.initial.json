@@ -1,0 +1,11 @@
+{
+  "juror": "j4",
+  "onFundamentals": "conditional",
+  "basis": "采纳分组与类别签，但理由必须是「收纳不删减」：默认全览、四签只收窄、23 条恒在场；证据里 13/23 与 11/11 的数字说明它缓解而非消除，裁决须写明残余限制。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "书状入卷后才拿到量测补充，判断依据同一份报告",
+  "at": "2026-11-16T16:25:00.562Z",
+  "sha": "5da634ae616aef0c383b2b213516d2ceae9d72f7ef9dc39b02f960c75d2792cb"
+}

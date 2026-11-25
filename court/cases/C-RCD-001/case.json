@@ -1,0 +1,433 @@
+{
+  "id": "C-RCD-001",
+  "title": "RCD 全面去 AI 味（含美术与新手教学）",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "roll-cut-die",
+  "author": "lead",
+  "summary": "先做人再做字最后做关；不碰判定与数值；文案只列不改",
+  "proposalPath": "docs/proposals/C-RCD-001.md",
+  "proposalSha": "707dcd322735bac5d45d3eea05bb8ed64d1e3d1f5a6b713f4d1d7635b0e28309",
+  "stage": "executing",
+  "openedAt": "2026-11-22T09:46:08.982Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-22T09:46:57.953Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\COPY_INVENTORY.md",
+      "version": "v1",
+      "claim": "RCD 玩家可见文案共 13 组约 130 条，位置与触发时机已定位",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-22T09:47:11.623Z",
+      "sourceRef": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\COPY_INVENTORY.md",
+      "decidedBy": "menxia",
+      "decidedAt": "2026-11-22T09:47:19.276Z",
+      "decisionReason": "文件真实存在、内容为提案直接依据、与提案第五节对应",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-22T09:46:58.070Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\TUTORIAL_PLAN.md",
+      "version": "v1",
+      "claim": "三关加演练的分步设计，含每关一条可观察验收",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-22T09:47:11.782Z",
+      "sourceRef": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\TUTORIAL_PLAN.md",
+      "decidedBy": "menxia",
+      "decidedAt": "2026-11-22T09:47:19.367Z",
+      "decisionReason": "文件真实存在、内容为提案直接依据、与提案第五节对应",
+      "contentHash": null
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-22T09:46:58.167Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\visual\\DEAI_PLAN.md",
+      "version": "v1",
+      "claim": "七条去 AI 味改动按性价比排序，含四条明确不做",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-22T09:47:11.932Z",
+      "sourceRef": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\visual\\DEAI_PLAN.md",
+      "decidedBy": "menxia",
+      "decidedAt": "2026-11-22T09:47:19.445Z",
+      "decisionReason": "文件真实存在、内容为提案直接依据、与提案第五节对应",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "双方对「美术是否应前置」存在实质分歧：控方主张先做人再做关最后做材质，辩方主张材质受硬件窗口限制应前置。",
+      "raisedBy": "rival",
+      "evidenceIds": [
+        "E003"
+      ],
+      "at": "2026-11-22T09:48:56.456Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "ctxA",
+      "text": "本提案主张：先做活人感（场务看你一眼、每节走掉一个人、纸是手写的、家具歪 2-7 度），再做教学三关，最后做美术材质。理由：材质再换，一个空房间仍是空房间；活人感与教学不做，玩家第一分钟就退出。提案不碰判定/数值/库存/概率，文案只列不改。",
+      "claims": [
+        {
+          "text": "活人感优先于美术",
+          "evidenceIds": [
+            "E001"
+          ]
+        },
+        {
+          "text": "教学三关可分步验收",
+          "evidenceIds": [
+            "E002"
+          ]
+        },
+        {
+          "text": "去AI味不碰判定",
+          "evidenceIds": [
+            "E003"
+          ]
+        }
+      ],
+      "lengthChars": 120,
+      "filedAt": "2026-11-22T09:47:50.508Z",
+      "sha": "1ade6bdccb8fc1866081897f11bc13afd96a9ae7f41d9e7d6fe4d0a8c786e7f9"
+    },
+    {
+      "side": "defense",
+      "author": "rival",
+      "contextId": "ctxB",
+      "text": "反方主张：美术应前置。创作者原话是独立游戏玩的是音乐与美术，且本机 SDXL 权重受阻意味着越晚做越可能做不成；活人感属细枝末节，不能在没有任何美术资产时先做。",
+      "claims": [
+        {
+          "text": "美术前置可复用且受硬件窗口限制",
+          "evidenceIds": [
+            "E003"
+          ]
+        }
+      ],
+      "lengthChars": 80,
+      "filedAt": "2026-11-22T09:48:08.180Z",
+      "sha": "9cb1bb03df154775a48e845bcdd5e9500830ce30cf5b0fbdc62cbef41a7494af"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "如果先做活人感，D 盘权重到位前美术完全没动，是否等于把最大风险推到最后？",
+      "askedBy": "rival",
+      "answeredBy": "lead",
+      "answer": "程序化材质与手写纸、家具歪斜属于同一批表现层工作，可以在做人时一起落；真贴图等盘到位后再替换，替换点只有 _surface() 一处",
+      "evidenceIds": [
+        "E003"
+      ],
+      "at": "2026-11-22T09:48:56.547Z"
+    },
+    {
+      "round": 2,
+      "question": "教学关是否会引入新的失败点或卡死风险，从而抵消留存收益？",
+      "askedBy": "rival",
+      "answeredBy": "lead",
+      "answer": "教学关复用现有关卡与状态机，仅加 _tutorial 分支与四条强制字段断言；不加场景、不加菜单，卡死风险等于现有过线判定",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-22T09:48:56.632Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "j1",
+      "onFundamentals": "approve",
+      "reason": "活人感是身份问题，美术是完成度问题；先身份后完成度，程序化材质可临时兜底",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "反方未给出硬件窗口的确切截止时间",
+      "wouldChange": "若 D 盘在一周内到位，则应改成美术与活人感并行",
+      "at": "2026-11-22T09:49:12.171Z",
+      "sha": "ad377f0dbf4cc4f5c894a98aedc597b23d355e472a7ea1d359d15d0f4d42f542"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "approve",
+      "reason": "教学三关可在现有关卡内实现，不改场景与菜单，风险可控，且直接决定第二局",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "反方未证明活人感与教学冲突",
+      "wouldChange": "若教学关需要新场景才能成立，则改为先做美术",
+      "at": "2026-11-22T09:49:12.248Z",
+      "sha": "07ac230de3b7821e098926011edcbae4adb984a8a78088673f464d4ff653b370"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "reject",
+      "reason": "程序化材质只到 80 分，真资产要等 D 盘，越晚做越危险",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [
+        "E003"
+      ],
+      "noCounter": null,
+      "wouldChange": "若能证明程序化材质可达 85 分，则同意把美术排后",
+      "at": "2026-11-22T09:49:12.327Z",
+      "sha": "039904a6024fbd766791fda0908845b648aefa041ba58819d4eed45bc19bbe58"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "approve",
+      "reason": "试玩反馈的退出点是不知干什么与没有人味，二者都在提案前两步内",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "辩方未把美术与退出点直接挂钩",
+      "wouldChange": "若截图显示画质已影响辨认则改为美术先行",
+      "at": "2026-11-22T09:50:03.519Z",
+      "sha": "cffc0bf2858e198dee4d613e3ed18551aba93b10153006f0ece483883d897f4f"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "reason": "同意顺序，但需并行触发条件：D 盘到位即启动真贴图替换",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "反方未给出可验证的窗口判据",
+      "wouldChange": "若 D 盘一周内到位则改为并行",
+      "at": "2026-11-22T09:50:21.170Z",
+      "sha": "c5c619d2cf55dc014e794c919b0f1515a5a3357d9c33e6ac93358c10367b2bfc"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "j1",
+      "onFundamentals": "approve",
+      "basis": "先做人再做字最后做关：活人感决定玩家第一分钟是否退出，材质换不掉空房间",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-22T09:47:50.271Z",
+      "sha": "5de1024607dbb7d67afc33ba64a30a65ccee7bdbdfb5a0d910b08a0acde65344"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "approve",
+      "basis": "教学三关分步可实现且每关有可观察验收，先做它能保住留存，代价可接受",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-22T09:47:50.353Z",
+      "sha": "21a5f98d764353690d82e07663aa3cf3a6e8f929c576d03ca199b0b807e6d196"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "reject",
+      "basis": "创作者点名美术与音乐是本作短板，素材一次投入可全片复用，不应排在最后",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-22T09:47:50.429Z",
+      "sha": "2a2b4190de0142304ba07e644b4331410cc9758863d1bc2d8d2b78f0d06eaa14"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "approve",
+      "basis": "试玩反馈指出的退出点是不知干什么与没有人味，二者都在提案前两步内",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "j4 在书状入卷后才加入陪审，初判仍按读书状前的立场独立给出，未参考控辩书状内容",
+      "at": "2026-11-22T09:50:03.350Z",
+      "sha": "49a37a1e73fb4c01168326d1597db662c3c52cfe126661b06153729b0bc0a462"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "basis": "顺序可接受，但美术不能无限延后，必须给出可验证的并行触发条件与时间点",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "j5 在书状入卷后补录初判，判断依据来自提案本身而非控辩书状，接受审计披露",
+      "at": "2026-11-22T09:50:21.087Z",
+      "sha": "a7b1afd88380980f8bcb306ea19c4c1520829cd3fe4fa0d300919b2914502fba"
+    }
+  ],
+  "redteam": [
+    {
+      "vector": "绕过验收：先做美术而不做活人感，仍声称已去 AI 味",
+      "attempt": "以创作者音乐美术原话作为前置理由，把活人感降为细枝末节",
+      "outcome": "failed",
+      "weakness": "若创作者本人坚持，制度无强制力，只能留档",
+      "fixed": true,
+      "evidencePath": null,
+      "at": "2026-11-22T09:49:49.703Z",
+      "sandboxed": true
+    }
+  ],
+  "ruling": {
+    "judge": "emperor",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "活人感缺位是本作主要 AI 味来源，造型精度次之",
+        "evidenceIds": [
+          "E001",
+          "E003"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "教学三关可在现有关卡内实现，风险可控",
+        "evidenceIds": [
+          "E002"
+        ]
+      }
+    ],
+    "conditions": [
+      "下一版 exe 需附四条验收截图（远处人声/被看见/人数≥4/一关内无需解释）",
+      "D 盘到位后一周内启动真贴图替换，只改 _surface()"
+    ],
+    "reason": "采纳控方顺序：先活人感、再教学、最后材质。本作 AI 味来自一切服务玩家而非造型精度；辩方未能证明美术窗口有确切截止时间，且活人感与材质同属表现层可同批落地，真贴图待盘到位仅替换一处。附两条并行触发条件，避免美术无限延后。",
+    "roundsChosen": 0,
+    "roundsWhy": "两轮交叉询问已覆盖顺序与风险两项分歧",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-22T09:50:40.234Z",
+    "sha": "7ae89ed4624798fccd8fd3d6dcc3673c149f64b60de00e662d68eca1e92d4bdf"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "T01 场务转身看你",
+      "owner": "lead",
+      "deadline": "2026-11-24T00:00:00.000Z",
+      "acceptance": "relay_rooms 的场务在玩家 2.5 m 内转头 0.25 s、停 0.4 s 再转回；不追不停工",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\DEAI_TASKS.md",
+      "status": "verified",
+      "createdAt": "2026-11-22T09:50:47.722Z",
+      "submittedAt": "2026-11-22T10:05:15.617Z",
+      "verifiedAt": "2026-11-22T10:58:23.111Z",
+      "verifier": "author",
+      "report": "场务在玩家 3.4 m 内停住、整身转向玩家约半秒再转回（body_yaw 实测 0.94 rad，0.30 s 内位移 0.025 m）；只加 notice_player 与 set_clock 的暂停分支，不碰判定与数值；三条断言锁住「转」「远处不转」「不是闪一下」。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": false,
+        "doubleCountChecked": false,
+        "omissionChecked": true
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\DEAI_TASKS.md",
+          "sha256": "dc7e059be819bc37582add53bfe083d571edea53b51152cf813b30fb35b2abe9"
+        }
+      ],
+      "verifyNote": "作者 2026-11-22 回复「验收通过」。核对了执行者提供的读数：真机 body_yaw 0.94 rad、0.30 秒内位移 0.025 米（场务确实停下转向）；tests/run_all.gd 550 断言全绿。"
+    },
+    {
+      "id": "T02",
+      "deliverable": "T02 每节走掉一个人",
+      "owner": "lead",
+      "deadline": "2026-11-24T00:00:00.000Z",
+      "acceptance": "第 2/3 节进场时远端有背影片段走出棚；不参与判定",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\DEAI_TASKS.md",
+      "status": "pending",
+      "createdAt": "2026-11-22T09:50:47.815Z",
+      "submittedAt": null,
+      "verifiedAt": null,
+      "verifier": null,
+      "report": null,
+      "overdueReason": null,
+      "cancelReason": null
+    },
+    {
+      "id": "T03",
+      "deliverable": "T03 纸是手写的",
+      "owner": "lead",
+      "deadline": "2026-11-24T00:00:00.000Z",
+      "acceptance": "门卡与结算页整张歪 ±0.6 度、字距 ±3%、一处划掉重写",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\roll-cut-die\\docs\\DEAI_TASKS.md",
+      "status": "pending",
+      "createdAt": "2026-11-22T09:50:47.893Z",
+      "submittedAt": null,
+      "verifiedAt": null,
+      "verifier": null,
+      "report": null,
+      "overdueReason": null,
+      "cancelReason": null
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

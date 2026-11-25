@@ -1,0 +1,11 @@
+{
+  "juror": "juror-j",
+  "onFundamentals": "reject",
+  "basis": "我先看玩家实际能不能点中。可逆性说的是以后可以改，可用性说的是现在能不能用；拿前者替代后者，是把成本推给玩家。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+  "at": "2026-11-15T15:15:58.905Z",
+  "sha": "b06482b1d15ea616706b11beaf1609ca65230196a30bb1cd5527ff202eabd04a"
+}

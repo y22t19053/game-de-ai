@@ -1,0 +1,11 @@
+{
+  "juror": "juror-c",
+  "onFundamentals": "conditional",
+  "basis": "我倾向加深但不倾向改边界：门的原话是规则要反复使用才有记忆，这一点我认，但「改时长」不等于「加深」。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+  "at": "2026-11-15T12:55:44.750Z",
+  "sha": "2356df882330155011a875899c896959c9875a6f72cd75e9dbbc4a0dae11800b"
+}

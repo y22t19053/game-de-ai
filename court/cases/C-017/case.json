@@ -1,0 +1,229 @@
+{
+  "id": "C-017",
+  "title": "远程证据可信度：这些证据能证明到哪一级",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\EVIDENCE-LEVELS.md",
+  "proposalSha": "1878b9396168a91e40df9b3bda88374d7f58e10527a0acde3a632f8a16bc1e9b",
+  "stage": "ruled",
+  "openedAt": "2026-11-17T05:32:19.585Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:32:19.668Z",
+      "kind": "judgment",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\EVIDENCE-LEVELS.md",
+      "version": null,
+      "claim": "本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T05:32:19.750Z",
+      "sourceRef": null,
+      "decidedBy": "judge-remote",
+      "decidedAt": "2026-11-17T05:32:19.829Z",
+      "decisionReason": "证据来自本轮实际运行输出，路径可复核，采信。",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "本轮证据是否足以支撑「远程可对战」这一结论",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:20.072Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "本轮实测结论：本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+      "claims": [
+        {
+          "text": "本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 66,
+      "filedAt": "2026-11-17T05:32:19.909Z",
+      "sha": "4969f51a36155d5437480377f97fade7c164f1cdbb2ef8baabd23e63bc8df369"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "反方立场：同机测试不能代表跨网络；公网隧道的可用性不代表生产可用。",
+      "claims": [
+        {
+          "text": "同机或隧道证据不足以支撑跨网络结论",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 33,
+      "filedAt": "2026-11-17T05:32:19.990Z",
+      "sha": "dce3e7b86a9afbd25b3f3a183d85ad69b08c57aad44bf7a3b1423c12c0a0ce54"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "这 13 项里有多少项真的经过公网？",
+      "askedBy": "prosecution",
+      "answeredBy": "yuanzhen",
+      "answer": "全部经过隧道，但两端在同一台机器上。",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:20.153Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:20.481Z",
+      "sha": "a5f39975e1bb418de85ce7f2257f90e391c8df6bf6304239fcccc7dca62bd4e7"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:20.567Z",
+      "sha": "89d81218cc1e86e336d94245c249d146f8b6f23280e8c11f0cda50696ad4227f"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:20.651Z",
+      "sha": "aa717af2be0626722cd1a9aa171e95956c5c68ad037ca0cfe7e2c3455d6e30e9"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:20.235Z",
+      "sha": "05cafc9cf4edb391c5415e7d81a191271732ecb40b1a72209c61d7cd67196a27"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:20.316Z",
+      "sha": "415729264d1c35fd266204d9c62ab94e0b39fe237e7e34ebd80dac48bfd11176"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:20.400Z",
+      "sha": "9030dc658ed407a2f2c777d838385914ab095f87fab3649890a7b7d5f9aefa87"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-remote",
+    "verdict": "insufficient",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "不得把 L3+ 记为 L4 或 L5",
+        "evidenceIds": [
+          "E001"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "永久后端方案未部署，隧道不可当生产入口",
+        "evidenceIds": [
+          "E001"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "按任务书的分级口径，本轮最高只到 L3+；L4 需要两台真实设备跨网络，证据不在卷内，因此判证据不足而不是通过。",
+    "roundsChosen": 0,
+    "roundsWhy": "本轮只走一轮质询：争点单一，反方立场已在书状中给出。",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-17T05:32:20.733Z",
+    "sha": "fea4e0f85b2f5a02c97f97bc65c57df49a4b2833190090fa14e4a0ed53d87ded"
+  },
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

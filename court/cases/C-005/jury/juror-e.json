@@ -1,0 +1,15 @@
+{
+  "juror": "juror-e",
+  "onFundamentals": "approve",
+  "reason": "我看失败路径：主张 B 自己在第 3 轮承认要先有基线数据才能上线试点，等于承认现在不能改边界。主张 A 的条件能写成可验收判据（读规则回合数 ≤2），所以投 A。",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "对 A 的反证是「开局局面改造能否一回合读懂」没有实测；我承认这是 A 的弱点，但它不构成支持改边界的证据。",
+  "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+  "at": "2026-11-15T12:55:59.280Z",
+  "sha": "7f4c8a4af4ca21290766c28de02fdc1eedc299fb5be1f9a0f40573e744dfc50d"
+}

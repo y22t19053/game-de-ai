@@ -1,0 +1,16 @@
+{
+  "juror": "j1",
+  "onFundamentals": "approve",
+  "reason": "证据链闭合：G-2 有行号级复现，修复后 31/31 通过，投支持票",
+  "minority": "无",
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "三轮质询未出现反证，修复点与失败路径一一对应",
+  "wouldChange": "若发现 fire 或 spin2 分支在受限期内同样遗留限制，或伪造 id 仍可写入双方日志，会改变判断",
+  "at": "2026-11-16T16:09:16.804Z",
+  "sha": "6654a70d27d29e212bca653e5b9b2751791a61b1c910bcdfb0e613ea6ea9c062"
+}

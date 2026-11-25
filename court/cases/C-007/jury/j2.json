@@ -1,0 +1,16 @@
+{
+  "juror": "j2",
+  "onFundamentals": "conditional",
+  "reason": "同意采信但附条件：必须以测试固化拒绝语义与防回退断言，否则重构后约束会消失",
+  "minority": "认为服务端校验不如引擎内建，但接受当前边界",
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "未发现反证，但 G-1 的防线依赖调用方注入钩子",
+  "wouldChange": "若接入方自建服务端未注入 validateEntity 且无运行期提示，或测试未固化拒绝语义，会改为反对",
+  "at": "2026-11-16T16:09:16.910Z",
+  "sha": "e8316b62397bd1ce607c1efc42d319c6a0755c211d9915d2d3b2a41b3edf355b"
+}

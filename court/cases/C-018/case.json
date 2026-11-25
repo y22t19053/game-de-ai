@@ -1,0 +1,371 @@
+{
+  "id": "C-018",
+  "title": "TOY 环境下三维场景退回二维：资产交付方式与性能自救误判",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "TOY 静态托管不提供 obj/mtl；性能自救阈值与预热窗口未定义；显影层颗粒贴图存在竖条纹缺陷",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\build-toy.mjs",
+  "proposalSha": "f864787f266b49450faa3fd27de363fa4b70417ae68c2d461aca410ec9578715",
+  "stage": "executing",
+  "openedAt": "2026-11-17T12:39:14.472Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T12:40:21.937Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\diag-toy-old.json",
+      "version": null,
+      "claim": "旧构建在 TOY 里 stage3d=null/scene3d=false（builtAt 2026-11-16T20:24:56Z）",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T12:40:29.196Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T12:40:29.439Z",
+      "decisionReason": "旧构建在 TOY 里没有三维，构建时间戳可核",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T12:40:22.026Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\diag-toy-fixed.json",
+      "version": null,
+      "claim": "修复构建在同一 TOY 宿主 stage3d=on/scene3d=true/fps=48",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T12:40:29.276Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T12:40:29.525Z",
+      "decisionReason": "同一平台同一宿主下三维恢复，含帧率",
+      "contentHash": null
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T12:40:22.099Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\build-toy.mjs",
+      "version": null,
+      "claim": "构建脚本把 OBJ/MTL 打成 JS 模块并在 scene3d.js 首行注入 import",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T12:40:29.355Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T12:40:29.614Z",
+      "decisionReason": "构建脚本可复核，资产自包含",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "退二维的主因是平台静态托管不提供 obj/mtl，还是性能自救误判？书状双方对机制的解释是否被证据支持？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002"
+      ],
+      "at": "2026-11-17T12:41:21.035Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "三维退回二维的主因是资产交付方式与平台静态托管不兼容，而性能自救在无预热窗口时也会误判；两者都可能让玩家看不到已完成的场景。",
+      "claims": [
+        {
+          "text": "TOY 静态托管下 obj/mtl 不可取，构建必须自包含",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        },
+        {
+          "text": "性能自救必须有预热窗口与迟滞，否则会把启动期低帧当持续低性能",
+          "evidenceIds": [
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 62,
+      "filedAt": "2026-11-17T12:40:37.857Z",
+      "sha": "cd2782d70eab5bc2d5991cab5e62ff2c249272f842eead8c251e35fd979d2991"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "施工方的解释可能把『平台拒绝 obj』当成既定事实，实际只验证了修复前后对比；另外显影层颗粒竖条纹属于另一处缺陷，不应混进同一结论。",
+      "claims": [
+        {
+          "text": "缺少平台侧直接证据，不能用前后对比代替机制证明",
+          "evidenceIds": [
+            "E003"
+          ]
+        }
+      ],
+      "lengthChars": 66,
+      "filedAt": "2026-11-17T12:40:37.962Z",
+      "sha": "f23e96ee95eb3d2b8254106cdf909d0c01b528a51e49f7966c14de4b8a56bd27"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "旧构建里 scene3d.js 的 fetch 是否真的收到 404？有平台侧响应证据吗？",
+      "askedBy": "yuanzhen",
+      "answeredBy": "lead",
+      "answer": "没有保存平台响应头；直接证据是控制台警告『OBJ 读取失败 404』与旧构建 stage3d=null、同一宿主换自包含构建后 stage3d=on 的前后对比。",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T12:41:21.124Z"
+    },
+    {
+      "round": 2,
+      "question": "性能自救是否也可能造成同一现象？",
+      "askedBy": "yuanzhen",
+      "answeredBy": "lead",
+      "answer": "旧构建 perfReason 为 null，说明自救根本没来得及判定，现象由装配失败直接触发；但无预热窗口的自救确实是独立缺陷，已改为 90 帧/3.5s 预热 + 三次中位数 + <15 才退 + 20s 重试。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-17T12:41:21.212Z"
+    },
+    {
+      "round": 3,
+      "question": "同宿主换自包含构建就恢复三维，是否足以排除平台 WebView 限制（G）？",
+      "askedBy": "yuanzhen",
+      "answeredBy": "lead",
+      "answer": "是：同一预览宿主、同一 WebGL 环境（Intel UHD/D3D11）、同一次会话，只改了资源交付方式；且修复构建 fps 48–76、perfReason ok，说明不是被 WebView 屏蔽。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-17T12:41:45.044Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "j1",
+      "onFundamentals": "conditional",
+      "reason": "资产自包含修复已在真实 TOY 宿主复现三维，机制解释缺口记为条件项",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "未发现能推翻同宿主前后对比的反证",
+      "wouldChange": "若拿到平台 404 响应头或出现反例则改判",
+      "at": "2026-11-17T12:42:13.105Z",
+      "sha": "7132fe2ea0706af78200250f04583883590788ddf0a2e42d19cb6ae144352313"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "reason": "资产自包含修复已在真实 TOY 宿主复现三维，机制解释缺口记为条件项",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "未发现能推翻同宿主前后对比的反证",
+      "wouldChange": "若拿到平台 404 响应头或出现反例则改判",
+      "at": "2026-11-17T12:42:13.191Z",
+      "sha": "08c9a0706b27522634a607c0a81247851162e4a7ef15b99bed773727efd65f2c"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "conditional",
+      "reason": "资产自包含修复已在真实 TOY 宿主复现三维，机制解释缺口记为条件项",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "未发现能推翻同宿主前后对比的反证",
+      "wouldChange": "若拿到平台 404 响应头或出现反例则改判",
+      "at": "2026-11-17T12:42:13.267Z",
+      "sha": "0ace14c9d5d6120fee153388fc990f0559a3050ca58b58ce07061cbc9f809e2e"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "conditional",
+      "reason": "修复已在真实 TOY 宿主复现三维，条件项为平台侧证据",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无推翻同宿主对照的反证",
+      "wouldChange": "若出现反例或拿到平台响应头则改判",
+      "at": "2026-11-17T12:42:50.867Z",
+      "sha": "4f25d8636e55c421dd853b8ae663f6c043b11ffce237f1b7c60a1ac47dc58d33"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "reason": "真实 TOY 宿主已复现三维，条件项为机制证据",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无推翻同宿主对照的反证",
+      "wouldChange": "若平台侧证据显示非资产原因则改判",
+      "at": "2026-11-17T12:42:51.014Z",
+      "sha": "837879ee59302945e456d6a25c25b6fe3672543298dca53e59004fe5f529a83b"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "j1",
+      "onFundamentals": "conditional",
+      "basis": "证据 E001/E002 构成同宿主前后对比，能支持资产交付方式这一机制；但缺少平台侧响应头，机制仍属推断。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状先入卷，陪审据此案当前证据补做初判，理由见下",
+      "at": "2026-11-17T12:42:00.277Z",
+      "sha": "74ea471161676c38db7c45769d011454b2d61b750e7dba9f072025f2cc8ec6c0"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "basis": "证据 E001/E002 构成同宿主前后对比，能支持资产交付方式这一机制；但缺少平台侧响应头，机制仍属推断。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状先入卷，陪审据此案当前证据补做初判，理由见下",
+      "at": "2026-11-17T12:42:00.395Z",
+      "sha": "6ced716c6c4b1b27363fb7797c225c1c055aaca0e5a3d758d07f704bf6bf500d"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "conditional",
+      "basis": "证据 E001/E002 构成同宿主前后对比，能支持资产交付方式这一机制；但缺少平台侧响应头，机制仍属推断。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状先入卷，陪审据此案当前证据补做初判，理由见下",
+      "at": "2026-11-17T12:42:00.518Z",
+      "sha": "ddf0be98af779ec8e0b9be3580c75f2eca242c084453999e19ed4b85b4573982"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "conditional",
+      "basis": "同宿主同会话仅换资源交付方式即恢复三维，机制方向正确；平台侧响应头缺失，只能有条件接受。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由如下所述",
+      "at": "2026-11-17T12:42:39.026Z",
+      "sha": "3607e4bc080c9dfdfd7519dd4fce8bd02d8faa9ebb3b116850a54cdb13b7a135"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "basis": "资产自包含是平台无关的正确做法；本次只验证了修复有效，机制解释仍需平台侧证据。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由如下所述",
+      "at": "2026-11-17T12:42:50.943Z",
+      "sha": "21ad6ecca167b73c71e63cdf39c91f7a3b846d6f95c042762cdfa0e7e6650aa3"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-hx",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "TOY 构建必须自包含模型资产（不得依赖平台提供 obj/mtl）",
+        "evidenceIds": [
+          "E001",
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "性能自救必须有预热窗口与迟滞，<15fps 才退二维并记录 perfReason",
+        "evidenceIds": [
+          "E002"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "显影层颗粒必须各向同性，强度用贴图 alpha 控制",
+        "evidenceIds": [
+          "E003"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "三维退回二维的机制证据是同宿主前后对比，能证明资产交付方式是主要路径，但缺少平台侧 404 响应头，故为有条件通过；性能自救与颗粒贴图属独立缺陷，须各自留下可复核证据。",
+    "roundsChosen": 0,
+    "roundsWhy": "两轮质询围绕平台侧证据与 WebView 限制展开，第三轮确认同宿主对照可排除 WebView",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-17T12:43:02.830Z",
+    "sha": "a7de31c565ecb1aae6f893087af4e083a4d0ba7ecacf2edbbf0456bc3826316e"
+  },
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

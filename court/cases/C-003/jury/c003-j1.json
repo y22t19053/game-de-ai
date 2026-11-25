@@ -1,0 +1,18 @@
+{
+  "juror": "c003-j1",
+  "onFundamentals": "conditional",
+  "reason": "只批一屏到两屏的原型验证，不批全站换骨",
+  "minority": "B 用纸后 E005 §5 的分家行失效，须先改小泽 DNA 再开工",
+  "contextId": "unknown",
+  "supports": [
+    "E003",
+    "E006"
+  ],
+  "against": [
+    "E005"
+  ],
+  "noCounter": null,
+  "wouldChange": "100% 并排三臂仍只靠换色被读出则 reject；靠压杆与项号读出则 approve",
+  "at": "2026-11-15T09:55:10.052Z",
+  "sha": "05cc60df524f7b63bf94d73b8eaca6e447128864c346d02b39159fc0b7410a3b"
+}

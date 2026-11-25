@@ -1,0 +1,18 @@
+{
+  "juror": "c004-j2",
+  "onFundamentals": "conditional",
+  "reason": "前提已否，但 A 清单里仍有可做的硬伤，附条件批 A 的一部分",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E006",
+    "E001",
+    "E002",
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "未见能支撑清单 B 前提的证据",
+  "wouldChange": "用户记录点名要那枚原型章，或盲排证明 25% 下现章认不出",
+  "at": "2026-11-15T10:06:33.101Z",
+  "sha": "827a19a5a99fd9464bc89a3e88290a7e0d13c80dd70186fd8d0e1b203f5bc02e"
+}

@@ -1,0 +1,16 @@
+{
+  "juror": "j2",
+  "onFundamentals": "conditional",
+  "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "无可推翻本报告分环境记账的反证",
+  "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+  "at": "2026-11-17T13:26:43.395Z",
+  "sha": "f10e25fe11d44a3b4bf08780c1784d7e3d9f4740db830bad3d7abb3bc767bbab"
+}

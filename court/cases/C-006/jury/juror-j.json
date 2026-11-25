@@ -1,0 +1,17 @@
+{
+  "juror": "juror-j",
+  "onFundamentals": "reject",
+  "reason": "可逆性不能替代可用性，玩家点不中就是点不中，两周等待期对一个已上线产品太长",
+  "minority": "认为应立即转乙案，不接受两周观察期",
+  "contextId": "unknown",
+  "supports": [
+    "E002"
+  ],
+  "against": [
+    "E003"
+  ],
+  "noCounter": null,
+  "wouldChange": "若两周内真机失败率低于 5% 则改判",
+  "at": "2026-11-15T15:16:04.243Z",
+  "sha": "8b7f2602d2de0ad1602998def622646cb59149ad43006f0ded26f3f971e29f3a"
+}

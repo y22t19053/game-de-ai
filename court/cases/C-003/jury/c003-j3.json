@@ -1,0 +1,19 @@
+{
+  "juror": "c003-j3",
+  "onFundamentals": "conditional",
+  "reason": "视觉语言确实需要换骨，但工期只够覆盖 18 处调用",
+  "minority": "A 的 token 重构应是 B 的前置工序，控辩双方都把它当替代品",
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E003",
+    "E004"
+  ],
+  "against": [
+    "E002"
+  ],
+  "noCounter": null,
+  "wouldChange": "pilot 实拍到位且 34 处 .btn 全站改法给出可核对排期",
+  "at": "2026-11-15T09:55:10.042Z",
+  "sha": "cd33ed182e327c4444846742fa3a2dbc14e561aa2c478e5ce928f583c710e8f0"
+}

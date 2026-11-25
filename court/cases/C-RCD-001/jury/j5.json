@@ -1,0 +1,15 @@
+{
+  "juror": "j5",
+  "onFundamentals": "conditional",
+  "reason": "同意顺序，但需并行触发条件：D 盘到位即启动真贴图替换",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "反方未给出可验证的窗口判据",
+  "wouldChange": "若 D 盘一周内到位则改为并行",
+  "at": "2026-11-22T09:50:21.170Z",
+  "sha": "c5c619d2cf55dc014e794c919b0f1515a5a3357d9c33e6ac93358c10367b2bfc"
+}

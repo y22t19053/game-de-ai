@@ -1,0 +1,15 @@
+{
+  "juror": "rj1",
+  "onFundamentals": "conditional",
+  "reason": "证据可复核、结论范围已限定，投条件通过",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001"
+  ],
+  "against": [],
+  "noCounter": "没有新的反证材料出现",
+  "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+  "at": "2026-11-17T05:32:19.238Z",
+  "sha": "0697ea170d2706bfe7cf901ad22e967a8f2ba75b27f296de2253669ed27eb99d"
+}

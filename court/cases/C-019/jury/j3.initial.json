@@ -1,0 +1,11 @@
+{
+  "juror": "j3",
+  "onFundamentals": "conditional",
+  "basis": "权限未查证就该写 UNKNOWN，这是态度问题也是方法问题。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+  "at": "2026-11-17T13:26:37.490Z",
+  "sha": "21ffab3e7577e091dcef7a90bb8d14ccdf8c58dc941e1c9280e09ad07af93bdf"
+}

@@ -1,0 +1,11 @@
+{
+  "juror": "j2",
+  "onFundamentals": "conditional",
+  "basis": "依据 E001 与 E002：修复可采，但裁决应附带条件——必须在测试中固化防回退断言与伪造 id 的拒绝语义，否则约束会随重构消失。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+  "at": "2026-11-16T16:08:53.831Z",
+  "sha": "4ddb0d8c7dffb23fbff93340fb2d380218c2668a97e48deed85049467f216624"
+}

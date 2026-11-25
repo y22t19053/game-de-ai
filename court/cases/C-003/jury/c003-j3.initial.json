@@ -1,0 +1,11 @@
+{
+  "juror": "c003-j3",
+  "onFundamentals": "conditional",
+  "basis": "# j3 初判（密封，未读书状）\n\n**立场：conditional**\n\n**依据**：三屏实际触及约 3,200 行 CSS，且分散在两代覆盖层（946–2095 / 4274–6026）；后段 1752 行仅 26 处 `var()`、151 处硬编码 hex，换色板不随 token 走。Kitchen 单屏 1126 行 TSX、142 个 className、9 处内联样式、35 条媒体查询。估工：Title 0.5 天 + Kitchen 1.5–2 天 + 对比度/40px 触控/减动效复验 0.5 天 = 三屏 4–6 天；只做 Title 约 1.5 天。\n\n**工期**：偏乐观约 1.5×。\"A 一天\"作为重构可信，交付的却是指标不是观感（E003 §6-Ⅲ：var 化改数字、渲染不动）；\"B 3–4 天做 3 屏\"做不完。给 conditional 而非 reject，是因为失败判据第三条（做不完收缩到 1 屏、不延期）是真刹车。\n\n**改判条件**：① `bistro-rush/visual/` 出现 Title 屏 B 实拍（现只有 v02_test 文案比对、零 B 原型）→ approve 该 1 屏版；② 承认 A 的 token 重构是 B 的前置而非替代 → approve；③ 坚持 3 天 3 屏不延期 → reject。\n",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判文件已于 2026-11-15T09:49:37.319Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+  "at": "2026-11-15T09:51:53.266Z",
+  "sha": "e5772503af5f9a7aad48670ce6484154bb9e42b2e100f136313d79ee06800fc8"
+}

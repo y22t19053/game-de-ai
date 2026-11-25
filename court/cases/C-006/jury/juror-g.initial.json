@@ -1,0 +1,11 @@
+{
+  "juror": "juror-g",
+  "onFundamentals": "reject",
+  "basis": "先看有没有实测数据；没有真机失败率之前，任何「接受」都是自证清白",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+  "at": "2026-11-15T15:15:05.981Z",
+  "sha": "238e7d9356d574db4fd5deaf17e2b4680c3528797523717d67f4b53c8a355563"
+}

@@ -1,0 +1,507 @@
+{
+  "id": "C-005",
+  "title": "骰子宇宙：单局 10–20 分钟硬线与 Boss 战深度能否同时成立",
+  "type": "high",
+  "schema": "v0.1.1",
+  "project": "diceverse",
+  "author": "lead",
+  "summary": "8×8 战术棋盘+15 抉择点结构下，Boss 检验世界规则理解 vs 单局 10–20 分钟硬线，二者冲突时牺牲谁",
+  "proposalPath": "../diceverse/docs/proposals/C005_PACING.md",
+  "proposalSha": "24ebe44fe7c4f4a631c2c95718bb8ef795c3618f38a029b582487346890cf73a",
+  "stage": "closed",
+  "openedAt": "2026-11-15T12:54:04.914Z",
+  "closedAt": "2026-11-15T12:58:13.572Z",
+  "evidence": [
+    {
+      "id": "S001",
+      "state": "submitted",
+      "submittedBy": "prosecution",
+      "submittedAt": "2026-11-15T12:54:17.609Z",
+      "kind": "run",
+      "source": "../diceverse/play-run.log",
+      "version": null,
+      "claim": "机器人完整通关日志，可数出 76 次交互与 outcome=won",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": null,
+      "registeredAt": null,
+      "sourceRef": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "decisionReason": null
+    },
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T12:54:30.599Z",
+      "kind": "raw",
+      "source": "../diceverse/docs/EDICT.md",
+      "version": "v1",
+      "claim": "旨意指名单局 10–20 分钟为硬性指标，同时指定战场 8×8–12×12 与 Boss 应检验规则理解",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar-1",
+      "registeredAt": "2026-11-15T12:54:34.376Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T12:54:39.340Z",
+      "decisionReason": "来源文件在盘、可复现、与本案争议点直接相关",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T12:54:30.681Z",
+      "kind": "run",
+      "source": "../diceverse/docs/PACING_EVIDENCE.md",
+      "version": "v1",
+      "claim": "一局满幕通关 76 次交互、15 抉择点、推断人速 9.4–15.0 分钟、加深 Boss 后 16.5–19.0 分钟",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar-1",
+      "registeredAt": "2026-11-15T12:54:34.457Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T12:54:39.421Z",
+      "decisionReason": "来源文件在盘、可复现、与本案争议点直接相关",
+      "contentHash": null
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "prosecution",
+      "submittedAt": "2026-11-15T12:54:30.760Z",
+      "kind": "raw",
+      "source": "../diceverse/src/core/map.ts",
+      "version": "v1",
+      "claim": "pathDepth 返回 15，三幕各 4 行+Boss，是时长结构上限的来源",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar-1",
+      "registeredAt": "2026-11-15T12:54:34.534Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T12:54:39.503Z",
+      "decisionReason": "来源文件在盘、可复现、与本案争议点直接相关",
+      "contentHash": null
+    },
+    {
+      "id": "E004",
+      "state": "admitted",
+      "submittedBy": "prosecution",
+      "submittedAt": "2026-11-15T12:54:30.839Z",
+      "kind": "run",
+      "source": "../diceverse/play-run.log",
+      "version": "v1",
+      "claim": "机器人完整通关日志，可数出 76 次交互与 outcome=won",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar-1",
+      "registeredAt": "2026-11-15T12:54:34.612Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T12:54:39.584Z",
+      "decisionReason": "来源文件在盘、可复现、与本案争议点直接相关",
+      "contentHash": null
+    },
+    {
+      "id": "E005",
+      "state": "admitted",
+      "submittedBy": "defense",
+      "submittedAt": "2026-11-15T12:54:30.915Z",
+      "kind": "external",
+      "source": "../diceverse/docs/MENXIA_REVIEW.md",
+      "version": "v1",
+      "claim": "门下保留异议：三案解决的是工部的问题不是玩家的问题；规则增至 12 条后负担落在玩家记忆上",
+      "confidence": "mid",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar-1",
+      "registeredAt": "2026-11-15T12:54:34.692Z",
+      "sourceRef": null,
+      "decidedBy": "judge-chen",
+      "decidedAt": "2026-11-15T12:54:39.664Z",
+      "decisionReason": "来源文件在盘、可复现、与本案争议点直接相关",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "在 8×8 棋盘与 15 个抉择点的现存结构下，Boss 战能否在不突破单局 20 分钟的前提下检验玩家对世界规则的理解？若不能，应当牺牲时长硬线还是牺牲 Boss 检验规则理解这一条？",
+      "raisedBy": "qingcha",
+      "evidenceIds": [
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-15T12:55:02.087Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "qingcha",
+      "contextId": "unknown",
+      "text": "检察方主张维持『单局 10–20 分钟』硬线不动，把深度压在单场战斗的规则改变上。据 E002，当前满幕通关推断人速 9.4–15.0 分钟，加深 Boss 到 8–10 回合后变为 16.5–19.0 分钟：仍在上限内，但没有余量给精英战扩充，一旦后续加内容就破线。据 E003，结构上限已由 15 个抉择点钉死，时长不是靠调平衡能挽回的。B站 Toy 的用户是被 feed 带进来的碎片时间用户，20 分钟已是这类游戏的耐心上限。所谓『Boss 检验规则理解』可以不靠回合数：把世界规则做成开战前的一次性局面改造（如重力异常直接删掉一整行能走的地），一回合就能看懂。因此牺牲的不是深度，是回合数。",
+      "claims": [
+        {
+          "text": "维持 10–20 分钟硬线",
+          "evidenceIds": [
+            "E002",
+            "E003"
+          ]
+        },
+        {
+          "text": "Boss 深度应来自开局局面改造而非回合数",
+          "evidenceIds": [
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 300,
+      "filedAt": "2026-11-15T12:54:44.249Z",
+      "sha": "9750b4353edd8fe451ba59bfa0f8af2ca12dc42c377cbd722a93c7684d5c76f8"
+    },
+    {
+      "side": "defense",
+      "author": "biangu",
+      "contextId": "unknown",
+      "text": "辩护方主张把硬线上调到 25–30 分钟，理由不是想做大，而是现在的 8×8 棋盘在 4–5 回合里用不上自己声称的核心卖点。据 E002 的实测：铸钟人 Boss 战 5 回合结束，且这 5 回合里地形与重力/潮汐/时滞没有真正改变过打法——一场打完玩家只记住『掷骰、算伤害、暴击翻倍』。旨意在 E001 里同时要求『Boss 应检验玩家对世界规则和战术系统的理解，而不是简单堆高生命值』；5 回合×1 次移动 2 格的结构给不了这个检验。另据 E005，门下早就算过这条账：规则增加到 12 条后，真正的负担是玩家记忆，而记忆要靠反复使用才能形成——3 回合用一次的规则等于没上。我们承认涨到 25–30 分钟会贴近上限（16.5–19.0 分钟），所以主张同步砍掉抉择点数量（15→11）来腾时间，而不是让玩家在一局里连续做 15 次选路。",
+      "claims": [
+        {
+          "text": "5 回合内世界规则未改变打法",
+          "evidenceIds": [
+            "E002"
+          ]
+        },
+        {
+          "text": "砍抉择点换战斗深度",
+          "evidenceIds": [
+            "E002",
+            "E005"
+          ]
+        }
+      ],
+      "lengthChars": 373,
+      "filedAt": "2026-11-15T12:54:51.072Z",
+      "sha": "ceb1d265adf0bcf5656f0312ef5d67ba239be7c8a035d1851e08fa6269f75e19"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "砍抉择点到 11 之后，一局里『打仗』与『选路』的时间比变成多少？如果玩家第一次玩就死在第二幕，他在 25 分钟里实际看到了多少内容？",
+      "askedBy": "qingcha",
+      "answeredBy": "biangu",
+      "answer": "按 E002 的每环节数据重排：战斗 6 场×加深后约 9–11 分钟，事件 5 页约 2–3 分钟，抉择点 11 个约 1.5–2.5 分钟，创世与结算约 2 分钟，合计 15–18 分钟——仍在 20 分钟内。死在第二幕的玩家会在第 8–10 分钟遇到第一次真正的失败，也就是说他至少完整看过一个 Boss，比现在 5 回合打完更可能记住规则。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-15T12:55:07.622Z"
+    },
+    {
+      "round": 2,
+      "question": "你说『开局一次性局面改造』一回合就能看懂重力异常，有实测证据吗？如果玩家实际仍需要 3 回合才理解，你的失败路径是什么？",
+      "askedBy": "biangu",
+      "answeredBy": "qingcha",
+      "answer": "没有实测，这是设计推断，我承认它属于 assumption 而不是 measurement。失败路径写明：若上线后第一次 Boss 战的『读规则』回合超过 2 回合，则本主张不成立，应改为辩护方的 8–10 回合方案；判据是战斗日志里玩家第一次做出符合规则的决策所在的回合数，需要在战斗里加埋点（现在没有）。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-15T12:55:12.162Z"
+    },
+    {
+      "round": 3,
+      "question": "如果 B站 Toy 上线后首周平均时长只有 6 分钟（多数玩家中途退出），你的加深方案会不会让退出更早？届时的止损条件是什么？",
+      "askedBy": "qingcha",
+      "answeredBy": "biangu",
+      "answer": "会。所以本方案必须先做限定范围试点而不是直接改：只在第三幕 Boss 上加深（一场），其余不动，观察一周；止损条件是第三幕 Boss 到达率比当前基线低 10 个百分点以上就回退。没有基线数据之前，这个试点不能上线。",
+      "evidenceIds": [
+        "E002",
+        "E005"
+      ],
+      "at": "2026-11-15T12:55:15.823Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "juror-a",
+      "onFundamentals": "approve",
+      "reason": "据 E002 与 E003：现有结构下加深 Boss 会把推断时长推到 16.5–19.0 分钟，已经贴住上限，而结构上限由 15 抉择点钉死。主张 A 给出的是「不涨时长也能加深」的路径，可验收。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "E002/E004 只是测量，不构成对「结构决定时长」的反证；没有证据显示调平衡能把上限拉高。",
+      "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+      "at": "2026-11-15T12:55:58.951Z",
+      "sha": "9f01f43c8ecc6b43efd8bab5b7ccde5a597bc141650c4981ee301f4af9bea496"
+    },
+    {
+      "juror": "juror-b",
+      "onFundamentals": "approve",
+      "reason": "E002 里「5 回合内地形与世界规则没有真正改变打法」是本案最硬的事实，它同时支持两边。但主张 B 的 25–30 分钟没有真实玩家数据支撑，只有外推；数据缺失时不应先动产品边界。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "目前没有任何 B站 Toy 真实时长数据，所以「20 分钟是耐心上限」这条同样无实测支持，我把它当作待验证而不是反证。",
+      "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+      "at": "2026-11-15T12:55:59.036Z",
+      "sha": "0784c27bca953de755372f7a2ede040a32fb52e9060d4010bddddd9bd2f04166"
+    },
+    {
+      "juror": "juror-c",
+      "onFundamentals": "conditional",
+      "reason": "我反对的是「改边界」而不是「加深」。E005 门下已指出规则要反复使用才形成记忆，5 回合做不到；但把硬线改成 25–30 分钟超出证据能支撑的范围，所以只给附条件：加深必须限定在第三幕 Boss，且先有基线数据。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [
+        "E002"
+      ],
+      "noCounter": null,
+      "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+      "at": "2026-11-15T12:55:59.129Z",
+      "sha": "195b289e9ac4e6df2d6d6329d6d477caa89ad1665e221b4fa0e34fd00359e6fc"
+    },
+    {
+      "juror": "juror-d",
+      "onFundamentals": "approve",
+      "reason": "三份证据指向同一件事：时长由结构决定而不是平衡调出来的（E003）。因此任何加深都得以「不增加回合预算」为前提，主张 A 符合这一点。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "没有反证能说明 15 个抉择点可以被绕开；E002 的人类时长是推断，不足以推翻结构结论。",
+      "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+      "at": "2026-11-15T12:55:59.204Z",
+      "sha": "f1cfae6631fb4f9c31d2228ea2fc6dc2344fe6e2e263c86171a2f6d86e1a53a2"
+    },
+    {
+      "juror": "juror-e",
+      "onFundamentals": "approve",
+      "reason": "我看失败路径：主张 B 自己在第 3 轮承认要先有基线数据才能上线试点，等于承认现在不能改边界。主张 A 的条件能写成可验收判据（读规则回合数 ≤2），所以投 A。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "对 A 的反证是「开局局面改造能否一回合读懂」没有实测；我承认这是 A 的弱点，但它不构成支持改边界的证据。",
+      "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+      "at": "2026-11-15T12:55:59.280Z",
+      "sha": "7f4c8a4af4ca21290766c28de02fdc1eedc299fb5be1f9a0f40573e744dfc50d"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "juror-a",
+      "onFundamentals": "approve",
+      "basis": "我先把问题看成一句：结构决定的时长，不能靠调平衡改。15 个抉择点已经把上限钉住，所以任何加深都必须不增加回合预算。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+      "at": "2026-11-15T12:55:44.591Z",
+      "sha": "5877224f01f6496f23d664a7b4155ee973dc673d01196b2c9bc4e516298e1f3d"
+    },
+    {
+      "juror": "juror-b",
+      "onFundamentals": "approve",
+      "basis": "两边都在拿同一份测量说话，区别在于要不要先动产品边界。没有真实玩家数据之前，动边界是拿承诺换猜测。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+      "at": "2026-11-15T12:55:44.672Z",
+      "sha": "85742f1ccc57638e73c59637adf2668aad72c20634ff7ed888453371000e8102"
+    },
+    {
+      "juror": "juror-c",
+      "onFundamentals": "conditional",
+      "basis": "我倾向加深但不倾向改边界：门的原话是规则要反复使用才有记忆，这一点我认，但「改时长」不等于「加深」。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+      "at": "2026-11-15T12:55:44.750Z",
+      "sha": "2356df882330155011a875899c896959c9875a6f72cd75e9dbbc4a0dae11800b"
+    },
+    {
+      "juror": "juror-d",
+      "onFundamentals": "approve",
+      "basis": "如果时长是结构决定的，那么争论「20 还是 30 分钟」本身就是错的问法，该问的是每回合里规则的密度。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+      "at": "2026-11-15T12:55:44.825Z",
+      "sha": "fd7d0f83f5598b68dc134010dcd4086748573c4c7475e8054028b97bd12fc26d"
+    },
+    {
+      "juror": "juror-e",
+      "onFundamentals": "approve",
+      "basis": "我看失败路径：辩护方自己承认要先有基线数据才能上线试点，这等于现在不能动边界，那主张 A 更可验收。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+      "at": "2026-11-15T12:55:44.899Z",
+      "sha": "26734b6821436881eb5b6114a1af2a8fb3c45cb3e9288c8508ecf3d0f6e15b77"
+    }
+  ],
+  "redteam": [
+    {
+      "vector": "全体角色同一底模：控辩审三方都是我派生的上下文，不是三个真人",
+      "attempt": "把检察方主张写成对我自己方案不利的方向（维持硬线＝砍深度），并让辩护方攻击我方已上线实现",
+      "outcome": "partial",
+      "weakness": "独立性只在输入包与立场声明这一层；若我无意识偏向某一边，对方角色不会自动发现",
+      "fixed": false,
+      "evidencePath": null,
+      "at": "2026-11-15T12:55:20.372Z",
+      "sandboxed": true
+    },
+    {
+      "vector": "证据由同一方供给：五份证据里四份出自承旨中枢自己",
+      "attempt": "把门下省的异议（E005）作为对立方证据入卷，且承认 E002 的人速是推断不是实测",
+      "outcome": "partial",
+      "weakness": "没有独立第三方采集数据；B站 Toy 侧真实时长数据要发布后才有",
+      "fixed": false,
+      "evidencePath": null,
+      "at": "2026-11-15T12:55:20.458Z",
+      "sandboxed": true
+    }
+  ],
+  "ruling": {
+    "judge": "judge-chen",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "现在的 Boss 战 5 回合内世界规则没有改变玩家打法，旨意要求的「Boss 检验规则理解」目前未达成",
+        "evidenceIds": [
+          "E002"
+        ]
+      },
+      {
+        "severity": "major",
+        "claim": "单局时长的上限由 15 个抉择点的结构决定，不靠数值平衡可调",
+        "evidenceIds": [
+          "E003"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "主张 B 的 25–30 分钟方案在加深 Boss 后会把推断时长推到 16.5–19.0 分钟，贴近上限且无真实玩家数据支撑",
+        "evidenceIds": [
+          "E002"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "「开局局面改造一回合可读」属于假设而非实测，控方第 2 轮已自认",
+        "evidenceIds": [
+          "E002"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "本案的争议不是「20 分钟还是 30 分钟」，而是「在不增加回合预算的前提下，能不能让 Boss 检验世界规则」。E002 的实测（5 回合、3 血险胜、地形与重力/潮汐/时滞未改变打法）与 E003 的结构结论（15 抉择点钉死时长上限）合并后指向同一结论：主张 B 想解决的问题是真的（现在太浅），但它提出的解法（延长单局）在结构上会立刻贴住 20 分钟上限（E002 推断 16.5–19.0 分钟），且没有任何真实玩家时长数据支撑（B站 Toy 侧数据要发布后才有）。因此批准主张 A 的方向，但不批准它作为「已证明的设计」：它关于「开局局面改造一回合可读」的部分只是假设，控方自己在第 2 轮承认没有实测。故给出附条件批准：先做可验收的小改动（Boss 战开局局面改造 + 埋点记录首次符合规则的决策回合），达成判据再上线加深版；在拿到真实时长基线之前，不得改单局硬线，也不得扩大 Boss 回合数。少数意见保留：juror-c 认为方向应更深，只是不赞成改边界。另记：辩护方第 3 轮自认需要基线数据才能试点，这一点被本庭采纳为「暂不动边界」的直接理由。",
+    "roundsChosen": 3,
+    "roundsWhy": "high 案要求 ≥3 轮且至少一轮针对失败路径：第 1 轮问时长比与死亡路径，第 2 轮追问假设的失败判据，第 3 轮问上线后的止损条件，三轮都落到可验收判据上，故不再加轮。",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-15T12:56:05.676Z",
+    "sha": "fc0992bd6f164471381759f64914b55b8129b14f8a532c8cec9d70a817533ad2"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "Boss 战开局局面改造（重力异常整行悬空留一格）+ 读规则回合埋点 ruleReadTurn",
+      "owner": "gongbu",
+      "deadline": "2026-11-18T00:00:00.000Z",
+      "acceptance": "1) 有重力异常的 Boss 战开局至少一整行 7 格不可站且留一个落脚点；2) noteRuleRead 只记第一次且记当时回合数；3) 单测覆盖以上两条并全绿；4) 构建通过",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\test\\c005.test.ts",
+      "status": "verified",
+      "createdAt": "2026-11-15T12:57:14.019Z",
+      "submittedAt": "2026-11-15T12:57:20.340Z",
+      "verifiedAt": "2026-11-15T12:57:57.669Z",
+      "verifier": "menxia-checker",
+      "report": "工部已完成：combat.ts 在 makeCombat 里对 boss 战且带 combat.move 规则的局面做开局改造；新增 noteRuleRead() 记录第一次被规则挡住的回合数；Battle.tsx 在玩家点不可站格时调用；新增 test/c005.test.ts 5 项；npm test 52/52 通过，构建通过。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": true,
+        "doubleCountChecked": false,
+        "omissionChecked": false
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\src\\core\\combat.ts",
+          "sha256": "534dcb9127d58ff36314bb4a7010cff99d1bb5f9de67a26978a3a4d636d2bfc2"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\test\\c005.test.ts",
+          "sha256": "4d32dd670bc084bebb44a9d01d0ff8ba3103d1dbea10153a2c13fb02784cc0da"
+        }
+      ],
+      "verifyNote": "验收人 menxia-checker 非执行人。打开 combat.ts 与 c005.test.ts 两个文件逐行核对：openingRule 分支条件 kind==='boss' && moveHook、整行除 gap 外 push 进 blocked、activeRules 追加同名条；noteRuleRead 以 ruleReadTurn!==undefined 早退只记第一次。自行复算：本机 npm test 52/52、npm run build 通过。artifact sha 已入卷。"
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  },
+  "closedBy": "judge-chen"
+}

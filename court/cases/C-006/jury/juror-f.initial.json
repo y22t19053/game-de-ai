@@ -1,0 +1,11 @@
+{
+  "juror": "juror-f",
+  "onFundamentals": "approve",
+  "basis": "先看它是否真的影响玩家能不能点到，而不是先看谁的成本更低；甲案只有在真机数据支撑时才成立",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+  "at": "2026-11-15T15:15:05.901Z",
+  "sha": "a709513c64b4188271198e95a3ceafb7a7eeb4d59a478573f899b07933a5e24b"
+}

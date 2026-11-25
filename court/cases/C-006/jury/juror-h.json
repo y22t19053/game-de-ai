@@ -1,0 +1,15 @@
+{
+  "juror": "juror-h",
+  "onFundamentals": "conditional",
+  "reason": "两条互斥承诺必须有一条让步，甲案让步的是宣传口径而不是几何",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001"
+  ],
+  "against": [],
+  "noCounter": "控方未能否认机位档的可逆性",
+  "wouldChange": "若移动端被列为首发平台则改判乙案",
+  "at": "2026-11-15T15:15:21.319Z",
+  "sha": "d7150af3274436c6326a33d7169b5669005cf002badcc97b04c1eae1acb4ae5a"
+}

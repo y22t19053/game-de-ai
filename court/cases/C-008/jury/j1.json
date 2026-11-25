@@ -1,0 +1,16 @@
+{
+  "juror": "j1",
+  "onFundamentals": "conditional",
+  "reason": "量测可复算，改法只动收纳，残余 13/23 已在报告写明",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "玩家实际想到的问法集合无法被量测，本条只能靠设计意图声明，不构成反证",
+  "wouldChange": "若日后证明分组使玩家少用跨类问法，应回滚为全览优先",
+  "at": "2026-11-16T16:25:03.739Z",
+  "sha": "665aab55cfc41b34634870f6f12cd47b5c10202d7feb8f713924a5ac39a37c36"
+}

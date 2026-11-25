@@ -1,0 +1,1 @@
+本轮实测结论：公网 GET /server/room.mjs 修前 200、修后 404；白名单只放 public/ 与 src/

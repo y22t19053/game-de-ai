@@ -1,0 +1,422 @@
+{
+  "id": "C-007",
+  "title": "受限期猜词不解除限制与非法词条未校验",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "刑部审计发现两条引擎红线：G-2 玩家在行动四受限期内用猜测消耗下一次行动后 restrictions 不清理（旧 engine.js:282 提前 return 跳过清理），UI 可直接触发，玩家被多罚一回合且提示文案与实际合法行动自相矛盾；G-1 猜测提交不存在的 canonical_id 时按错猜结算并自罚（旧 :301-302），客户端伪造 id 可越权改变对局结算。本方案：guess 分支统一清理限制并补 restriction-cleared 事件；新增 validateEntity 注入钩子（规则层不 import 词库），服务端组装点 local.mjs 注入 entityById 校验；猜测日志文本 cleanLabel 截断清洗。",
+  "proposalPath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/src/rules/engine.js",
+  "proposalSha": "5e00c546b7f15006a2e221de696136eb2bc40d504a2e8c5462936a339711f62f",
+  "stage": "executing",
+  "openedAt": "2026-11-16T16:06:53.849Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-16T16:07:20.333Z",
+      "kind": "run",
+      "source": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/reports/ISOLATION_AUDIT.md",
+      "version": null,
+      "claim": "G-2 受限期内用猜测后 restrictions 不清理，玩家被多罚一次限制；G-1 不存在的 canonical_id 被当作错猜结算并自罚一枪",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-16T16:07:25.914Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-16T16:07:32.571Z",
+      "decisionReason": "证据指向真实存在的审计报告与可复现的引擎行为，作者已独立复核失败输出",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-16T16:07:35.973Z",
+      "kind": "run",
+      "source": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+      "version": null,
+      "claim": "修复后可复现验证：tests/invariants.test.mjs 31/31 通过；注入 validateEntity 钩子（local.mjs 用 entityById）后伪造 canonical_id 报 bad-guess 且不改状态；guess 分支补 restriction-cleared，受限期内猜词不再遗留限制",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-16T16:07:38.643Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-16T16:07:38.742Z",
+      "decisionReason": "该证据是修复后的自动化测试结果，测试文件真实存在且可重跑",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "G-1 的修复边界：引擎内置词库，还是只在服务端组装点校验",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002"
+      ],
+      "at": "2026-11-16T16:08:06.595Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "作者自证：刑部审计发现的两条红线已在本轮修复并有自动化测试复现。请求裁 G-2 为严重缺陷、G-1 为规范漏洞；修复方案（guess 分支清理限制、validateEntity 注入、日志清洗）可采信；并要求补一条防回退断言。",
+      "claims": [
+        {
+          "text": "G-2 受限期内猜词遗留限制",
+          "evidenceIds": [
+            "E001"
+          ]
+        },
+        {
+          "text": "G-1 伪造 canonical_id 按错猜结算",
+          "evidenceIds": [
+            "E001"
+          ]
+        },
+        {
+          "text": "修复有效 注入钩子后报 bad-guess 且 guess 清理限制",
+          "evidenceIds": [
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 113,
+      "filedAt": "2026-11-16T16:07:55.345Z",
+      "sha": "8399af2772e2ad259daaa9de0ddb9f169c2ba0c77fc32aa7bd028d12e9360647"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "被告方（引擎实现）陈述：G-2 属实现缺陷，接受整改，已在 guess 分支统一清理限制并补 restriction-cleared 事件；G-1 主张规则层不应依赖词库，故以注入钩子方式在组装点校验，引擎裸用时按错猜处理的现有契约继续保留并写进测试；日志清洗为附加加固，不影响规则语义。",
+      "claims": [
+        {
+          "text": "引擎不依赖词库 校验应放组装点",
+          "evidenceIds": [
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 144,
+      "filedAt": "2026-11-16T16:07:59.279Z",
+      "sha": "22489b1b74300a69e7d4887e2d2bcd857c2ca650fd82affaa5c272b5771f8e63"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "G-2 修复后是否仍有路径让玩家多受一回合限制？",
+      "askedBy": "prosecution",
+      "answeredBy": "yuanzhen",
+      "answer": "已复核 apply() 全部分支：fire/pass/spin2/peek 共用 hadRestriction 清理点，guess 已单独补清理；over 阶段不清理但对局已结束。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-16T16:08:06.692Z"
+    },
+    {
+      "round": 2,
+      "question": "若引擎不内建词库校验，第三方接入方忘记注入钩子时，是否有运行期信号提示这一退化？",
+      "askedBy": "defense",
+      "answeredBy": "lead",
+      "answer": "有：tests/invariants.test.mjs 的 I4-g 已把「未注入钩子时非法 id 退化为错猜」写成显式契约，服务端 local.mjs 与 room.mjs 默认注入 entityById；接入方若自建服务端，契约文档 INTERFACES.md 与测试名可直接指向该退化点。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-16T16:09:00.625Z"
+    },
+    {
+      "round": 3,
+      "question": "这一轮修复是否改变了任何对外可见的规则语义（例如猜词是否仍消耗回合）？",
+      "askedBy": "prosecution",
+      "answeredBy": "yuanzhen",
+      "answer": "未改：猜词仍消耗一个回合，猜错仍立即自罚一枪；本轮只改三处实现——伪造 id 由错猜变为非法请求、受限期内猜词后限制按时解除、日志不再记录客户端原始文本。",
+      "evidenceIds": [
+        "E001",
+        "E002"
+      ],
+      "at": "2026-11-16T16:09:03.422Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "j1",
+      "onFundamentals": "approve",
+      "reason": "证据链闭合：G-2 有行号级复现，修复后 31/31 通过，投支持票",
+      "minority": "无",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "三轮质询未出现反证，修复点与失败路径一一对应",
+      "wouldChange": "若发现 fire 或 spin2 分支在受限期内同样遗留限制，或伪造 id 仍可写入双方日志，会改变判断",
+      "at": "2026-11-16T16:09:16.804Z",
+      "sha": "6654a70d27d29e212bca653e5b9b2751791a61b1c910bcdfb0e613ea6ea9c062"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "reason": "同意采信但附条件：必须以测试固化拒绝语义与防回退断言，否则重构后约束会消失",
+      "minority": "认为服务端校验不如引擎内建，但接受当前边界",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "未发现反证，但 G-1 的防线依赖调用方注入钩子",
+      "wouldChange": "若接入方自建服务端未注入 validateEntity 且无运行期提示，或测试未固化拒绝语义，会改为反对",
+      "at": "2026-11-16T16:09:16.910Z",
+      "sha": "e8316b62397bd1ce607c1efc42d319c6a0755c211d9915d2d3b2a41b3edf355b"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "approve",
+      "reason": "证据链闭合，修复后自动化测试全绿，投支持票",
+      "minority": "无",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "三轮质询与两轮证据均未出现反证，修复与复现对应",
+      "wouldChange": "若发现其它行动分支在受限期遗留限制，或伪造 id 仍能写入日志，会改变判断",
+      "at": "2026-11-16T16:09:27.079Z",
+      "sha": "08be30beb6c31e409b97b68a14191933837c632531efb7d004b299eb8dbd299b"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "approve",
+      "reason": "证据链闭合，修复后自动化测试全绿，投支持票",
+      "minority": "无",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "三轮质询与两轮证据均未出现反证，修复与复现对应",
+      "wouldChange": "若发现其它行动分支在受限期遗留限制，或伪造 id 仍能写入日志，会改变判断",
+      "at": "2026-11-16T16:09:27.234Z",
+      "sha": "6a8ed3d1dd16c81fc5327c6baff7a64972d42f6101e0f9923d7d67c289b92673"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "approve",
+      "reason": "证据链闭合，修复后自动化测试全绿，投支持票",
+      "minority": "无",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "三轮质询与两轮证据均未出现反证，修复与复现对应",
+      "wouldChange": "若发现其它行动分支在受限期遗留限制，或伪造 id 仍能写入日志，会改变判断",
+      "at": "2026-11-16T16:09:27.394Z",
+      "sha": "5aa790f4abf844a1d9afe01c1d2f242bbe893bfb1d5b1f8a6bf910127c63f773"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "j1",
+      "onFundamentals": "approve",
+      "basis": "依据 E001 的引擎行号与 E002 的可重跑结果：G-2 属实现缺陷，修复点与失败路径一一对应；G-1 以注入钩子在服务端校验，规则层不引入词库依赖，边界清晰。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+      "at": "2026-11-16T16:08:53.718Z",
+      "sha": "60ad43458c05aaf7b6958f5b13ea42ae153cabe9888ce7bc24106b4813507f17"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "basis": "依据 E001 与 E002：修复可采，但裁决应附带条件——必须在测试中固化防回退断言与伪造 id 的拒绝语义，否则约束会随重构消失。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+      "at": "2026-11-16T16:08:53.831Z",
+      "sha": "4ddb0d8c7dffb23fbff93340fb2d380218c2668a97e48deed85049467f216624"
+    },
+    {
+      "juror": "j3",
+      "onFundamentals": "approve",
+      "basis": "依据 E001 的行号级复现与 E002 的可重跑结果判断：修复点与失败路径对应，且未引入词库耦合到规则层，边界可接受。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+      "at": "2026-11-16T16:09:26.984Z",
+      "sha": "7300e4564f918b3313db6ea11654a30f357b0ad48f55367f576c9aa8dea7c1ce"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "approve",
+      "basis": "依据 E001 的行号级复现与 E002 的可重跑结果判断：修复点与失败路径对应，且未引入词库耦合到规则层，边界可接受。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+      "at": "2026-11-16T16:09:27.153Z",
+      "sha": "9900e7b1de7d34edd9caee992adcf29c14bb3fbf9662cdf309f88c19ade4a662"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "approve",
+      "basis": "依据 E001 的行号级复现与 E002 的可重跑结果判断：修复点与失败路径对应，且未引入词库耦合到规则层，边界可接受。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+      "at": "2026-11-16T16:09:27.314Z",
+      "sha": "91b67ff19735437e2e851785f909a2553512d3583ee9c4aa82036d734a0249aa"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-hx",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "受限期猜词后限制必须解除",
+        "evidenceIds": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "伪造 canonical_id 必须拒绝且不入日志",
+        "evidenceIds": [
+          "E001",
+          "E002"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "刑部证据确立两条缺陷：受限期猜词后限制未解除（UI 可触发），伪造 canonical_id 被当作错猜结算并写入双方日志。修复后在服务端组装点注入词库校验、guess 分支统一清理限制并清洗日志，31/31 通过，未改动对外规则语义。故有条件采信：修复方向成立，须以测试固化拒绝语义与防回退断言，并补日志清洗断言。",
+    "roundsChosen": 0,
+    "roundsWhy": "争议点集中在 G-1 修复边界与是否改变规则语义，第三轮质询确认未改语义",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-16T16:09:30.361Z",
+    "sha": "1f7493b02e23e81fa7de717926b1baee92cbbc76ccf11387ebdd25f6c75f32e0"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "在 tests/invariants.test.mjs 增加日志清洗断言：伪造或超长带角标的 canonical_id 提交后，双方日志与 state.log 均不得出现原始客户端文本（只允许清洗后的标签或被拒）",
+      "owner": "lead",
+      "deadline": "2026-11-17T04:00:00.000Z",
+      "acceptance": "node --test tests/invariants.test.mjs 全绿，且断言在删除 engine.js 的 cleanLabel 调用后会失败（可临时验证后还原）",
+      "evidencePath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+      "status": "verified",
+      "createdAt": "2026-11-16T16:09:37.259Z",
+      "submittedAt": "2026-11-16T16:10:26.842Z",
+      "verifiedAt": "2026-11-16T16:15:29.834Z",
+      "verifier": "yanshou-c007",
+      "report": "tests/invariants.test.mjs 新增 [I4-h]（展示名清洗：日志无尖括号/控制字符、超长标签截断到 24 字）与 [I4-i]（被词条校验拒绝的猜测不写任何日志，原始文本不残留）。当前 node --test tests/invariants.test.mjs = 33/33 全绿（原 31 + 新增 2）。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": true,
+        "doubleCountChecked": true,
+        "omissionChecked": true
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+          "sha256": "7f2bc5f416f8ddd35b617f38bd084f38d5a355f01c3e7c166ecff28507dc9a86"
+        },
+        {
+          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/src/rules/engine.js",
+          "sha256": "0412618e24c72de19b439bba8c20f2291f3b39514e3da4c46861e33f9d4a3f07"
+        },
+        {
+          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/reports/COURT_C007_VERIFICATION.md",
+          "sha256": "868397f1536358efd74ab062714a9c2cd71699b704fd22208b29c4bd06759572"
+        }
+      ],
+      "verifyNote": "独立复算：invariants 34/34 跑三次一致；在 %TEMP% 副本删掉 cleanLabel 后 I4-h 转红，证明断言有效；发现其截断断言取错行，记入验收报告 §3。"
+    },
+    {
+      "id": "T02",
+      "deliverable": "把「受限期内猜词后限制解除」与「伪造 canonical_id 被拒」两条写入防回退断言，并在 docs/GAME_STATE_MACHINE.md 的已知偏差一节更新为已修复",
+      "owner": "lead",
+      "deadline": "2026-11-18T04:00:00.000Z",
+      "acceptance": "测试文件包含 I4-f/I4-g 且全绿；GAME_STATE_MACHINE.md 不再把该偏差列为未修",
+      "evidencePath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/GAME_STATE_MACHINE.md",
+      "status": "verified",
+      "createdAt": "2026-11-16T16:09:37.354Z",
+      "submittedAt": "2026-11-16T16:10:26.938Z",
+      "verifiedAt": "2026-11-16T16:15:29.934Z",
+      "verifier": "yanshou-c007",
+      "report": "docs/GAME_STATE_MACHINE.md §9 已把 D-2 标记为已修复（法庭 C-007 裁定 conditional），新增 D-2b（校验由组装点注入）与 D-2c（日志清洗），并写明防回退锚点 I4-f/I4-g/I6-d/I4-h/I4-i。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": true,
+        "doubleCountChecked": false,
+        "omissionChecked": true
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/GAME_STATE_MACHINE.md",
+          "sha256": "013868eabb1139aa38f06f2e29896fb7a04cc1926002a2c8fc03a2bcc6d7edfd"
+        },
+        {
+          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+          "sha256": "7f2bc5f416f8ddd35b617f38bd084f38d5a355f01c3e7c166ecff28507dc9a86"
+        }
+      ],
+      "verifyNote": "独立核对 GAME_STATE_MACHINE.md:193 已标已修复且无计划措辞，D-2b/D-2c 与五个锚点齐全；回退 D-2 后 I6-d 转红。"
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

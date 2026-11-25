@@ -1,0 +1,610 @@
+{
+  "id": "C-004",
+  "title": "《小泽模拟器》副本里可以先做哪些视觉改动（硬伤 vs 动身份要素）",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "little-zelensky-simulator",
+  "author": "lead",
+  "summary": "",
+  "proposalPath": null,
+  "proposalSha": null,
+  "stage": "closed",
+  "openedAt": "2026-11-15T09:45:31.455Z",
+  "closedAt": "2026-11-15T10:27:59.043Z",
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.458Z",
+      "kind": "raw",
+      "source": "../little-zelensky-simulator/visual/GAME_DNA.md",
+      "version": "v0.2.0",
+      "claim": "小泽身份三件套（印章/刻度/折痕）与\"三条不可违反\"",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.459Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.460Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.461Z",
+      "kind": "raw",
+      "source": "../little-zelensky-simulator/visual/VISUAL_LANGUAGE.md",
+      "version": "v0.2.0",
+      "claim": "V0.6.0 视觉语言与例外表",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.463Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.464Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.466Z",
+      "kind": "external",
+      "source": "../_research/v03_frontier/academic.md",
+      "version": "v0.2.0",
+      "claim": "Burrows Delta / 集体多样性等外部研究，用于判断单点改动的可测性",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.467Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.468Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E004",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.470Z",
+      "kind": "raw",
+      "source": "docs/proposals/C-004-lzx-copy-changes.md",
+      "version": "v0.2.0",
+      "claim": "本提案原文（两套清单与失败判据）",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.471Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.472Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E005",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.474Z",
+      "kind": "run",
+      "source": "../_research/v03_frontier/proto/fp_bistro.json",
+      "version": "v0.2.0",
+      "claim": "同类结构指标，用于说明\"计数类验收会奖励改错方向\"",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.475Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.477Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E006",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:49:45.358Z",
+      "kind": "raw",
+      "source": "../little-zelensky-simulator/css/v2.css",
+      "version": "v0.2.0",
+      "claim": "正式版 v2.css 中 --stamp 只在 :24 定义、:417 由 .v2-ending 的 border-left-color 引用；index.html 对 stamp/已阅/seal 零命中。故“已阅印章”只存在于 visual/prototype 实验副本，正式版没有实体印章元素——提案清单 B 的前提不成立。",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "little-zelensky-simulator",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:49:45.361Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:49:45.363Z",
+      "decisionReason": "来源为本地既有文件，路径与行号可复核，口径已在claim中写明",
+      "contentHash": "auto"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "提案清单 B 的前提（正式版存在一枚装饰性「已阅」章）已被 E006 与辩方自述推翻；在此基础上，B 是否还有可试的对象，以及 A 清单里哪些条属\"为改而改\"。",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E006"
+      ],
+      "at": "2026-11-15T09:58:53.663Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "prosecution",
+      "contextId": "unknown",
+      "text": "# 控方书状 · C-004\n\n案号 C-004｜控方 c004-pros｜2026-11-15\n诉由：清单 B 越界改动身份要素；清单 A 未做减法\n\n## 一、请求\n\n驳回清单 B 全部（包括\"只在副本\"的试点）；清单 A 只批第 1、2 条；否决第 3 条；第 4 条提案已自认该否，且其对象落在冻结的正式版上，副本内无法执行。\n\n## 二、主张一：B 打错了对象\n\n正式版是 `little-zelensky-simulator/index.html`（V3.2.1，见第 7 行标题；提案 §一 称 V0.6.0，与实际版本不符）：第 11 行只加载 `css/v2.css`，第 143–148 行只加载 `js/v2/*`。全文件没有\"已阅\"章。印章只以 token 活着——`css/v2.css:24 --stamp: #8c4a3a`，且已绑到状态：`css/v2.css:417 .v2-ending{border-left-color:var(--stamp)}`、`css/v2.css:596 .iso-pt.status-lost .iso-top{fill:#8c4a3a}`、`js/v2/ui.js:770` 的 `{lost:'#8c4a3a'}`。**正式版里印章红＝结局/失守，语义早就有了。**\n\n唯一那枚实体章在副本原型 `visual/prototype/index.html:49`（`aria-hidden=\"true\"`），样式 `visual/prototype/styles.css:477–502`：`border:3px double`、`opacity:.72`、`mix-blend-mode:multiply`、`pointer-events:none`。它的日期 `24.02 04:00` 与同文件第 42 行顶栏时钟 `2 月 24 日 · 04:00` 一致——不是\"读不出意思\"，它的意思是**这份档案已在此刻被签发**（叙事内标记），不是 UI 状态灯。\n\nE002 的例外表比提案说得清楚：`VISUAL_LANGUAGE.md:37` 只说那行 9px 日期\"纯装饰、不承载必读信息\"，第 86 行紧跟让出项\"不用作信息载体（时间已在顶栏和时钟各出现一次）\"。**让出的只是日期那 9px，主体\"已阅\"没有让出信息责任。**B 的\"无条件装饰\"等于替 E002 撤掉一条它从未写过的让出项。\n\n何况\"未结算时隐去\"会把 E001 §4 的识别锚点变成时有时无：25% 缩略图测试要求\"其次看到右上那枚小红章\"，章随结算状态出现或消失，这个第二识别物在一半状态下缺席。\n\n## 三、主张二：B 的基线与收益都不可复核\n\n提案第 24 行写\"从 `#9c3b2e` 提到 `#b03a2a`\"。这两个值全库只出现在提案自身那一行：原型红是 `visual/prototype/styles.css:31 --alarm:#9d3a26`（`VISUAL_LANGUAGE.md:20`、`GAME_DNA.md:21` 同值），正式版是 `css/v2.css:24 #8c4a3a`。**起点写错，\"提高 25%\"就无从复核**；而且它本身没有测法——谁的 25%、哪一像素、测什么？\n\nE002 §1 给红的是\"占比 ≤3%\"预算，这个预算只在红的感知强度固定时才成立。把红推高＝面积没变、存在感变了，≤3% 从护栏退化为条文。E005 可作对照：bistro-rush 55 个文件、847 个唯一色值、明度直方图 light≥0.6 占 158，颜色指纹是可数的；但\"把一档红调亮\"不改变指纹形状，只改语义强度，投入产出不对称。\n\nE003 的纪律正卡在这里：自动指标与专家评分可反向（词多样性对评分 0.09、novelty −0.03），能力接近的两稿之间评审与人类相关仅 0.19（标准条件 τ=0.86）。B 的收益声明必须先走小批强制排序（ρ 0.87 vs 0.38，批 90→15 是提升机制）。**先证明 25% 下现在认不出，再谈改红；举证责任在提案方。**\n\n## 四、主张三：清单 A3 也该被否\n\n1. **验收面不存在。** 正式版只加载 `css/v2.css`（index.html:11），v2.css 内无 `@media print`；唯一 print 块在 `css/style.css:872`，属 legacy 路径。\"打印视角\"在浏览器游戏里没有交付面，无法按提案 §三\"可截图验证\"。\n2. **口径不明。**\"ΔL 2.1\"无单位、无测法。按 WCAG 相对亮度实测，`#e3d5b6` 与 `#d4c4a2` 对比 1.18:1、Lab ΔL*≈6.0，与 2.1 对不上，正落进 E003\"数字必须写清谁测、测什么\"。\n3. **它修的是设计意图。** `--paper-2` 是 8% 上限的\"第二层纸（露出一角）\"（`VISUAL_LANGUAGE.md:15`），`.dossier::before` 偏移仅 `-7px/-6px`（第 48 行）。7px 的露出边提高明度差，只会把细边变成新的可视线，撞 E001 §4\"绝对不能还显眼的是：按钮边框、图标\"。\n\nA4 另补一笔：它要动的顶栏属\"正式版一行不动\"的冻结范围，副本内根本不可执行。\n\n## 五、结论\n\n批 A1、A2；否 A3、A4；驳回 B 全部。若法庭仍要给\"表达意图\"留口子，唯一合法形态是：先出 E003 式 4–6 稿强制排序证据，再讨论是否动身份要素；在此之前，\"小幅打磨\"就等于\"只修硬伤\"。\n\nCLAIMS\n- 正式版 V3.2.1 无\"已阅\"实体章，印章只作状态色绑定结局与失守点，B 的\"无条件装饰\"前提不成立 | E001,E002\n- 例外表只让出印章日期那 9px 的信息责任，主体\"已阅\"是信息载体，将其降为状态指示器即撤销一条未写过的让出项 | E002,E001\n- B 的色值基线 #9c3b2e 全库 0 命中（真实值 #9d3a26 / #8c4a3a），\"提高 25% 可读性\"无可复核起点，须先出小批强制排序证据 | E002,E003,E005\n- 清单 A3 应否：正式版无 print 交付面、ΔL 口径不明（实测 1.18:1、ΔL*≈6.0）、且它修的是设计意图而非缺陷 | E002,E003,E001\n",
+      "claims": [
+        {
+          "text": "正式版 V3.2.1 无\"已阅\"实体章，印章只作状态色绑定结局与失守点，B 的\"无条件装饰\"前提不成立",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        },
+        {
+          "text": "例外表只让出印章日期那 9px 的信息责任，主体\"已阅\"是信息载体，将其降为状态指示器即撤销一条未写过的让出项",
+          "evidenceIds": [
+            "E002",
+            "E001"
+          ]
+        },
+        {
+          "text": "B 的色值基线 #9c3b2e 全库 0 命中（真实值 #9d3a26 / #8c4a3a），\"提高 25% 可读性\"无可复核起点，须先出小批强制排序证据",
+          "evidenceIds": [
+            "E002",
+            "E003",
+            "E005"
+          ]
+        },
+        {
+          "text": "清单 A3 应否：正式版无 print 交付面、ΔL 口径不明（实测 1.18:1、ΔL*≈6.0）、且它修的是设计意图而非缺陷",
+          "evidenceIds": [
+            "E002",
+            "E003",
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 2685,
+      "filedAt": "2026-11-15T09:51:36.161Z",
+      "sha": "6fcbac1298701c7e75cb90f23e3bcb79fbc90fdc5519625c5e8da776c0d0f252"
+    },
+    {
+      "side": "defense",
+      "author": "defense",
+      "contextId": "unknown",
+      "text": "# 辩方书状 · C-004\n\n案由：副本里可以先做哪些视觉改动｜辩方立场：**清单 A 四条全做；清单 B 准其试点，但只限一次性只读副本、只限截图验证。**\n\n## 主张一 · A 的四条都该做，但 A3 必须先测后改\n\nA1、A2 是真缺陷，可数字都还没核。`.v2-menu-foot`（`little-zelensky-simulator/index.html:132-136`）在 `css/v2.css:569` 给的是 `gap:6px 18px`，不是提案写的 8px；`visual/preview/` 六张 png 只有 1440×900 与 390×844 两档，1024×768 从未出图，A2 属「未测」不属「已证」。A3 更要紧：提案称 `--paper`/`--paper-2` 明度差 2.1，我按 sRGB→L\\* 复算，成品 `css/v2.css:19-20`（`#ddd3ba`/`#cabfa3`）是 7.19，原型 `visual/prototype/styles.css:22-23`（`#e3d5b6`/`#d4c4a2`）是 5.99，两处都不是 2.1。故 A3 的正确执行是「先测基线、再决定」：达标则改走 GAME_DNA §3 规则 1 的「至少一道折痕或层叠边」，不动色值。A4 作者已自判否决，我同意结论但换掉理由。真正的缺陷是可核的三重漂移：`assets/visual/archive/dossier-stamp.svg`（508B）在 `visual/ASSET_MANIFEST.md:16` 被登记为「archive-stamp｜档案印章｜**朱红印记**｜已生成」，而文件实为铜色 `#b99a5d`；html/css/js 对它零引用，`--stamp`（`css/v2.css:24`，`#8c4a3a`）也只挂在 `.v2-ending` 等边饰上。只改 GAME_DNA 变更记录，不动玩家可见文案。\n\n## 主张二 · B 要改的印章，在已发布版里根本不存在\n\n`stamp|已阅|印章` 在 `little-zelensky-simulator/index.html` 命中 0 条；`.stamp` 只见于 `visual/prototype/styles.css:477-495`（3px double、-7°）；成品用的是 `.v2-mark` 的 YK 字标。于是 B 不是「推翻用户认可的成品」，而是「给未上线元素补语义」；风险从「不可逆的身份改动」降为「一次原型内对照实验」，这正是准它试点的理由。\n\n## 主张三 · 语义化是回到 DNA，不是离开 DNA\n\nGAME_DNA §3 规则 2 原文是「红只属于『已发生』……不做装饰色」，而提案自陈章现在是「无条件装饰」。无条件出现的章，恰恰是对这条不可违反的违反。母题（红双线章＝已阅）、字形、3px double、-7°、`top:26; right:30` 全部保留，只改触发条件，这正是把 DNA 执行到位。\n\n## 改印章会不会破坏用户已认可的方向\n\n不会，但有两个点必须守住。**其一**，GAME_DNA §4 的 25% 识别测试（360×225）针对的是主界面即菜单屏，且明文把「右上那枚小红章」列为第二顺位识别锚点；所以试点必须让菜单屏的章保持常驻，只把「未结算时隐去」试用于局内屏。菜单那枚写的是「已阅 24.02 04:00」，档案被读过属于「已发生」，常驻本就合法。**其二**，印章红怎么调都还在同一明度带：`#b03a2a`（L\\* 41.88）相对 DNA 的 `#9d3a26`（38.44）差 3.45，相对成品实值 `#8c4a3a`（`css/v2.css:24`，39.20）差 2.68。所以「提高 25% 缩略图可读性」不可能来自明度，只能来自彩度；验收不许用「色值更红」判成败。\n\n## 试点三条件\n\n**范围**：只准一次性副本 `little-zelensky-simulator-visual-copy/`，只改 `.stamp` 的显示条件与其自身颜色；manifest 写死基线来源（原型或成品 `index.html`，附 hash），因为两者印章风险完全不同。失败判据须先改写：提案 §五写的 `.stage` 只存在于 `visual/prototype/styles.css:65/211/847`，成品主栅格是 `css/v2.css:125-135` 的 `.v2-grid`，现判据在成品上不可执行。\n\n**验收方式**：只读、截图出证、不进正式版。同机同 DPR，三视口 1440×900、1024×768、390×844；把 360×225 缩略图交三位评审做**强制排序**并盲标（不告知哪版改过）——能力接近的两稿用绝对分与人类相关仅 0.19，而贴「AI 改过」标签本身就会压分。另加一条机器可数指标：红色像素面积占比 ≤3%。\n\n**回退线**：出现任一即整批回退、删副本——(a) 三评排序中位数不优于基线；(b) 需要新增 JS 状态字段来判「本班已结算」（只读副本不许动游戏逻辑）；(c) 红面积占比 >3%；(d) 需要动 `.v2-grid` 或 `index.html` 布局骨架。\n\n## 什么证据出现我就改主意\n\n**一**，若出现记录显示用户曾在原型评审中指着那枚「已阅」章说「就要这个」（纪要、批注、评审表皆可），B 的基线便从「未上线元素」变成「用户点名的身份锚点」，主张二失效——我改为主张 B 只调色、不动语义。\n\n**二**，若第二批三位评审的缩略图盲排出现方向反转（改后版本在 ≥2/3 人次里落末位），「补语义不伤识别」被推翻——我改为主张 B 整条驳回、A 照做。\n\nCLAIMS\n- 清单 A 四条全做，其中 A3 须先测基线（实测 ΔL 7.19/5.99，非提案的 2.1）再决定改色还是只补折痕 | E002\n- 清单 B 允许以一次性只读副本试点，因为「已阅」印章在已发布 index.html 中零命中，只存在于原型 .stamp | E004\n- 印章语义化是回到 GAME_DNA §3 规则 2「红只属于已发生」，母题与形制不变，故不破坏已认可方向 | E001\n- 验收只做盲标强制排序与缩略图，不做绝对分；绝对分在能力接近的两稿上与人类相关仅 0.19 | E003\n- 把「唯一值计数」当验收会奖励加变体（同类项目已达 847 色/47 种圆角/30 种字号），故只用面积占比与排序 | E005\n",
+      "claims": [
+        {
+          "text": "清单 A 四条全做，其中 A3 须先测基线（实测 ΔL 7.19/5.99，非提案的 2.1）再决定改色还是只补折痕",
+          "evidenceIds": [
+            "E002"
+          ]
+        },
+        {
+          "text": "清单 B 允许以一次性只读副本试点，因为「已阅」印章在已发布 index.html 中零命中，只存在于原型 .stamp",
+          "evidenceIds": [
+            "E004"
+          ]
+        },
+        {
+          "text": "印章语义化是回到 GAME_DNA §3 规则 2「红只属于已发生」，母题与形制不变，故不破坏已认可方向",
+          "evidenceIds": [
+            "E001"
+          ]
+        },
+        {
+          "text": "验收只做盲标强制排序与缩略图，不做绝对分；绝对分在能力接近的两稿上与人类相关仅 0.19",
+          "evidenceIds": [
+            "E003"
+          ]
+        },
+        {
+          "text": "把「唯一值计数」当验收会奖励加变体（同类项目已达 847 色/47 种圆角/30 种字号），故只用面积占比与排序",
+          "evidenceIds": [
+            "E005"
+          ]
+        }
+      ],
+      "lengthChars": 2746,
+      "filedAt": "2026-11-15T09:51:36.172Z",
+      "sha": "1a1663705317956e0ddb9a28af6b41801184e5e4813a6616299528e9211c1db2"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "成品里没有 .stamp 也没有「已阅」，你主张它被用户认可，依据是？",
+      "answeredBy": "defense",
+      "answer": "我的主张恰恰是「没有证据显示用户认可过这枚章」：index.html 与 js/v2 零命中，GAME_DNA §4 在 360×225 测试里只把它当第二顺位识别锚点，从未赋「已阅」语义。请出示纪要。",
+      "evidenceIds": [],
+      "at": "2026-11-15T09:58:53.668Z"
+    },
+    {
+      "round": 2,
+      "question": "原型里唯一那枚「已阅」章就在菜单屏上，你又主张菜单屏的章必须常驻；那么，B 的试点还能试什么呢？",
+      "answeredBy": "prosecution",
+      "answer": "试点若要成立，就得先在局内屏新增一枚本不存在的章；那不算补语义，而是新增装饰。这枚章之所以有意义，是因为它贴在档案袋上、日期与顶栏对得上；局内屏没有被签发的文件，搬过去只能硬造状态色，恰好造出提案要消灭的纯装饰，只是更红。这样要试的是新物件，不是 B。",
+      "evidenceIds": [],
+      "at": "2026-11-15T09:58:53.671Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "c004-j1",
+      "onFundamentals": "reject",
+      "reason": "清单 B 的对象在正式版不存在，提案以原型为前提，属事实层错误",
+      "minority": "A1 三段页脚 gap 18 在 390 宽是否挤，应实拍复测之后再否",
+      "contextId": "unknown",
+      "supports": [
+        "E006"
+      ],
+      "against": [],
+      "noCounter": "控方未提交任何能证明该章曾存在或获认可的记录",
+      "wouldChange": "用户纪要点名此章、局内屏现有章可隐、25% 盲排证改后更易辨",
+      "at": "2026-11-15T10:06:33.092Z",
+      "sha": "52660582bff07640f71b1fa228286e88590ee7da35add89ac4c92a902a21ea55"
+    },
+    {
+      "juror": "c004-j2",
+      "onFundamentals": "conditional",
+      "reason": "前提已否，但 A 清单里仍有可做的硬伤，附条件批 A 的一部分",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E006",
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "against": [],
+      "noCounter": "未见能支撑清单 B 前提的证据",
+      "wouldChange": "用户记录点名要那枚原型章，或盲排证明 25% 下现章认不出",
+      "at": "2026-11-15T10:06:33.101Z",
+      "sha": "827a19a5a99fd9464bc89a3e88290a7e0d13c80dd70186fd8d0e1b203f5bc02e"
+    },
+    {
+      "juror": "c004-j3",
+      "onFundamentals": "conditional",
+      "reason": "只批 390 页脚与可复算的排版项，B 驳回",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E006",
+        "E002"
+      ],
+      "against": [
+        "E001"
+      ],
+      "noCounter": null,
+      "wouldChange": "正式版实装印章，或出现用户认可该章的记录，即改判容许 B 试点",
+      "at": "2026-11-15T10:06:33.105Z",
+      "sha": "06d519da2aa82af392ce333c85c2cc0b6e1aaf811d1fa8042d13c51f94c31b2f"
+    },
+    {
+      "juror": "c004-j4",
+      "onFundamentals": "conditional",
+      "reason": "玩家能感知的是页脚糊与识别锚点，不是一枚不存在的章",
+      "minority": "清单缺第一眼验收，每条改动须附 25% 与 100% 对照图",
+      "contextId": "unknown",
+      "supports": [
+        "E006",
+        "E001"
+      ],
+      "against": [
+        "E002"
+      ],
+      "noCounter": null,
+      "wouldChange": "用户曾点名要章、或章将上线则准 B 只调色试点",
+      "at": "2026-11-15T10:06:33.109Z",
+      "sha": "a9606bb069a962c3a2cbfa6a0667c0bfcd56d41aa56cd36b1df101df77045f5f"
+    },
+    {
+      "juror": "c004-j5",
+      "onFundamentals": "conditional",
+      "reason": "多个数字不可复算（ΔL 实为 5.99/7.19，8px 实为 6/18），须先订正",
+      "minority": "A1 可证：390 宽三段必然折行且末项孤行，无需再等测点",
+      "contextId": "unknown",
+      "supports": [
+        "E006",
+        "E002",
+        "E003"
+      ],
+      "against": [
+        "E001"
+      ],
+      "noCounter": null,
+      "wouldChange": "提案补 A2 测点与 2.1 口径、同机三视口基线图，B 附可测验收",
+      "at": "2026-11-15T10:06:33.112Z",
+      "sha": "1631c0b9c76c5fe8452008077223c634199b78d52f237b0f1996bc7f63d05e1f"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "c004-j1",
+      "onFundamentals": "conditional",
+      "basis": "J1 初判\n立场：reject（有反证）\n依据\n1）正式版 index.html 无 stamp/已阅/seal；v2.css:24 --stamp #8c4a3a 已绑 :417/:596；\"已阅\"章只在原型 index.html:49；#9c3b2e 仅提案。\n2）自算 ΔL* 7.19（#ddd3ba→#cabfa3）/5.99（#e3d5b6→#d4c4a2），非 2.1；#b03a2a 对纸 4.58→4.05，反降。\n清单A：A3 该否（数假）；A4 自否；A1 8px 不符（gap18）；A2 不可发生。\n改判：改标原型并撤 B/A3/A4、A1/A2 实测、25% 盲标排序（E003）→conditional。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:53:20.469Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:55:20.583Z",
+      "sha": "aac1ac9917a17cee5d3237f5f8c04828945bb128d8645f2ef4f451243e3dd6c3"
+    },
+    {
+      "juror": "c004-j2",
+      "onFundamentals": "conditional",
+      "basis": "立场：conditional\n\n依据：E006 成立：B 的印章在正式版不存在，提案却在原型的章上做加减；且 #9c3b2e 与原型 #9d3a26、代码 #8c4a3a 均不符，A3 的 ΔL 2.1 也复算不出。\n\nB 限原型仍值得审：①DNA §2 已定「章＝已阅」，隐去属改写语义；②§4 的 25% 第二眼红章会被削，判据须含未结算态；③可读性由 multiply 合成定、非 hex，#b03a2a 不在 token；④进正式版＝新增身份元素，须单独立案。\n\n改判：标目标物+行号；A1 按三 span（index.html:133-135）复测 390，A2 实拍 1024×768；B 限原型+截图、先改 DNA、盲测含未结算态；只认渲染与盲测（E003 ρ=0.19）→approve。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:52:32.840Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:55:20.590Z",
+      "sha": "d4d91e316f07c10f1e06693b5f76660a07309880d3c9fb2f5f03172dd20ad6b9"
+    },
+    {
+      "juror": "c004-j3",
+      "onFundamentals": "conditional",
+      "basis": "# J3\n**立场：附条件批准**\n\n依据：清单证据取自 prototype：正式版只载 `v2.css`、无 `.stamp`；「已阅」章仅 `prototype/index.html:49`；`#9c3b2e`/`#b03a2a` 全项目 0 命中（`--stamp` 只 `v2.css:24`）。证据脱节，身份要素回退最贵。\n\n最值得 A1（390 页脚）：唯一指向真机且有判据 `scrollWidth==390`，flex 一块可退。\n最不值 A4（顶栏措辞）：非视觉缺陷，跨作一致性；改文案违「不改主调」。\n会改判：真机复现 390/1024；A3 写清 ΔL 口径（无 print 样式）；B 先有印章。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:54:53.520Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:55:20.594Z",
+      "sha": "60e50ee16ce0fa2755256fd9a17669ac6fdcfc45edbbc4673097fc4a61d2770e"
+    },
+    {
+      "juror": "c004-j4",
+      "onFundamentals": "conditional",
+      "basis": "# 陪审员 #4 初判\n\n**立场**：部分准：只准 A1；A2 补测；A3 与 B 驳回。\n\n**依据**：玩家只感到两处：390 页脚糊、缩略图认不认得出。A3 纸色差、B 印章语义玩家看不见；E006 证正式版无实体章，B 收益为零。\n\n**建议**：清单缺\"第一眼\"。每条改动须附 25% 与 100% 对照图；玩家靠\"台灯+纸+账页\"认游戏，认不出的不做，A3 出局。\n\n**改判**：带章版 25% 下明显更易认出→章应常驻；A3 有玩家误读证据→准；E006 被推翻→B 成议题。\n\n**程序**：读案卷 case.json 已见书状；若需盲态请作废此票。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:54:04.893Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:55:20.599Z",
+      "sha": "4259415157888b7e3804728fb5da39bf0f7a806ed4b84c1a088fc95132c8fa51"
+    },
+    {
+      "juror": "c004-j5",
+      "onFundamentals": "conditional",
+      "basis": "# C-004 j5 初判\n\n**conditional**：数字不换口径不改。自算 ΔL*：成品 #ddd3ba/#cabfa3 = 7.19、原型 5.99；提案 2.1 两口径皆不成立（3.4×）。--paper-2 在 v2.css 零引用、无 @media print，A3 无交付面。\n\n不可复算：2.1（无口径）；8px（gap 6px18px、三段）；1024 重叠 6px（无测点）；#9c3b2e（0 命中，实为 #9d3a26）；25%（无定义/基线）；3 位评审（双尾 p 最小 0.25，永不触发）；.stage（成品用 .v2-grid）。\n\n改判：测点口径＋同机同视口前后图＋基线色值＋25% 操作化＋E003 小批排序。\n\n（late：读过 case.json、内嵌书状；自算。）\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T10:00:24.957Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T10:00:41.391Z",
+      "sha": "27c4ee69ee6969df46c94a59537f4db43a59e5e6536318fd931f60cede53b9dc"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "c004-judge",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "P0",
+        "claim": "正式版 V3.2.1 无实体「已阅」章：index.html 对 stamp/已阅 零命中，--stamp 仅 v2.css:24 定义、:417 由 .v2-ending 引用，B 所称\"无条件装饰的章\"在成品不存在",
+        "evidenceIds": [
+          "E006"
+        ]
+      },
+      {
+        "severity": "P0",
+        "claim": "故\"未结算时隐去\"在成品无处可落：菜单那枚是唯一实体章且辩方自认须常驻，落到局内屏即成新增装饰，与 B 要消灭的装饰性红同类",
+        "evidenceIds": [
+          "E006",
+          "E001"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "指纹文档与实装脱节：E001 §4 以\"右上那枚小红章\"为第二识别锚点，成品以 .v2-mark YK 字标顶替，25% 测试按原文在成品上不可通过",
+        "evidenceIds": [
+          "E001",
+          "E006"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "A 清单数字普遍不可复算：ΔL* 实测 7.19（#ddd3ba/#cabfa3，1.23:1）与 5.99（#e3d5b6/#d4c4a2，1.18:1）非 2.1，#9c3b2e/#b03a2a 全库 0 命中，页脚为三段 span、gap:6px 18px 且已 wrap，非\"两段 8px\"",
+        "evidenceIds": [
+          "E002",
+          "E006"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "无成品基线图：visual/preview 六张只有 1440×900/390×844 且为原型，成品 1024×768 从未出图，故 A1、A2 属未测；提案 §五 又拿不存在的 .stage 当判据（成品为 .v2-grid）",
+        "evidenceIds": [
+          "E006",
+          "E002"
+        ]
+      },
+      {
+        "severity": "P2",
+        "claim": "验收口径不可测：\"25%\"无定义无基线，3 人方向判断的双尾下限 p=0.25，而计数类指标会奖励加变体（同类已 847 色），只能用盲标强制排序与面积占比",
+        "evidenceIds": [
+          "E003",
+          "E005"
+        ]
+      }
+    ],
+    "conditions": [
+      "副本内只减不增：只许收紧既有 token/间距/断点，任何新增玩家可见元素（含把章或字标加进任一屏）不批，须单独立案",
+      "每条改动须同交\"基线出处（文件:行）+ 算式 + 同机同 DPR 双端实拍 390×844 与 1440×900\"，缺一按未证=不改处理",
+      "A1 执行形态固定：先出 390 成品基线并量 document.documentElement.scrollWidth；仅在末段孤行或溢出实测成立时，只改 @media (max-width:560px) 内 .v2-menu-foot 行距，不动段数/文案/.v2-grid",
+      "A3、A4 只做文档订正不动视觉：A3 写明 ΔL* 7.19/5.99、对比 1.23:1/1.18:1、v2 无 print 面；A4 订正 ASSET_MANIFEST 的\"朱红\"登记与 GAME_DNA §4 实装状态",
+      "硬停：若 390 基线显示页脚无孤行且 scrollWidth==390，A1 判\"不改\"，本批只剩文档订正，不得另找改动凑数"
+    ],
+    "reason": "# C-004 裁决书\n\nfresh 法官｜2026-11-15｜5 票 conditional｜2 轮质询｜只读案卷，未改 `little-zelensky-simulator/`\n\n**账面**：正式版 V3.2.1（`index.html:7/20`）非 V0.6.0；§五 的 `.stage` 在成品不存在，栅格是 `.v2-grid`（`v2.css:125`）。\n\n**① 清单 A：准 A1 之半，否 A3/A4，暂缓 A2**\n\nA1 **点位真、描述假**：页脚是**三段** span（`index.html:132-136`），`v2.css:569` 已 `flex-wrap:wrap; gap:6px 18px`，非\"两段、相距 8px\"。不按原描述执行，只准\"先出 390 成品基线，再定是否仅动窄屏行距\"。\n\nA2 **未测**：`visual/preview/` 六图仅 1440×900 与 390×844 两档且为原型；成品 1024×768 从未出图，\"重叠 6px\"无出处。\n\nA3 **否**：`v2.css` 无 `@media print`（唯一 print 在 legacy `style.css:872`）；复算 ΔL\\* 为 **7.19**（`#ddd3ba`/`#cabfa3`，1.23:1）、**5.99**（`#e3d5b6`/`#d4c4a2`，1.18:1），2.1 两口径皆复算不出。`--paper-2` 只露 7px，提差会把细边变成新可视线，撞 §4\"不能还显眼的是边框\"。\n\nA4 **否**：作者自认，对象又在冻结的正式版顶栏。真缺陷在文档：`ASSET_MANIFEST.md:16` 记 dossier-stamp.svg 为\"朱红\"，实为铜 `#b99a5d` 且零引用——改登记，不动文案。\n\n**② 清单 B：驳回原样试点，改对象**\n\nB 的对象在成品不存在（E006），不是\"未上线就能试\"，而是错位：菜单那枚是唯一实体章，辩方自认菜单须常驻；\"未结算时隐去\"便只能落局内屏——那里没有章，搬过去即**新增装饰**，恰是 B 要消灭之物。色值门槛同样落空：`#9c3b2e`/`#b03a2a` 全库 0 命中，`#b03a2a` 对成品 `#8c4a3a` 的 ΔL\\* 仅 +2.68，不可见，\"25%\"又无基线。B 改对**文档落差**立案：E001 §4 把\"右上那枚小红章\"列为第二识别锚点，成品却用 `.v2-mark` YK 字标顶替，指纹与实装脱节，25% 测试按原文不可通过。订正 §4 实装状态；\"把章加进 v2\"须单独立案。\n\n**③ \"不推翻已认可方向\"的判据**\n\n用户认可的是\"低饱和军事绿 + 档案纸 + 琥珀 + 桌面布局\"，非 DNA 文本、非那枚章。三条：**只减不增**——只许收紧既有 token/间距/断点，新增可见元素即改方向，须单独立案；**无三件套即未证**——收益须同给基线出处（文件:行）、算式、同机双端实拍，缺一按未证=不改（3 人\"更差\"下限 p=0.25，E003 相近稿 0.19）；**同场基线臂**——25% 判断须并置盲排，不得被任一侧自然通过。\n\n少数意见：j4 并入 CONDITION 2，j5 不采。\n\n```\nVERDICT conditional\nROUNDS_CHOSEN 0\nFINDING P0|正式版 V3.2.1 无实体「已阅」章：index.html 对 stamp/已阅 零命中，--stamp 仅 v2.css:24 定义、:417 由 .v2-ending 引用，B 所称\"无条件装饰的章\"在成品不存在|E006\nFINDING P0|故\"未结算时隐去\"在成品无处可落：菜单那枚是唯一实体章且辩方自认须常驻，落到局内屏即成新增装饰，与 B 要消灭的装饰性红同类|E006,E001\nFINDING P1|指纹文档与实装脱节：E001 §4 以\"右上那枚小红章\"为第二识别锚点，成品以 .v2-mark YK 字标顶替，25% 测试按原文在成品上不可通过|E001,E006\nFINDING P1|A 清单数字普遍不可复算：ΔL* 实测 7.19（#ddd3ba/#cabfa3，1.23:1）与 5.99（#e3d5b6/#d4c4a2，1.18:1）非 2.1，#9c3b2e/#b03a2a 全库 0 命中，页脚为三段 span、gap:6px 18px 且已 wrap，非\"两段 8px\"|E002,E006\nFINDING P1|无成品基线图：visual/preview 六张只有 1440×900/390×844 且为原型，成品 1024×768 从未出图，故 A1、A2 属未测；提案 §五 又拿不存在的 .stage 当判据（成品为 .v2-grid）|E006,E002\nFINDING P2|验收口径不可测：\"25%\"无定义无基线，3 人方向判断的双尾下限 p=0.25，而计数类指标会奖励加变体（同类已 847 色），只能用盲标强制排序与面积占比|E003,E005\nCONDITION 副本内只减不增：只许收紧既有 token/间距/断点，任何新增玩家可见元素（含把章或字标加进任一屏）不批，须单独立案\nCONDITION 每条改动须同交\"基线出处（文件:行）+ 算式 + 同机同 DPR 双端实拍 390×844 与 1440×900\"，缺一按未证=不改处理\nCONDITION A1 执行形态固定：先出 390 成品基线并量 document.documentElement.scrollWidth；仅在末段孤行或溢出实测成立时，只改 @media (max-width:560px) 内 .v2-menu-foot 行距，不动段数/文案/.v2-grid\nCONDITION A3、A4 只做文档订正不动视觉：A3 写明 ΔL* 7.19/5.99、对比 1.23:1/1.18:1、v2 无 print 面；A4 订正 ASSET_MANIFEST 的\"朱红\"登记与 GAME_DNA §4 实装状态\nCONDITION 硬停：若 390 基线显示页脚无孤行且 scrollWidth==390，A1 判\"不改\"，本批只剩文档订正，不得另找改动凑数\nTASK lead|little-zelensky-simulator-visual-copy/ 下 A1 四张实拍（改前/改后 × 390×844、1440×900）+ scrollWidth 实测值 + 仅改 .v2-menu-foot 窄屏行距的一处 diff|四图同机同 DPR 可在同目录打开；git -C little-zelensky-simulator status --porcelain 为空；改后 390 实测 scrollWidth==390 且三段末项不孤；不成立则交\"不改\"结论并停止\nTASK lead|提案修订版（2.1→ΔL* 7.19/5.99、8px→gap:6px 18px 三段、删\"打印视角\"、#9c3b2e 注明 0 命中、§五 .stage→.v2-grid）+ GAME_DNA §4 与 ASSET_MANIFEST 的实装状态注记|每条数字可按所注\"文件:行\"复算（ΔL* 容差 ≤0.05）；GAME_DNA §4 明写\"章在 v2 未实装，加回须单独立案\"；ASSET_MANIFEST 不再把 #b99a5d 记为朱红；两份文件不含玩家可见文案或 CSS 改动\nPRECEDENT 原型里有、成品零命中的元素不得作为\"副本内打磨\"的对象：先指出实装位置与渲染证据，指不出即驳回，也不许把它换个屏当替身落地\n```\n",
+    "roundsChosen": 0,
+    "roundsWhy": "普通质询与书状已足够暴露分歧；剩余不确定只能靠产物实拍结清，再打七轮属过度拟合",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-15T10:09:48.326Z",
+    "sha": "1090a8a606a0528db2acb5305a4e935d7fd45795660fd089516c822020a4d6ae"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "little-zelensky-simulator-visual-copy/ 下 A1 四张实拍（改前/改后 × 390×844、1440×900）+ scrollWidth 实测值 + 仅改 .v2-menu-foot 窄屏行距的一处 diff",
+      "owner": "lead",
+      "deadline": "2026-11-19T00:00:00.000Z",
+      "acceptance": "四图同机同 DPR 可在同目录打开；git -C little-zelensky-simulator status --porcelain 为空；改后 390 实测 scrollWidth==390 且三段末项不孤；不成立则交\"不改\"结论并停止",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
+      "status": "verified",
+      "createdAt": "2026-11-15T10:09:48.330Z",
+      "submittedAt": "2026-11-15T10:20:09.474Z",
+      "verifiedAt": "2026-11-15T10:25:14.329Z",
+      "verifier": "c004-verifier",
+      "report": "A1 判不改（修订）：真读 scrollWidth=390=clientWidth，无横向溢出；页脚 3 span 分 2 行、第 2 行仅『38 天 · 时间由你推进』，孤行客观成立。曾试裁决唯一许可形态 row-gap 6→14px，实测孤行未消、面板上移 4px 且属放宽间距(违反 CONDITION 1)，已回滚；副本 css/v2.css 与正式版逐字节相同，改动数=0。执行形态不足记 I-25，建议另立 C-005 审『窄屏页脚能否改行分解』。证据=c004-shots/EVIDENCE.md v2 + 四张实拍。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": true,
+        "doubleCountChecked": true,
+        "omissionChecked": true
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
+          "sha256": "534177e51a9a62c714bbb9916aa176a831ff3e9f630c977811017d6a2ed1863f"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-before.png",
+          "sha256": "ee1a9ba0b1811cd972936e8b5249901b04d1c6280b717acca64e5a7e77a42573"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-after.png",
+          "sha256": "27868ded411093c209ca5e31be6ef70fbfa17ae8180ac993cf7cfb2193abd9a5"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-before.png",
+          "sha256": "519eae8d06b21fd510d640e5403cdef15ddd44c6d0a2ad7124d2400e355f5946"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-after.png",
+          "sha256": "519eae8d06b21fd510d640e5403cdef15ddd44c6d0a2ad7124d2400e355f5946"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\css\\v2.css",
+          "sha256": "aea926d49a117f57073a9a379ba9e6acbce74297ff0d8261190ffaf569a2a320"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\css\\v2.css",
+          "sha256": "aea926d49a117f57073a9a379ba9e6acbce74297ff0d8261190ffaf569a2a320"
+        }
+      ],
+      "verifyNote": "自跑 measure_sw.mjs：scrollWidth=390、clientWidth=390、docHeight=844、spanCount=3、rowGap 6px/wrap，行 top=598(2 span)/621(1 span)；自拍 390 full 得 194537 B、sha EE1A9BA0…，与 A1-390-before.png、_baseline-390.png 逐字节相同；副本与正式版 css/v2.css sha 均 AEA926D4…A2A320。四图字节/尺寸与 EVIDENCE 逐项相符，A1 判「不改」成立。"
+    },
+    {
+      "id": "T02",
+      "deliverable": "提案修订版（2.1→ΔL* 7.19/5.99、8px→gap:6px 18px 三段、删\"打印视角\"、#9c3b2e 注明 0 命中、§五 .stage→.v2-grid）+ GAME_DNA §4 与 ASSET_MANIFEST 的实装状态注记",
+      "owner": "lead",
+      "deadline": "2026-11-19T00:00:00.000Z",
+      "acceptance": "每条数字可按所注\"文件:行\"复算（ΔL* 容差 ≤0.05）；GAME_DNA §4 明写\"章在 v2 未实装，加回须单独立案\"；ASSET_MANIFEST 不再把 #b99a5d 记为朱红；两份文件不含玩家可见文案或 CSS 改动",
+      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
+      "status": "verified",
+      "createdAt": "2026-11-15T10:09:48.332Z",
+      "submittedAt": "2026-11-15T10:20:09.556Z",
+      "verifiedAt": "2026-11-15T10:25:18.062Z",
+      "verifier": "c004-verifier",
+      "report": "T02 第二轮补齐（上轮 FAIL）：①GAME_DNA §4 的『右上那枚小红章』改注为『只存在于 visual/prototype/，成品零命中，不得当既有锚点，加回须单独立案(P-004)』；§2 注记保留。②ASSET_MANIFEST 的 archive-stamp 色值订正为『铜色双线 #b99a5d，非朱红』（SVG 4 处色值全为 #b99a5d）。③提案 ΔL* 归因改为『两对色值之差』并给出 文件:行——成品 css/v2.css:19-20 得 ΔL*7.19/1.23:1，原型 visual/prototype/styles.css:22-23 得 ΔL*5.99/1.18:1；删『对手调整后』病句；§三『尚未创建』改为『已创建(robocopy 排除 .git/node_modules, 4600 文件)』。",
+      "overdueReason": null,
+      "cancelReason": null,
+      "verifyChecks": {
+        "artifactsOpened": true,
+        "versionChecked": true,
+        "contentRechecked": true,
+        "recomputed": true,
+        "doubleCountChecked": true,
+        "omissionChecked": true
+      },
+      "verifyArtifacts": [
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
+          "sha256": "9de4cd06802059d3c38e1e80f5b179f40ca2803fc09f2a07acdf1d008c34ddff"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\GAME_DNA.md",
+          "sha256": "24e7aa46f372a625d007f6e99334ac65c75f3c89206aa3a76fef9cca34c7191f"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\ASSET_MANIFEST.md",
+          "sha256": "4463169d1224f3792c80df1413fd5bd600e115e2c65843ff8e6969c1b7216dd3"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\assets\\visual\\archive\\dossier-stamp.svg",
+          "sha256": "285522aae37685e4ba3ff2c5ae7755829eb3362309ea3ebdd4cff0d9d6b0cfd2"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\prototype\\styles.css",
+          "sha256": "b0bba6596b67d2c38ec6c7cf3ae42d6e550c1b83d0d7dc8f91ed588a31186ea2"
+        },
+        {
+          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\prototype\\index.html",
+          "sha256": "f26b7cc998a763b15732801930cd46114279020a4500569d2a4e95d43996debc"
+        }
+      ],
+      "verifyNote": "重算 ΔL*：css/v2.css:19-20（#ddd3ba/#cabfa3）7.19、1.23:1；visual/prototype/styles.css:22-23（#e3d5b6/#d4c4a2）5.99、1.18:1，与提案一致；GAME_DNA.md:28（§4）已写「须单独立案，见先例 P-004」；ASSET_MANIFEST.md:16 已写零引用与铜色 #b99a5d 非朱红；全库「已阅」仅 prototype/index.html:49，dossier-stamp.svg 在 HTML/CSS/JS 零引用。"
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  },
+  "closedBy": "system"
+}

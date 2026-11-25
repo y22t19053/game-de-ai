@@ -1,0 +1,15 @@
+{
+  "juror": "juror-d",
+  "onFundamentals": "approve",
+  "reason": "三份证据指向同一件事：时长由结构决定而不是平衡调出来的（E003）。因此任何加深都得以「不增加回合预算」为前提，主张 A 符合这一点。",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "没有反证能说明 15 个抉择点可以被绕开；E002 的人类时长是推断，不足以推翻结构结论。",
+  "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+  "at": "2026-11-15T12:55:59.204Z",
+  "sha": "f1cfae6631fb4f9c31d2228ea2fc6dc2344fe6e2e263c86171a2f6d86e1a53a2"
+}

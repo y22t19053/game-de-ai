@@ -1,0 +1,11 @@
+{
+  "juror": "j1",
+  "onFundamentals": "approve",
+  "basis": "依据 E001 的引擎行号与 E002 的可重跑结果：G-2 属实现缺陷，修复点与失败路径一一对应；G-1 以注入钩子在服务端校验，规则层不引入词库依赖，边界清晰。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+  "at": "2026-11-16T16:08:53.718Z",
+  "sha": "60ad43458c05aaf7b6958f5b13ea42ae153cabe9888ce7bc24106b4813507f17"
+}

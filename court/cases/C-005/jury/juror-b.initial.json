@@ -1,0 +1,11 @@
+{
+  "juror": "juror-b",
+  "onFundamentals": "approve",
+  "basis": "两边都在拿同一份测量说话，区别在于要不要先动产品边界。没有真实玩家数据之前，动边界是拿承诺换猜测。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+  "at": "2026-11-15T12:55:44.672Z",
+  "sha": "85742f1ccc57638e73c59637adf2668aad72c20634ff7ed888453371000e8102"
+}

@@ -1,0 +1,4 @@
+# schema v1｜fixture｜G2 台账
+
+{"n":1,"sentence":"第 1 次开工前写下的一句","written_at":"2026-11-15T01:00:00Z","ui_file":"src/ui/a.tsx","minutes_spent":4}
+{"n":1,"type":"BLOCK","reason":"没写句子，不许开工"}

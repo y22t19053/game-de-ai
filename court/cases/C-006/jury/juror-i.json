@@ -1,0 +1,15 @@
+{
+  "juror": "juror-i",
+  "onFundamentals": "approve",
+  "reason": "止损线加有效期后，甲案是我能接受的最不坏选择",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E003"
+  ],
+  "against": [],
+  "noCounter": "控方未提出乙案的具体测试代价估算",
+  "wouldChange": "若乙案工期低于一天则改判乙案",
+  "at": "2026-11-15T15:16:04.164Z",
+  "sha": "fbb1ba60a054beaf15c5cf43b384231751b9a2a80a1463e05b22888279f43995"
+}

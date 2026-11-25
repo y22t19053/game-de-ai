@@ -1,0 +1,456 @@
+{
+  "id": "C-019",
+  "title": "V2.1 项目现实审计：版本混淆、联机完成度、权限证据与生产体系真实性",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "以四部门只读审计与线上包实测为证据，复核\"线上/预览/主线是否被混为一谈、本地联机完成度是否被夸大、TOY 权限是否有真实证据、生产体系是否真在用、是否存在虚假完成\"。",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\audits\\PROJECT_REALITY_AUDIT_2026-11-17.md",
+  "proposalSha": "50f32337f498475930cc78dd37af1642bb6ad0c41a7b5aa7e004ce9e3dbeaf97",
+  "stage": "executing",
+  "openedAt": "2026-11-17T13:25:42.701Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T13:25:42.846Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\audits\\PROJECT_REALITY_AUDIT_2026-11-17.md",
+      "version": null,
+      "claim": "审计主报告：现状总览、版本差异表、风险分级与下一阶段路线",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T13:25:43.067Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T13:25:43.219Z",
+      "decisionReason": "审计文件为可复核的一手材料，准予采信。",
+      "contentHash": null
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T13:25:42.922Z",
+      "kind": "raw",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\audits\\MODULE_STATUS_MATRIX.csv",
+      "version": null,
+      "claim": "模块状态矩阵 60 行，逐项状态与证据",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T13:26:23.122Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T13:26:27.214Z",
+      "decisionReason": "审计文件为可复核的一手材料，准予采信。",
+      "contentHash": null
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T13:25:42.994Z",
+      "kind": "external",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\audits\\TOY_PLATFORM_GAP_ANALYSIS.md",
+      "version": null,
+      "claim": "TOY 平台差距：权限 UNKNOWN、线上仍为修复前构建（GET 实测）",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T13:26:23.194Z",
+      "sourceRef": null,
+      "decidedBy": "judge-hx",
+      "decidedAt": "2026-11-17T13:26:27.284Z",
+      "decisionReason": "审计文件为可复核的一手材料，准予采信。",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "线上正式版、最新预览版与主线是否被混为一谈？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:27.657Z"
+    },
+    {
+      "id": "D02",
+      "point": "3D 修复是否真实进入主线，并是否已上线？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:27.730Z"
+    },
+    {
+      "id": "D03",
+      "point": "本地联机的完成度是否被夸大（L3+ 被写成完整联机）？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:27.803Z"
+    },
+    {
+      "id": "D04",
+      "point": "TOY 自建后端与自有 API 权限是否有真实证据？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:27.875Z"
+    },
+    {
+      "id": "D05",
+      "point": "UGC 与自由文本风险是否按具体输入场景准确分析？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:27.948Z"
+    },
+    {
+      "id": "D06",
+      "point": "AAPS/法庭/Game De-AI/三省六部是否真正投入使用？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:28.020Z"
+    },
+    {
+      "id": "D07",
+      "point": "是否存在重复开发与虚假完成声明（排队写成完成、预览写成正式）？",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:28.092Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "本次审计要求把\"三个环境\"分开、把\"排队\"与\"完成\"分开、把\"本地验证\"与\"平台验证\"分开。现有材料显示：线上正式版仍是修复前构建；本地联机只到 L3+；TOY 自建后端权限未查证；生产体系里 AAPS 的游戏任务全部停在 created。",
+      "claims": [
+        {
+          "text": "线上正式版与主线不是同一构建，3D 修复从未上线",
+          "evidenceIds": [
+            "E001",
+            "E003"
+          ]
+        },
+        {
+          "text": "本地联机完成度只到 L3+，L4/L5 无证据",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        },
+        {
+          "text": "TOY 权限状态在审计中应记 UNKNOWN，不得写成已取得",
+          "evidenceIds": [
+            "E003"
+          ]
+        },
+        {
+          "text": "AAPS 中游戏任务均为 created，不得记为已执行",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 120,
+      "filedAt": "2026-11-17T13:26:27.428Z",
+      "sha": "6b5ed54e4761d62f72f0644b6f89ed8ee972858a1999e8e8945e508d5dac4da4"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "辩护方不反对\"版本要分开\"，但反对把两处写成缺陷：其一，线上落后一版是用户未授权更新的结果，属流程而非质量问题；其二，AAPS 的 47 个 verified 证明生产线确实在用，只是负载在文本任务上，不能据此说\"生产体系没投入使用\"。",
+      "claims": [
+        {
+          "text": "线上落后一版是未授权更新的结果，不应记为质量缺陷",
+          "evidenceIds": [
+            "E001"
+          ]
+        },
+        {
+          "text": "AAPS 有 47 个 verified，生产体系确实在用",
+          "evidenceIds": [
+            "E001",
+            "E002"
+          ]
+        }
+      ],
+      "lengthChars": 118,
+      "filedAt": "2026-11-17T13:26:27.506Z",
+      "sha": "d22851362538a1a69fdab4562229a60e9495364a83ffc2eede1af723a6bcbd10"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "线上版本落后，是构建流程缺陷还是授权流程所致？请指出决定性证据。",
+      "askedBy": "yuanzhen",
+      "answeredBy": "lead",
+      "answer": "两者都成立但层次不同：构建产物 dist/toy 落后于 HEAD（dist/toy/app.js 仍含已删除的 attempt:2），这是流程缺陷；而\"线上仍是修复前构build\"的直接原因是用户尚未授权 toy update。证据 E001 的版本差异表同时列出两者。",
+      "evidenceIds": [
+        "E001",
+        "E003"
+      ],
+      "at": "2026-11-17T13:26:37.126Z"
+    },
+    {
+      "round": 2,
+      "question": "AAPS 47 个 verified 是否可用于证明\"生产体系已服务于本项目\"？",
+      "askedBy": "lead",
+      "answeredBy": "yuanzhen",
+      "answer": "不能。那 47 个 verified 的 goal 是历史案例档案类文本任务，本项目 P1–P8 与 3D 修复任务全部停在 created。可以用它证明 AAPS 可用，不能证明游戏开发线在用。",
+      "evidenceIds": [
+        "E002"
+      ],
+      "at": "2026-11-17T13:26:37.202Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "j3",
+      "onFundamentals": "conditional",
+      "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无可推翻本报告分环境记账的反证",
+      "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+      "at": "2026-11-17T13:26:37.842Z",
+      "sha": "80d0ab6f2858a8924eeba41408a2e6c391164bcf4691b4b1d81ab8443633f8c6"
+    },
+    {
+      "juror": "j1",
+      "onFundamentals": "conditional",
+      "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无可推翻本报告分环境记账的反证",
+      "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+      "at": "2026-11-17T13:26:43.321Z",
+      "sha": "89657fdb85a0f47b8ce22554edeb9a2ced1a1406bf31924bc0dde8246bf03bd9"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无可推翻本报告分环境记账的反证",
+      "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+      "at": "2026-11-17T13:26:43.395Z",
+      "sha": "f10e25fe11d44a3b4bf08780c1784d7e3d9f4740db830bad3d7abb3bc767bbab"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "conditional",
+      "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无可推翻本报告分环境记账的反证",
+      "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+      "at": "2026-11-17T13:26:43.543Z",
+      "sha": "e0c35fba26e65c89c3290da6ced134d06562886c7e58a36a812a2be64f36afd4"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "reason": "证据支持\"分环境记账\"与\"L3+ 不等于 L4\"的主张，故有条件通过。",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E002"
+      ],
+      "against": [],
+      "noCounter": "无可推翻本报告分环境记账的反证",
+      "wouldChange": "若线上包实测显示 objdata.js 200 且含 OBJ_TEXT 则改判",
+      "at": "2026-11-17T13:26:43.616Z",
+      "sha": "46fd78b7363a214eea267575c9cbcba6deb99a2ff5ef71f6970ca206489c35da"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "j3",
+      "onFundamentals": "conditional",
+      "basis": "权限未查证就该写 UNKNOWN，这是态度问题也是方法问题。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+      "at": "2026-11-17T13:26:37.490Z",
+      "sha": "21ffab3e7577e091dcef7a90bb8d14ccdf8c58dc941e1c9280e09ad07af93bdf"
+    },
+    {
+      "juror": "j1",
+      "onFundamentals": "conditional",
+      "basis": "版本与阶段必须分开记账：线上包、预览包、主线三者一旦混为一谈，后面所有结论都会漂，所以我倾向有条件通过并继续取证。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+      "at": "2026-11-17T13:26:42.952Z",
+      "sha": "23dd459d3e2cbe590f57f34f798f271d48b999ee611a7575c3fb4aa0f67e43e8"
+    },
+    {
+      "juror": "j2",
+      "onFundamentals": "conditional",
+      "basis": "公网 WebSocket 加同机双浏览器只能说明协议通路可用，跨网络真机没有证据，把它写成完整联机是不对的，因此支持有条件通过。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+      "at": "2026-11-17T13:26:43.030Z",
+      "sha": "c85ee5208b16e3a33f1452770f7e40f4c958beee8edfdfb7351efb818be1d9bf"
+    },
+    {
+      "juror": "j4",
+      "onFundamentals": "conditional",
+      "basis": "生产体系更准确的表述是可用但没服务本项目：四十七个已验任务都是别的用途，游戏任务仍停在创建态，据此支持有条件通过。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+      "at": "2026-11-17T13:26:43.174Z",
+      "sha": "f6ca6a736c130884e8d99d1e247f139508396376d09c1bd9b114f3b3efa86534"
+    },
+    {
+      "juror": "j5",
+      "onFundamentals": "conditional",
+      "basis": "线上落后一版既要算流程问题也不能隐去事实；报告把两者分列并写明需授权更新，方向正确，故投有条件通过。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+      "at": "2026-11-17T13:26:43.249Z",
+      "sha": "82992d7b66892ef2cf84583e690befaf5c553e164a573f02c235249bb4e50b61"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-hx",
+    "verdict": "conditional",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "线上正式版、预览版与主线必须分账，禁止以任一代表其余",
+        "evidenceIds": [
+          "E001",
+          "E003"
+        ]
+      },
+      {
+        "severity": "major",
+        "claim": "本地联机只能记为 L3+，L4/L5 需两台真机与真实玩家",
+        "evidenceIds": [
+          "E001",
+          "E002"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "TOY 自建后端与自有 API 权限在取证前必须记 UNKNOWN",
+        "evidenceIds": [
+          "E003"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "AAPS 可在用，但本项目游戏任务为 created，不得记为已执行",
+        "evidenceIds": [
+          "E002"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "审计对\"线上/预览/主线\"三类环境的分账成立，且以线上 GET 实测支撑；\"本地联机只到 L3+\"与\"权限 UNKNOWN\"两项亦有证据。但报告尚缺 TOY 后台权限页与真机证据，故为有条件通过。",
+    "roundsChosen": 0,
+    "roundsWhy": "两轮质询分别覆盖版本口径与生产体系口径，争点已充分对撞。",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-17T13:26:46.914Z",
+    "sha": "b8ae3c6d1ef4a2fbbbbfd97725544bfd85c26d262f5ac6e545e46c4e2d485c04"
+  },
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

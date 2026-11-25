@@ -1,0 +1,11 @@
+{
+  "juror": "j1",
+  "onFundamentals": "conditional",
+  "basis": "版本与阶段必须分开记账：线上包、预览包、主线三者一旦混为一谈，后面所有结论都会漂，所以我倾向有条件通过并继续取证。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "书状已入卷，陪审据此案当前证据补做初判，理由见 basis。",
+  "at": "2026-11-17T13:26:42.952Z",
+  "sha": "23dd459d3e2cbe590f57f34f798f271d48b999ee611a7575c3fb4aa0f67e43e8"
+}

@@ -1,0 +1,16 @@
+{
+  "juror": "j5",
+  "onFundamentals": "conditional",
+  "reason": "真实 TOY 宿主已复现三维，条件项为机制证据",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "无推翻同宿主对照的反证",
+  "wouldChange": "若平台侧证据显示非资产原因则改判",
+  "at": "2026-11-17T12:42:51.014Z",
+  "sha": "837879ee59302945e456d6a25c25b6fe3672543298dca53e59004fe5f529a83b"
+}

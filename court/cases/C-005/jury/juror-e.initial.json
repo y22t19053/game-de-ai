@@ -1,0 +1,11 @@
+{
+  "juror": "juror-e",
+  "onFundamentals": "approve",
+  "basis": "我看失败路径：辩护方自己承认要先有基线数据才能上线试点，这等于现在不能动边界，那主张 A 更可验收。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+  "at": "2026-11-15T12:55:44.899Z",
+  "sha": "26734b6821436881eb5b6114a1af2a8fb3c45cb3e9288c8508ecf3d0f6e15b77"
+}

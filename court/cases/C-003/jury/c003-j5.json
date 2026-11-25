@@ -1,0 +1,16 @@
+{
+  "juror": "c003-j5",
+  "onFundamentals": "conditional",
+  "reason": "判据可执行性被补丁救回，但缺 A 基线使结论不可判",
+  "minority": "词表发给评审即成提示题，须先自述再离线匹配；缺 A 对照卡",
+  "contextId": "unknown",
+  "supports": [
+    "E003",
+    "E005"
+  ],
+  "against": [],
+  "noCounter": "控方未提交能证明判据恒通过的实测对照",
+  "wouldChange": "补交现状/A 后/B 后同协议实拍；若 A 也过关则判据作废、B 不批",
+  "at": "2026-11-15T09:55:10.044Z",
+  "sha": "fe2b924bc83b8278ab7d7ab7e3b874b31ba12c6c54ea429f7467aa7ee380fdb4"
+}

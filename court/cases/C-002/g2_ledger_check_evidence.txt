@@ -1,0 +1,36 @@
+﻿G2 台账核验器证据（C-002 T01）
+生成时间: 2026-11-15T17:30:34.2372142+08:00
+核验器: tools/g2_ledger_check.mjs  样本: _research/court_case_c002/fixtures/  时序映射: fixtures/ui_commits.json
+============================================
+
+### ledger_good  -> exit=0
+OK（创作行 3 条；交接行 2 条；C6：记录 <5 时只留档，本器不判同款率）
+
+### ledger_missing_handoff  -> exit=1
+FAIL line 4: [HANDOFF_MISSING] 创作行 n=2 缺对应的交接行（read_of=1），C1 要求每次开工前先读上一次
+FAIL line 5: [HANDOFF_MISSING] 创作行 n=3 缺对应的交接行（read_of=2），C1 要求每次开工前先读上一次
+OK（创作行 3 条；交接行 0 条；C6：记录 <5 时只留档，本器不判同款率）
+
+合计 2 处违规。
+
+### ledger_handoff_late  -> exit=1
+FAIL line 5: [HANDOFF_AFTER_UI] 交接 2026-11-16T00:00:00.000Z 不早于 src/ui/b.tsx 首次提交 2026-11-15T13:00:00.000Z
+OK（创作行 3 条；交接行 2 条；C6：记录 <5 时只留档，本器不判同款率）
+
+合计 1 处违规。
+
+### ledger_class_no_reviewer  -> exit=1
+FAIL line 3: [CLASS_WITHOUT_REVIEWER] 有 class 但没有 reviewer（C2 禁止自评）
+FAIL line 1: [CLASS_MIXED] 部分行有 class、部分没有（C2：混用即不成立）
+OK（创作行 3 条；交接行 2 条；C6：记录 <5 时只留档，本器不判同款率）
+
+合计 2 处违规。
+
+### ledger_blocking_event  -> exit=1
+FAIL line 4: [BLOCKING_EVENT] 出现阻断类事件「BLOCK」：违反 C5 零阻断，试点应终止
+OK（创作行 1 条；交接行 0 条；C6：记录 <5 时只留档，本器不判同款率）
+
+合计 1 处违规。
+
+### 真实台账 cases/C-002/g2_ledger.jsonl（试点未开始） -> exit=0
+OK（尚无记录：试点未开始，C1 的 3 创作行 + 2 交接行尚未满足）

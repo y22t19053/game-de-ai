@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['22', '24']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: 测试（27 条制度规则）
+        run: npm test
+      - name: CLI 冒烟
+        run: |
+          node court/bin/court.mjs case list --root court
+          node court/bin/court.mjs metrics show --root court
+          node court/bin/court.mjs log show --tail 3 --root court

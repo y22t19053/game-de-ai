@@ -1,0 +1,7 @@
+# schema v1｜G2 试点台账（C-002 裁定 C1）｜只追加，不改行，不改历史
+# 创作行：{"n":1,"sentence":"...","written_at":"ISO","ui_file":"path/to/file","minutes_spent":4}
+# 交接行：{"n":2,"type":"handoff_read","read_of":1,"read_at":"ISO","sha":"<commit>","sha_date":"ISO"}
+# 禁止：任何 BLOCK / REWORK / APPEAL 类事件行（C5 零阻断）
+# 分类：class 只能由写句人以外的人写或复核，并记 reviewer（C2）
+# 账目禁令（C4）：G2 读数不构成三案已不同的证据。
+# 核验：node tools/g2_ledger_check.mjs --ledger cases/C-002/g2_ledger.jsonl --git

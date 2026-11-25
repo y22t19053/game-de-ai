@@ -1,0 +1,15 @@
+{
+  "juror": "j2",
+  "onFundamentals": "approve",
+  "reason": "教学三关可在现有关卡内实现，不改场景与菜单，风险可控，且直接决定第二局",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "反方未证明活人感与教学冲突",
+  "wouldChange": "若教学关需要新场景才能成立，则改为先做美术",
+  "at": "2026-11-22T09:49:12.248Z",
+  "sha": "07ac230de3b7821e098926011edcbae4adb984a8a78088673f464d4ff653b370"
+}

@@ -1,0 +1,518 @@
+{
+  "id": "C-003",
+  "title": "《午夜餐厅》界面模板化改造：保守层级 vs 后厨出单纸语言",
+  "type": "major",
+  "schema": "v0.1.1",
+  "project": "bistro-rush",
+  "author": "lead",
+  "summary": "",
+  "proposalPath": null,
+  "proposalSha": null,
+  "stage": "executing",
+  "openedAt": "2026-11-15T09:45:26.104Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.431Z",
+      "kind": "run",
+      "source": "../_research/v03_frontier/proto/fp_bistro.json",
+      "version": "v0.2.0",
+      "claim": "bistro-rush 的 token 指纹（847 色 / 47 圆角 / 30 字号 / 17 间距，口径为 CSS 声明而非渲染值）",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.435Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.436Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E002",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.438Z",
+      "kind": "run",
+      "source": "../_research/v03_frontier/proto/fp_fusheng.json",
+      "version": "v0.2.0",
+      "claim": "浮生牌指纹（58 字号 / 22 圆角 / 字重仅 2 档），用于判断\"结构病是否同类\"",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.439Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.442Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E003",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.443Z",
+      "kind": "external",
+      "source": "../_research/v03_frontier/negation/r3.md",
+      "version": "v0.2.0",
+      "claim": "R3 五专业攻击：结构层绝对计数不可作验收（8 个魔法数字换 var() 即可让字号 30→3 而像素不动）",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.444Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.446Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E004",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.448Z",
+      "kind": "raw",
+      "source": "docs/proposals/C-003-bistro-visual-direction.md",
+      "version": "v0.2.0",
+      "claim": "本提案原文（含两条路线与失败判据）",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.449Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.450Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E005",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:45:31.451Z",
+      "kind": "raw",
+      "source": "../little-zelensky-simulator/visual/GAME_DNA.md",
+      "version": "v0.2.0",
+      "claim": "小泽的身份三件套，用于对照\"bistro 是否有同等身份要素\"",
+      "confidence": "medium",
+      "verified": false,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:45:31.453Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:45:31.454Z",
+      "decisionReason": "来源为本地已存在文件，路径可核，口径已在claim中标注",
+      "contentHash": "auto"
+    },
+    {
+      "id": "E006",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-15T09:49:45.347Z",
+      "kind": "run",
+      "source": "../_research/v03_frontier/proto/fp_bistro.json",
+      "version": "v0.2.0",
+      "claim": "圆角分布复核：该文件只保留前 8 名——999px×33 与 50%×33（胶囊/正圆，语义值，合计 66 次）、10px×17、99px×10、inherit×9、14px×9、8px×8、12px×8；radius_unique=47。提案据此说“47 种圆角”，但其中两类是语义值，且剩余 39 种的出现次数未保留，故“47 种”不能直接当“47 种随意取值”。",
+      "confidence": "high",
+      "verified": true,
+      "conflict": null,
+      "scope": "bistro-rush",
+      "counter": null,
+      "note": null,
+      "registeredBy": "clerk-ci",
+      "registeredAt": "2026-11-15T09:49:45.352Z",
+      "sourceRef": null,
+      "decidedBy": "judge-ci",
+      "decidedAt": "2026-11-15T09:49:45.354Z",
+      "decisionReason": "来源为本地既有文件，路径与行号可复核，口径已在claim中写明",
+      "contentHash": "auto"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "在 25% 缩略图判据被辩方自认「只测亮度、不测结构」之后，B 路线还剩什么可执行的结构判据；以及 3–4 天窗口内 .btn 18 处（Title 7 / Levels 11 / Kitchen 0）之外的范围该不该算进试点。",
+      "evidenceIds": [
+        "E001",
+        "E003",
+        "E006"
+      ],
+      "at": "2026-11-15T09:53:40.784Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "c003-pros",
+      "contextId": "unknown",
+      "text": "# 控方书状 · C-003《午夜餐厅》视觉路线\n\n- 立场：**反对批准路线 B（3–4 天、3 屏）**\n- 请求裁决：`pilot`（范围写死），不是 `approved`\n- 角色：独立上下文控方，只读；`bistro-rush/src/` 未改一行\n- 引用范围：仅 E001–E005\n\n## 一、主张\n\n1. **47 种圆角里 76 处是圆与食器剪影，\"归零\"碰不到版式，只碰插画。** | E001,E003\n2. **按钮改压杆式是 34 处调用、散在 9 个文件，按 3 屏报 3–4 天不成立。** | E004\n3. **25% 判据两次都会亮绿灯：今天暗底、B 后全亮，它测不到结构。** | E004,E005\n\n下面用代码兑现。\n\n## 二、论证\n\n### 1. 提案当\"设计症状\"报的圆角表，数进去的是食器\n\n`bistro-rush/src/ui/styles.css`（7608 行）有 **197** 条 `border-radius`：`999px` 33 条、`50%` 33 条、`99px` 10 条，合计 **76 条，38.6%**——它们不是设计圆角，是圆、胶囊与剪影：`:5097` 是盘（`46% 46% 34% 34% / 40% 40% 26% 26%`）、`:6657` 是碗、`:7228` 是壶（`52% 0 0 44% / 46% 0 0 34%`）。\"圆角归零\"落到这 76 条上不是拧一个 token，是把食器逐件重画成方的，这部分工作量提案没算。\n\n提案 §一 的\"统一 22px 圆角卡片\"更不成立：`styles.css:23` 确有 `--radius: 22px`，但 `var(--radius)` 在整棵 `bistro-rush/src` 树里被引用 **0 次**——22px 是死 token；真实卡片圆角散在 `:479` 24px、`:627` 26px、`:775` 18px、`:2111` 20px。没有枢轴可拧：\"归零\"实际是 197 条里挑 121 条手改，还得保留那 76 条几何圆。\n\nE001 与 E002 并排，这把尺子立刻自相矛盾：浮生牌 `font_size_unique: 58`，bistro **30**；浮生牌 `radius_unique: 22`，bistro **47**。两作各赢一根轴。同一把尺子既说 bistro 更收敛又说它更烂，就不能拿它给 B 定收益（E003 已独立证成：`var()` 化能让 30 掉到 3 而渲染一像素不动）。\n\n### 2. \"重做 3 屏\"装不下 B 的第二条组件语言\n\nB 要\"按钮 → 压杆式\"。但按钮不是屏级组件：`.btn` 系列在 `styles.css:114–192`（`.btn` / `.primary` / `.ghost` / `.danger` / `.small` / `.big`），**调用 34 处、9 个文件**——`Title.tsx:69/74/77/80/83/86/90`、`Kitchen.tsx` 11 处，其余 7 个文件 16 处（`Settings` 4、`Tutorial` 3、`PlacementReport` 3、`Upgrades` 2、`ToyPanel` 2、`Modes:73` 1、`App.tsx:89` 1）。改全站＝超范围；只给 3 屏局部覆盖＝同一文件并存两套按钮，E001 口径的圆角/字号计数只会上涨。两条路都让\"3–4 天、3 屏\"这个报价失效。\n\n### 3. B 的失败判据判不了它自己要判的东西\n\n提案 §四 要求：改造后首页在 25% 缩略里被 3 位评审与小泽/浮生牌分开。\n\n问题在基线：首页底色从来不是奶油。`:263` 给 `.title-screen` 暖褐底 `#2b1a10 → #130c08`；`:3018` 又定义一次，换成 `#1b1030 → #080510` 的霓虹紫底加粉青光（`:3020–3022`）；同权重、后出现者胜，所以**今天**玩家看到的是暗底亮字。而 E005 §4 说小泽在 25% 下读作\"被灯照亮的一块纸 + 暗的桌面\"，暗底亮字与其必然可分——**判据今天就已经通过**。没换骨也通过的判据，抓不到没换骨。\n\n改造后更糟：全屏冷白 `#f4f1ea` 把整页亮度反转一次，25% 下更醒目、通过更容易。而 B 主打的 1.5px 硬边、2px 圆角、打孔边，在 390×844 缩到 25%（97×211）后是 0.375 / 0.5 / 0.5 像素，物理上不可见。**判据测的是亮度，B 卖的是边距。** 无论 B 成败它都亮绿灯，因此它不是判据，是仪式。\n\nE005 还给出方向风险：小泽第三条律是\"圆角 ≤2px\"、第一条是\"纸必须像纸\"，B 的\"圆角 0/2px + 打孔纸\"是同一句式；而 E005 §5 写 bistro 的识别点是\"暖橙圆角、无纸\"——B 抹掉的恰是这两条，不是分家，是搬进对方院子。\n\n## 三、失败判据（用来推翻我）\n\n1. 2 小时假页上，3 位**未参与制作**的评审在 25% 缩略、三选一里 3/3 全对，且理由写\"形状/边/排版\"而非\"颜色\" → 主张 3 被推翻。\n2. \"圆角归零\"≤1 个工作日做完、76 处几何圆一处不减、非 3 屏区截图 SSIM ≥0.99 → \"成本被低估\"被推翻。\n3. B 之后 E001 口径的 `font_size_unique`、`spacing_unique` 有实质下降（且非 `var()` 化） → 我认输。\n\n## 四、我更愿意批准的最小动作\n\n**判 `pilot`**：\n\n- 范围：`bistro-rush/visual/c003-pilot/`（§31 已授权目录），只首页、只 390×844 一档、只静态 HTML/CSS，`src/` 一行不动。\n- 工时：2 小时；产出 `pilot-b.html` + `shot-100.png` + `shot-25.png`。\n- 验收三条负断言：可点击物 <40px 判负；正文对比度 <4.5:1 判负（沿用 §37）；25% 缩略给**用户本人**看而非 3 位评审——拍板的是用户（§31），而 §25 自认缺的证据正是\"用户没看过 B 的实拍\"。\n- 解锁：用户说方向对，才批那 3–4 天；否则 B 降级为 `visual/` 里的一份皮肤存档。\n\n2 小时是 24–32 小时的 6–8%，买的是 B 唯一缺的那份证据。用 3–4 天买一个自己判据都判不了的方案，我不批准。\n\nCLAIMS\n- 47 种圆角里 76 处是圆与食器剪影，\"归零\"碰不到版式，只碰插画。 | E001,E003\n- 按钮改压杆式是 34 处调用、散在 9 个文件，按 3 屏报 3–4 天不成立。 | E004\n- 25% 判据两次都会亮绿灯：今天暗底、B 后全亮，它测不到结构。 | E004,E005\n",
+      "claims": [
+        {
+          "text": "47 种圆角里 76 处是圆与食器剪影，\"归零\"碰不到版式，只碰插画。",
+          "evidenceIds": [
+            "E001",
+            "E003"
+          ]
+        },
+        {
+          "text": "按钮改压杆式是 34 处调用、散在 9 个文件，按 3 屏报 3–4 天不成立。",
+          "evidenceIds": [
+            "E004"
+          ]
+        },
+        {
+          "text": "25% 判据两次都会亮绿灯：今天暗底、B 后全亮，它测不到结构。",
+          "evidenceIds": [
+            "E004",
+            "E005"
+          ]
+        }
+      ],
+      "lengthChars": 2936,
+      "filedAt": "2026-11-15T09:51:16.219Z",
+      "sha": "900698833be911ae2254ac5fb1a25be92850bc42773285eaebf9fc5b0fbe2c86"
+    },
+    {
+      "side": "defense",
+      "author": "c003-def",
+      "contextId": "unknown",
+      "text": "# C-003 辩方书状：给 B 两天试用期，不给判决书\n\n- 案件：C-003《午夜餐厅》UI 模板化\n- 作者：c003-def（辩方）\n- 依据：E004 提案原文；`cases/C-003/case.json` 的 E001–E005（均 admitted）\n- 立场：支持 B 的**有条件试点**——≤2 屏、上限 2 天、25% 缩略图盲测、触线即停；不支持 3–4 天全量 B，也不把 A 当已解决。\n\n**证据射程**：五条均 admitted，但采信理由只到“来源可核”，`verified` 全为 false。E001 的 847/47/30/17 是 CSS 声明口径；E003 已证 `var()` 化能让字号 30→3 而像素不动；E002 的 58 字号也不独有。最伤我方的是 E005：它靠“bistro 暖橙圆角、无纸”与小泽分家；B 一用纸，表就失效——B 的存亡在钢台、压杆、项号，不在纸。\n\n## 三条主张\n\n**一、B 换骨靠压杆/钢台/项号，不靠纸；计数不能验收它。**（E003、E004、E005）\nE004 的 B 语言真正换结构的是压杆、温度贴、项号右对齐；E005 已把纸划给小泽（档案纸黄、折痕、≤2px 圆角、≤3% 红）。只做出纸，就是替小泽换色；验收只能看缩略图辨识。\n\n**二、3–4 天是 3 屏全量价；2 屏 2 天的试点买的是同一份答案。**（E004）\nE004 的报价对应“重做 3 个核心屏”，且自带“做不完收缩到 1 屏、不得延期”；这只是把超时补救改成开工默认。A 报价“一天内可完成”，差价 1 天对 2 天；而 A 自认“结构问题不解决”。\n\n**三、玩家偏好从未测量，不能当否决票；识别率才是 B 的存活线。**（E004、E005）\nE004 自认“用户没看过 B 的实拍”。“爱奶油”与“爱后厨纸”同等可疑。能当证据的是首屏读数：8 人看 5 秒，答“像不像后厨”。偏好可输，识别不能输。\n\n## 控方三刀\n\n**“3–4 天太贵。”** 贵的不是 B，是任何结构改动。A 的卖点是“圆角 47→2、字号 30→5”（E004），E003 已证这是“换 var 不改像素”的同类收益。B 的贵有对价：只有它能跑“25% 缩略图测试”——测试要先有 B 的截图。\n\n**“计数类验收会奖励改错方向。”** 全盘接受，并写死：unique 计数不得作通过或失败依据；验收只有提案 §4 的 25% 缩略图盲测 + 安全线（可点击物 ≥40px、对比度 ≥4.5:1）。反手一刀：若用“圆角 47→2”证明 A 有效，控方犯的是同一个错——这把刀双刃，我方先挨。\n\n**“玩家可能更爱现在的奶油色。”** 先纠正对象：首屏底色是夜色城市实拍压暗（`Title.tsx` 内联 `city.webp` 压暗），奶油是文字色（`.title-screen` 的 `color` 即 `--cream`）。若爱的是暖橙图标与按钮，B 保留辣椒红（E004），偏好可部分继承；若爱的是全站底色，更该测——试点第 3 条正是这测量。未测量的偏好不是否决票，是待读数。\n\n## 三条试点条件\n\n1. **范围与工期**：只在 `bistro-rush/visual/` 做静态原型（E004 授权），不动 `src`；先 Title，再加一个卡片墙屏。上限 2 天：第 1 天末交 Title 双档实拍；第 1.5 天末卡片墙屏未出 → 砍到 Title 单屏验收，不得延期。**回退线**：第 2 天末实拍不全或越出 `visual/` → B 判不成立，转 A。\n2. **结构验收（反计数）**：3 位未参与设计的评审，在 25% 缩略图看 B/现状/小泽三张首屏（双档各一轮），须 ≥2/3 指出“B 不是小泽也不是现状”，并说出 ≥1 个非纸特征（压杆边/项号右对齐/温度贴）；只说“不一样”不算过。**回退线**：任一轮 <2/3 → 判“没换骨”，立即停。\n3. **玩家读数**：8 位非项目成员，390×844 首屏看 5 秒，答“更爱哪版”“像不像后厨”；上限 0.5 天。**判据**：识别“后厨/出单纸” ≥5/8 且条件 2 过 → B 进下一版；若偏好 A ≥6/8，B 只准上 1 屏，不得全量。**回退线**：识别 <5/8 → B 判负，转 A，不做第二版。\n\n## B 在什么条件下会失败\n\n- **撞车**：盲测里 B 被认成小泽，或评审只说出“纸/手写体/打孔边”。E005 把 bistro 定为“无纸”，B 纸化后必须靠钢台、压杆、项号重建区分；建不出，就是“另一个纸游戏”。\n- **只剩纸**：工期一紧先砍压杆、钢台、温度贴，只留打孔边与手写体——结构未换，只是把圆角换成纸边，是 E003“数字变了、像素没变”的设计层翻版。\n- **超时**：第 2 天末交不出双档实拍。不是“再给一天”，而是判 B 不成立：3–4 天报价隐含约 1 天/屏，2 天含缓冲仍超时，说明原报价失真。\n\n## 结论\n\n请判：B 以「≤2 屏 / 上限 2 天 / 缩略图盲测 / 8 人首屏读数」试点；A 保底并行；触线即停，不延期。若 2 天也不给，请判 A，并把“结构身份”写成带 owner 与日期的下一版前置——否则它会像 E003 之前的计数一样没人负责。\n\nCLAIMS\n- B 换骨靠压杆/钢台/项号，不靠纸；计数不能验收它 | E003,E004,E005\n- 3–4 天是 3 屏全量价；2 屏 2 天的试点买的是同一份答案 | E004\n- 玩家偏好从未测量，不能当否决票；识别率才是 B 的存活线 | E004,E005\nSIDE defense\nAUTHOR c003-def\n",
+      "claims": [
+        {
+          "text": "B 换骨靠压杆/钢台/项号，不靠纸；计数不能验收它",
+          "evidenceIds": [
+            "E003",
+            "E004",
+            "E005"
+          ]
+        },
+        {
+          "text": "3–4 天是 3 屏全量价；2 屏 2 天的试点买的是同一份答案",
+          "evidenceIds": [
+            "E004"
+          ]
+        },
+        {
+          "text": "玩家偏好从未测量，不能当否决票；识别率才是 B 的存活线",
+          "evidenceIds": [
+            "E004",
+            "E005"
+          ]
+        }
+      ],
+      "lengthChars": 2402,
+      "filedAt": "2026-11-15T09:51:16.227Z",
+      "sha": "28fb1f57710d51637c96ec7e17fb28709417d43577924f5b565affd803d0f849"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "压杆式按钮要动 34 处调用、跨 9 个文件，你所说的「3 屏」具体含哪几处？",
+      "answeredBy": "defense",
+      "answer": "只做 2 屏：Title 的 7 处 .btn 与 Levels 的静态出单纸卡墙（0 处 .btn）。3 屏里的 Kitchen 我放弃（0 处 .btn）。.btn 共 18 处（7/11/0），3–4 天只覆盖这 18 处；其余 16 处分布在 Settings/Tutorial/Upgrades 等 7 个文件，不在试点内。全站 34 处不承诺。",
+      "evidenceIds": [],
+      "at": "2026-11-15T09:53:40.788Z"
+    },
+    {
+      "round": 2,
+      "question": "你自认 25% 下看不见 1.5px 边，那 2 小时假页的 3/3 到底在测 B，还是在测亮度？",
+      "answeredBy": "prosecution",
+      "answer": "承认：25% 下测的是亮度与观感，不测结构。所以 3/3 只能证伪「B 一眼像小泽的纸」，不能证明 B 换了骨。判据改为 100% 全尺寸并排看 1.5px 硬边、2px 圆角、打孔边、项号右对齐是否立得住，并加三条负断言：可点击物 ≥40px、正文对比 ≥4.5:1、2 小时做不完即暴露真实成本。",
+      "evidenceIds": [],
+      "at": "2026-11-15T09:53:40.791Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "c003-j2",
+      "onFundamentals": "conditional",
+      "reason": "结构身份靠 100% 全尺寸可判，但范围与覆盖面未闭合，只批试点",
+      "minority": "34 处 .btn 只有 18 处在承诺的 2 屏内，余 16 处并存两套按钮且无验收覆盖",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E003",
+        "E006"
+      ],
+      "against": [
+        "E004"
+      ],
+      "noCounter": null,
+      "wouldChange": "两天试点出 100% 双档实拍且盲测能点名压杆与项号则转 approve B",
+      "at": "2026-11-15T09:55:10.034Z",
+      "sha": "eb9fb973ddd17817720eade8a20c4da81e099052466ac281fdd7b89004cf4c50"
+    },
+    {
+      "juror": "c003-j3",
+      "onFundamentals": "conditional",
+      "reason": "视觉语言确实需要换骨，但工期只够覆盖 18 处调用",
+      "minority": "A 的 token 重构应是 B 的前置工序，控辩双方都把它当替代品",
+      "contextId": "unknown",
+      "supports": [
+        "E001",
+        "E003",
+        "E004"
+      ],
+      "against": [
+        "E002"
+      ],
+      "noCounter": null,
+      "wouldChange": "pilot 实拍到位且 34 处 .btn 全站改法给出可核对排期",
+      "at": "2026-11-15T09:55:10.042Z",
+      "sha": "cd33ed182e327c4444846742fa3a2dbc14e561aa2c478e5ce928f583c710e8f0"
+    },
+    {
+      "juror": "c003-j5",
+      "onFundamentals": "conditional",
+      "reason": "判据可执行性被补丁救回，但缺 A 基线使结论不可判",
+      "minority": "词表发给评审即成提示题，须先自述再离线匹配；缺 A 对照卡",
+      "contextId": "unknown",
+      "supports": [
+        "E003",
+        "E005"
+      ],
+      "against": [],
+      "noCounter": "控方未提交能证明判据恒通过的实测对照",
+      "wouldChange": "补交现状/A 后/B 后同协议实拍；若 A 也过关则判据作废、B 不批",
+      "at": "2026-11-15T09:55:10.044Z",
+      "sha": "fe2b924bc83b8278ab7d7ab7e3b874b31ba12c6c54ea429f7467aa7ee380fdb4"
+    },
+    {
+      "juror": "c003-j4",
+      "onFundamentals": "conditional",
+      "reason": "玩家能感知的是后厨物件感，但半新半旧风险真实",
+      "minority": "其余 16 处不承诺等于同文件两套按钮并存，玩家会看到半新半旧",
+      "contextId": "unknown",
+      "supports": [
+        "E003",
+        "E004",
+        "E006"
+      ],
+      "against": [
+        "E005"
+      ],
+      "noCounter": null,
+      "wouldChange": "8 人读数偏好 A 达 6/8，或 B 被认成小泽则改判 A",
+      "at": "2026-11-15T09:55:10.048Z",
+      "sha": "f32cc16df4684e79f4d8d714229a9dd8849cc23b3ed3b7f39928f0a4de02a7d6"
+    },
+    {
+      "juror": "c003-j1",
+      "onFundamentals": "conditional",
+      "reason": "只批一屏到两屏的原型验证，不批全站换骨",
+      "minority": "B 用纸后 E005 §5 的分家行失效，须先改小泽 DNA 再开工",
+      "contextId": "unknown",
+      "supports": [
+        "E003",
+        "E006"
+      ],
+      "against": [
+        "E005"
+      ],
+      "noCounter": null,
+      "wouldChange": "100% 并排三臂仍只靠换色被读出则 reject；靠压杆与项号读出则 approve",
+      "at": "2026-11-15T09:55:10.052Z",
+      "sha": "05cc60df524f7b63bf94d73b8eaca6e447128864c346d02b39159fc0b7410a3b"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "c003-j1",
+      "onFundamentals": "conditional",
+      "basis": "# J1 密封初判 C-003\n\n1 立场：conditional——只批首页 1 屏 B 原型，不批三屏通改。\n2 依据：E002 浮生牌字号 58 种、间距 23 种多于 bistro 的 30/17 却已验收，故 47/30/17 不证结构无身份；E003 证 var() 化可令字号种类 30→3 而渲染不变。\n3 缺：① B 首页实拍 1440×900/390×844（自承未看过）；② 出单纸与小泽档案纸 25% 缩略图对照——E005 §5 靠「bistro 无纸」分家，B 用纸即失效；③ bistro 上仅 var 化的 SSIM 复跑。\n4 改判：B 首页仍读出「白卡片」或与小泽不可区分 → reject；验收换回计数 → reject。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:47:40.262Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:51:53.256Z",
+      "sha": "a228cbdc3bb335c7509c0885fc8ce99a380762419a043ece756ce83a371dfec0"
+    },
+    {
+      "juror": "c003-j2",
+      "onFundamentals": "conditional",
+      "basis": "# J2\n\n**立场：conditional**\n\n**依据**：`ui/styles.css:21-22` 硬影已 token 化、全站仅 2 处引用，\"全站投影\"不成立；`radius:999px|50%` 71 次是胶囊与正圆（E001 radius_top 前二）。两处\"结构问题\"皆计数假象，E003 已证同口径把小泽判差。\n\n**最担心**：\"结构没有身份\"未检验，A/B 皆建其上；口径数的是变量名与胶囊圆（R3 §0.4）。\n\n**改判**：B 真机截图→approve B 单屏；390 宽对比<4.5:1 或点击物<40px→approve 精简 A；缩略图盲测可分→reject。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:49:09.782Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:51:53.262Z",
+      "sha": "15586f8ae7d5f8617a70127f0f94d486aba44c4ae3ade2dd79f95e200705da68"
+    },
+    {
+      "juror": "c003-j3",
+      "onFundamentals": "conditional",
+      "basis": "# j3 初判（密封，未读书状）\n\n**立场：conditional**\n\n**依据**：三屏实际触及约 3,200 行 CSS，且分散在两代覆盖层（946–2095 / 4274–6026）；后段 1752 行仅 26 处 `var()`、151 处硬编码 hex，换色板不随 token 走。Kitchen 单屏 1126 行 TSX、142 个 className、9 处内联样式、35 条媒体查询。估工：Title 0.5 天 + Kitchen 1.5–2 天 + 对比度/40px 触控/减动效复验 0.5 天 = 三屏 4–6 天；只做 Title 约 1.5 天。\n\n**工期**：偏乐观约 1.5×。\"A 一天\"作为重构可信，交付的却是指标不是观感（E003 §6-Ⅲ：var 化改数字、渲染不动）；\"B 3–4 天做 3 屏\"做不完。给 conditional 而非 reject，是因为失败判据第三条（做不完收缩到 1 屏、不延期）是真刹车。\n\n**改判条件**：① `bistro-rush/visual/` 出现 Title 屏 B 实拍（现只有 v02_test 文案比对、零 B 原型）→ approve 该 1 屏版；② 承认 A 的 token 重构是 B 的前置而非替代 → approve；③ 坚持 3 天 3 屏不延期 → reject。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:49:37.319Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:51:53.266Z",
+      "sha": "e5772503af5f9a7aad48670ce6484154bb9e42b2e100f136313d79ee06800fc8"
+    },
+    {
+      "juror": "c003-j4",
+      "onFundamentals": "conditional",
+      "basis": "# 陪审员 #4 初判（受众代表）\n\n**立场**：混合：A 的暖色底 + B 的物件语言，先做一屏。\n\n**依据**：玩家认游戏靠第一眼（E005 的 25% 缩略图）。A 只让截图更整、玩家无感；B 的出单纸/压杆/温度贴才把界面变成后厨物件，但冷白+不锈钢会丢掉奶油珊瑚\"看着好吃\"的暖。\n\n**A 吸引力**：一天、低风险、老玩家零学习成本。\n**B 吸引力**：结构换骨：卡片→出单纸、按钮有压杆手感、状态是冰箱贴，\"看到就想点\"，也是与小泽档案纸分家的实招。\n\n**改判条件**：\n- B 单屏 25% 缩略图仍一眼后厨、不被认成小泽 → 全押 B；\n- 任一可点物 ≤40px、对比度 <4.5，或缩略图读成白纸文档 → 退回 A；\n- 用圆角/字号计数（E001、E006）宣布\"更像游戏\" → 不认。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:50:36.732Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:51:53.269Z",
+      "sha": "8a3cc74f06dba4f6e3c63785140683fc6516036e2497633751ad70de671bb075"
+    },
+    {
+      "juror": "c003-j5",
+      "onFundamentals": "conditional",
+      "basis": "# C-003 j5 密封初判\n\n只读提案与 E001/E002/E003/E005/E006；未读书状、未读他陪审文件。\n\n**立场：conditional** —— B 方向可试，但判据不改不投 approve。\n\n**依据**：E003 已证「数 CSS 声明」能被 `var()` 洗白；换用 25% 缩略图辨认，是同一类洗白搬到知觉层——打孔边、1.5px 硬边、1px 压杆边在 25% 下全成亚像素，B 只能靠换色被认出。\n\n**该判据不可执行**：①无基线臂（改造前／路线 A 输出）。E005 §5 已载 bistro 靠暖橙与小泽纸黄分家，改造前多半已可辨→判据永不触发、恒通过。②尺寸自相矛盾：25%×1440=360×225 可用；25%×390=97×211 文字全灭，两档不同度量。③几票算区分、是否盲评、缩略用重采样还是 CSS 缩放，全未定。\n\n**可操作化**：固定 360×225（移动端截视口后缩到 360 宽）；五选一强制辨认 {B后／改造前／A后／小泽／浮生牌}；冻结结构词表（打孔边、出单纸、压杆、温度贴），只报颜色记 0；通过线＝两档 3/3 ＋ ≥2 人指结构词 ＋ A 对照臂必须辨不出。\n\n**改判**：若基线实测显示改造前与 A 输出确被认成小泽／浮生牌（判据真能报失败），且 B 靠结构词而非颜色被认出。\n",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "初判文件已于 2026-11-15T09:50:59.430Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+      "at": "2026-11-15T09:51:53.272Z",
+      "sha": "729c0a0dcde877a58804e9abd7cf2164d1d8cb3b3ee908116104cc21e796dcc3"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "c003-judge",
+    "verdict": "pilot",
+    "findings": [
+      {
+        "severity": "P0",
+        "claim": "零 B 原型：visual/ 下只有 v02_test 文案比对，5 票无一 approve，此刻批 3–4 天是对未存在物批准",
+        "evidenceIds": [
+          "E004"
+        ]
+      },
+      {
+        "severity": "P0",
+        "claim": "25% 缩略判据无基线臂且改造前已通过（暗底亮字 vs 小泽亮纸），换骨前后都亮绿灯，不能当验收",
+        "evidenceIds": [
+          "E004",
+          "E005"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "47 种圆角里 66 次是 999px/50% 的胶囊与正圆、10 次 99px 同属语义值，归零在这部分是重画食器",
+        "evidenceIds": [
+          "E001",
+          "E006"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "计数口径不可作验收（var() 化能让字号 30→3 而像素不动）；本案连 var() 化都未做，A 只是 B 的前置",
+        "evidenceIds": [
+          "E003"
+        ]
+      },
+      {
+        "severity": "P1",
+        "claim": "3–4 天范围未闭合：34 处 .btn 跨 9 文件，试点 Title+Levels 只覆盖 7 处，Kitchen 11 处在窗外",
+        "evidenceIds": [
+          "E004"
+        ]
+      },
+      {
+        "severity": "P2",
+        "claim": "纸是撞车区不是区分区：E005 §5 靠 bistro 无纸分家，B 用纸即失效，须弃纸或先改小泽 DNA",
+        "evidenceIds": [
+          "E005",
+          "E004"
+        ]
+      }
+    ],
+    "conditions": [
+      "试点只在 bistro-rush/visual/c003-pilot/，`git status --porcelain bistro-rush/src` 输出为空",
+      "交齐三臂双档 100% 实拍：现状/A后/B后 × 390×844 与 1440×900 共 6 张，另各一张去色图，缺一即未交付",
+      "去色存活：B 臂灰度图上 3 位未参与评审中 ≥2/3 说出 ≥1 个非纸结构词，否则判身份来自颜色",
+      "A 臂反证：同一协议下 A 臂若也 ≥2/3 被认出结构，判据作废重写，不得据旧判据通过",
+      "安全负断言：任一可点物 <40px 或正文对比 <4.5:1 判负（沿用提案 §四）",
+      "硬停：2 天到点无上述 6 张全图，判 B 不成立转 A，不得延期"
+    ],
+    "reason": "# C-003 裁决书\n\nfresh 法官｜2026-11-15｜5 票 conditional + 2 轮质询｜只读案卷，未改 `bistro-rush/src`\n\n**账面三处（先纠）**\n\n1. 指派称\"j1 文件写 reject、登记误填 conditional\"；**实读 `jury_j1_initial.md` 第 3 行为 conditional**，与 `c003-j1.initial.json` 的 `onFundamentals` 一致——该笔误在文件上不存在。该件真瑕疵是自身 `late:true`（09:51:53 登记晚于 09:51:16 书状）。按实读记录，不改票面，不折损其初判效力。\n2. 交叉第 1 轮答\"Title 7 / Levels 11 / Kitchen 0\"，本庭复核为 Title 7 / **Kitchen 11** / **Levels 0**（全局 34 处 `.btn`、9 文件），后两者写反。\n3. `bistro-rush/visual/` 下无 B 原型。\n\n**① 串行混合：A 打地基，B 做上层**\n\nA 是 B 的前置而非替代。`styles.css:23` 的 `--radius: 22px` 被 `var(--radius)` 引用 0 次，无枢轴可拧；不先做这层，B 每屏手改常量，第二天必超时。B 的换骨在压杆/钢台/项号/温度贴，**不在纸**：E005 §5 定 bistro 为\"暖橙圆角、无纸\"，纸化即搬进小泽院子。故 A 地基 0.5–1 天，B 只押 Title（7 处 `.btn`）+ Levels（78 行、0 处），静态、不进 src。\n\n**② 结构与身份的验收（非计数）**\n\n1. **物件映射表**：每个界面元件对应一件后厨实物，一个物件不许兼两种气质；有元件无对应即不合格。\n2. **去色存活**：B 臂转灰后，≥2/3 未参与者说出 ≥1 个非纸结构词（压杆边/项号右对齐/温度贴）。\n3. **A 臂必须不过**：A 臂若也被认出结构，判据作废。**25% 缩略图不再作依据**——`.title-screen` 在 `:263`/`:3018` 两次都定义为暗底，今天与小泽亮纸已可分；改造前即通过的判据抓不到不换骨。\n\n**③ 3–4 天不值，2 小时买前提**\n\n报价未闭合：Kitchen 单文件 1126 行含 11/34 处 `.btn`；197 条 `border-radius` 中 66 条是 999px/50% 胶囊与正圆、10 条 99px 同属语义值（E006），归零是重画食器；失败模式恰是辩方自写的\"只剩纸\"。2 小时买三臂图（现状/A/B × 双档 100% + 去色），把\"没人见过的 B\"变成可判物证——买不到成本答案，只买掉该问题成立的前提。判 pilot：2 屏、2 天硬停、触线即停。\n\n```\nVERDICT pilot\nROUNDS_CHOSEN 0\nFINDING P0|零 B 原型：visual/ 下只有 v02_test 文案比对，5 票无一 approve，此刻批 3–4 天是对未存在物批准|E004\nFINDING P0|25% 缩略判据无基线臂且改造前已通过（暗底亮字 vs 小泽亮纸），换骨前后都亮绿灯，不能当验收|E004,E005\nFINDING P1|47 种圆角里 66 次是 999px/50% 的胶囊与正圆、10 次 99px 同属语义值，归零在这部分是重画食器|E001,E006\nFINDING P1|计数口径不可作验收（var() 化能让字号 30→3 而像素不动）；本案连 var() 化都未做，A 只是 B 的前置|E003\nFINDING P1|3–4 天范围未闭合：34 处 .btn 跨 9 文件，试点 Title+Levels 只覆盖 7 处，Kitchen 11 处在窗外|E004\nFINDING P2|纸是撞车区不是区分区：E005 §5 靠 bistro 无纸分家，B 用纸即失效，须弃纸或先改小泽 DNA|E005,E004\nCONDITION 试点只在 bistro-rush/visual/c003-pilot/，`git status --porcelain bistro-rush/src` 输出为空\nCONDITION 交齐三臂双档 100% 实拍：现状/A后/B后 × 390×844 与 1440×900 共 6 张，另各一张去色图，缺一即未交付\nCONDITION 去色存活：B 臂灰度图上 3 位未参与评审中 ≥2/3 说出 ≥1 个非纸结构词，否则判身份来自颜色\nCONDITION A 臂反证：同一协议下 A 臂若也 ≥2/3 被认出结构，判据作废重写，不得据旧判据通过\nCONDITION 安全负断言：任一可点物 <40px 或正文对比 <4.5:1 判负（沿用提案 §四）\nCONDITION 硬停：2 天到点无上述 6 张全图，判 B 不成立转 A，不得延期\nTASK lead|c003-pilot/ 下 Title+Levels 两屏静态三臂（6 张双档 100% 截图 + 去色图 + 物件映射表）|上列 CONDITION 全过、2 天内交付、src 零 diff\nTASK 用户|在双档实拍上看 5 秒后给书面一句裁决（B 全量 / 只 1 屏 / 转 A）|该句写入下次复核记录，作为放行或取消 3–4 天的唯一凭据\nPRECEDENT 判据必须先能报失败：改造前就已通过的验收，不得用于批准改造。\n```\n",
+    "roundsChosen": 0,
+    "roundsWhy": "普通质询与书状已足够暴露分歧；剩余不确定只能靠产物实拍结清，再打七轮属过度拟合",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-15T09:58:02.810Z",
+    "sha": "5d52e972401b9ad9e64d8b3a9b5edbd627b99f68729923187d7106beb0b7368a"
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "deliverable": "c003-pilot/ 下 Title+Levels 两屏静态三臂（6 张双档 100% 截图 + 去色图 + 物件映射表）",
+      "owner": "lead",
+      "deadline": "2026-11-19T00:00:00.000Z",
+      "acceptance": "上列 CONDITION 全过、2 天内交付、src 零 diff",
+      "evidencePath": null,
+      "status": "pending",
+      "createdAt": "2026-11-15T09:58:02.818Z",
+      "submittedAt": null,
+      "verifiedAt": null,
+      "verifier": null,
+      "report": null,
+      "overdueReason": null,
+      "cancelReason": null
+    },
+    {
+      "id": "T02",
+      "deliverable": "在双档实拍上看 5 秒后给书面一句裁决（B 全量 / 只 1 屏 / 转 A）",
+      "owner": "用户",
+      "deadline": "2026-11-19T00:00:00.000Z",
+      "acceptance": "该句写入下次复核记录，作为放行或取消 3–4 天的唯一凭据",
+      "evidencePath": null,
+      "status": "pending",
+      "createdAt": "2026-11-15T09:58:02.820Z",
+      "submittedAt": null,
+      "verifiedAt": null,
+      "verifier": null,
+      "report": null,
+      "overdueReason": null,
+      "cancelReason": null
+    }
+  ],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

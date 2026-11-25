@@ -1,0 +1,11 @@
+{
+  "juror": "c004-j3",
+  "onFundamentals": "conditional",
+  "basis": "# J3\n**立场：附条件批准**\n\n依据：清单证据取自 prototype：正式版只载 `v2.css`、无 `.stamp`；「已阅」章仅 `prototype/index.html:49`；`#9c3b2e`/`#b03a2a` 全项目 0 命中（`--stamp` 只 `v2.css:24`）。证据脱节，身份要素回退最贵。\n\n最值得 A1（390 页脚）：唯一指向真机且有判据 `scrollWidth==390`，flex 一块可退。\n最不值 A4（顶栏措辞）：非视觉缺陷，跨作一致性；改文案违「不改主调」。\n会改判：真机复现 390/1024；A3 写清 ΔL 口径（无 print 样式）；B 先有印章。\n",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判文件已于 2026-11-15T09:54:53.520Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+  "at": "2026-11-15T09:55:20.594Z",
+  "sha": "60e50ee16ce0fa2755256fd9a17669ac6fdcfc45edbbc4673097fc4a61d2770e"
+}

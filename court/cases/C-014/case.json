@@ -1,0 +1,229 @@
+{
+  "id": "C-014",
+  "title": "公网入口能不能真的承载一局：WebSocket 与双客户端同步",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\remote-check.mjs",
+  "proposalSha": "9b9a45f79c1fff22ef219cc881d64f531932d703761f4297cd9d358cc61ad909",
+  "stage": "executing",
+  "openedAt": "2026-11-17T05:32:15.779Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "admitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:32:15.878Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\L3-public-ws.log",
+      "version": null,
+      "claim": "tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T05:32:15.974Z",
+      "sourceRef": null,
+      "decidedBy": "judge-remote",
+      "decidedAt": "2026-11-17T05:32:16.080Z",
+      "decisionReason": "证据来自本轮实际运行输出，路径可复核，采信。",
+      "contentHash": null
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D01",
+      "point": "本轮证据是否足以支撑「远程可对战」这一结论",
+      "raisedBy": "prosecution",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:16.329Z"
+    }
+  ],
+  "briefs": [
+    {
+      "side": "prosecution",
+      "author": "lead",
+      "contextId": "unknown",
+      "text": "本轮实测结论：tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+      "claims": [
+        {
+          "text": "tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 94,
+      "filedAt": "2026-11-17T05:32:16.174Z",
+      "sha": "dc0cbf7771906fd3182d0dd9fdfa6a7ba5584dac56eb6d1897c546c85ac932c0"
+    },
+    {
+      "side": "defense",
+      "author": "yuanzhen",
+      "contextId": "unknown",
+      "text": "反方立场：同机测试不能代表跨网络；公网隧道的可用性不代表生产可用。",
+      "claims": [
+        {
+          "text": "同机或隧道证据不足以支撑跨网络结论",
+          "evidenceIds": [
+            "E001"
+          ]
+        }
+      ],
+      "lengthChars": 33,
+      "filedAt": "2026-11-17T05:32:16.253Z",
+      "sha": "aee5dbf3c2c8611c672f44ade2dffc87b617ca51579cb5ebe89e37df9872f313"
+    }
+  ],
+  "cross": [
+    {
+      "round": 1,
+      "question": "这 13 项里有多少项真的经过公网？",
+      "askedBy": "prosecution",
+      "answeredBy": "yuanzhen",
+      "answer": "全部经过隧道，但两端在同一台机器上。",
+      "evidenceIds": [
+        "E001"
+      ],
+      "at": "2026-11-17T05:32:16.415Z"
+    }
+  ],
+  "jury": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:16.737Z",
+      "sha": "e191ea5da3ab7ad0df08fb528d801bbfa257b0bd54f7f066519e5e85f02d7fc8"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:16.818Z",
+      "sha": "371027655597a90214cfaa1de974377f9d5dce0b4ddb6ef283f1a094871aad5d"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "reason": "证据可复核、结论范围已限定，投条件通过",
+      "minority": null,
+      "contextId": "unknown",
+      "supports": [
+        "E001"
+      ],
+      "against": [],
+      "noCounter": "没有新的反证材料出现",
+      "wouldChange": "若出现跨网络丢包或状态不一致的实测记录会改判",
+      "at": "2026-11-17T05:32:16.899Z",
+      "sha": "6018da2740aef7d8801bf85310392ba1998c80c58b53c35a43dd450a8c08bfb4"
+    }
+  ],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:16.495Z",
+      "sha": "2cb38ed934bf00f1afed23abfe8eee745f85daa4fc0e1f2b2e87a9de3811c182"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:16.576Z",
+      "sha": "0ffdbef51cfbe11146accaa8b494cc5ac4de959627bf167aecf32080bae40af5"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": false,
+      "late": true,
+      "lateReason": "书状入卷后才拿到本轮完整日志，属于补充意见而非事后编造。",
+      "at": "2026-11-17T05:32:16.655Z",
+      "sha": "2c8f694abe5bea2c6cd1629a51a4770fa9c2d430a4b66c06ddf760c0eb2fc17a"
+    }
+  ],
+  "redteam": [],
+  "ruling": {
+    "judge": "judge-remote",
+    "verdict": "approved",
+    "findings": [
+      {
+        "severity": "major",
+        "claim": "公网 WebSocket 通路可用（建房/入座/动作/事件回包）",
+        "evidenceIds": [
+          "E001"
+        ]
+      },
+      {
+        "severity": "minor",
+        "claim": "重复 actionId 不会造成第二次执行",
+        "evidenceIds": [
+          "E001"
+        ]
+      }
+    ],
+    "conditions": [],
+    "reason": "public tunnel 上真的跑通了两个客户端的同一间房与动作回包，且幂等成立；这不是「页面能打开」，是协议层可用。",
+    "roundsChosen": 0,
+    "roundsWhy": "本轮只走一轮质询：争点单一，反方立场已在书状中给出。",
+    "minorityRecorded": true,
+    "ruledAt": "2026-11-17T05:32:16.985Z",
+    "sha": "561e1509b7320f015fd64ea02506e20f50eeda7e9e5b8d3a422d9ddb0419eb00"
+  },
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

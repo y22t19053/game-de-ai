@@ -1,0 +1,11 @@
+{
+  "juror": "juror-h",
+  "onFundamentals": "conditional",
+  "basis": "两条互斥承诺必须有一条让步，条件式同意甲案但必须绑定真机止损线",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+  "at": "2026-11-15T15:15:06.057Z",
+  "sha": "5fc9cd06ad6829cd9b5a8ba9b23fd6ee2e8da93d47c7468ee7915620ba6827e5"
+}

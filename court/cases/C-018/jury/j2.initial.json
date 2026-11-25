@@ -1,0 +1,11 @@
+{
+  "juror": "j2",
+  "onFundamentals": "conditional",
+  "basis": "证据 E001/E002 构成同宿主前后对比，能支持资产交付方式这一机制；但缺少平台侧响应头，机制仍属推断。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "书状先入卷，陪审据此案当前证据补做初判，理由见下",
+  "at": "2026-11-17T12:42:00.395Z",
+  "sha": "6ced716c6c4b1b27363fb7797c225c1c055aaca0e5a3d758d07f704bf6bf500d"
+}

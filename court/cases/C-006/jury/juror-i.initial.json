@@ -1,0 +1,11 @@
+{
+  "juror": "juror-i",
+  "onFundamentals": "approve",
+  "basis": "我先看止损线有没有到期日。一个可以说随时撤回、却永远不会到期的可逆状态，在工程上等于永久例外，这是我判断的第一条依据。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判意见在书状入卷前已形成，录入顺序有误导致晚于书状落卷，接受审计按迟到披露",
+  "at": "2026-11-15T15:15:58.812Z",
+  "sha": "60677aaa07eb0fa163035a92379d44e63025e8280d615ab64cfa27329c1b3978"
+}

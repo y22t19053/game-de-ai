@@ -1,0 +1,15 @@
+{
+  "juror": "c004-j1",
+  "onFundamentals": "reject",
+  "reason": "清单 B 的对象在正式版不存在，提案以原型为前提，属事实层错误",
+  "minority": "A1 三段页脚 gap 18 在 390 宽是否挤，应实拍复测之后再否",
+  "contextId": "unknown",
+  "supports": [
+    "E006"
+  ],
+  "against": [],
+  "noCounter": "控方未提交任何能证明该章曾存在或获认可的记录",
+  "wouldChange": "用户纪要点名此章、局内屏现有章可隐、25% 盲排证改后更易辨",
+  "at": "2026-11-15T10:06:33.092Z",
+  "sha": "52660582bff07640f71b1fa228286e88590ee7da35add89ac4c92a902a21ea55"
+}

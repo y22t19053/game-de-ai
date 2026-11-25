@@ -1,0 +1,11 @@
+{
+  "juror": "c004-j5",
+  "onFundamentals": "conditional",
+  "basis": "# C-004 j5 初判\n\n**conditional**：数字不换口径不改。自算 ΔL*：成品 #ddd3ba/#cabfa3 = 7.19、原型 5.99；提案 2.1 两口径皆不成立（3.4×）。--paper-2 在 v2.css 零引用、无 @media print，A3 无交付面。\n\n不可复算：2.1（无口径）；8px（gap 6px18px、三段）；1024 重叠 6px（无测点）；#9c3b2e（0 命中，实为 #9d3a26）；25%（无定义/基线）；3 位评审（双尾 p 最小 0.25，永不触发）；.stage（成品用 .v2-grid）。\n\n改判：测点口径＋同机同视口前后图＋基线色值＋25% 操作化＋E003 小批排序。\n\n（late：读过 case.json、内嵌书状；自算。）\n",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "初判文件已于 2026-11-15T10:00:24.957Z 写入磁盘（早于书状提交），但登记动作因编排顺序在书状之后；属登记时序错误，判断本身未受书状影响",
+  "at": "2026-11-15T10:00:41.391Z",
+  "sha": "27c4ee69ee6969df46c94a59537f4db43a59e5e6536318fd931f60cede53b9dc"
+}

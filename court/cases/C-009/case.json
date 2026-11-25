@@ -1,0 +1,100 @@
+{
+  "id": "C-009",
+  "title": "公网入口能不能真的承载一局：WebSocket 与双客户端同步",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\remote-check.mjs",
+  "proposalSha": "9b9a45f79c1fff22ef219cc881d64f531932d703761f4297cd9d358cc61ad909",
+  "stage": "opened",
+  "openedAt": "2026-11-17T05:30:44.160Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "E001",
+      "state": "registered",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:30:44.253Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\L3-public-ws.log",
+      "version": null,
+      "claim": "tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": "registrar",
+      "registeredAt": "2026-11-17T05:31:36.356Z",
+      "sourceRef": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "decisionReason": null,
+      "contentHash": null
+    }
+  ],
+  "disputes": [],
+  "briefs": [],
+  "cross": [],
+  "jury": [],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:44.862Z",
+      "sha": "0e5b52310f31afe89258198502e3937b5d8f5f04d2cab8c5eb27faed540afa83"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:44.947Z",
+      "sha": "dcbac4fa7872fe73eb139c60056904893ca1e536d7e33500f6ac0de169bdad28"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:45.032Z",
+      "sha": "7e6b13b052206c9802afde13d2b5a4f7548d167483a1c22acbd979985b6d6b42"
+    }
+  ],
+  "redteam": [],
+  "ruling": null,
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

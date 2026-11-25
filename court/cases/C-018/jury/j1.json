@@ -1,0 +1,16 @@
+{
+  "juror": "j1",
+  "onFundamentals": "conditional",
+  "reason": "资产自包含修复已在真实 TOY 宿主复现三维，机制解释缺口记为条件项",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001",
+    "E002"
+  ],
+  "against": [],
+  "noCounter": "未发现能推翻同宿主前后对比的反证",
+  "wouldChange": "若拿到平台 404 响应头或出现反例则改判",
+  "at": "2026-11-17T12:42:13.105Z",
+  "sha": "7132fe2ea0706af78200250f04583883590788ddf0a2e42d19cb6ae144352313"
+}

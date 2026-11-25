@@ -1,0 +1,17 @@
+{
+  "juror": "j3",
+  "onFundamentals": "reject",
+  "reason": "程序化材质只到 80 分，真资产要等 D 盘，越晚做越危险",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001"
+  ],
+  "against": [
+    "E003"
+  ],
+  "noCounter": null,
+  "wouldChange": "若能证明程序化材质可达 85 分，则同意把美术排后",
+  "at": "2026-11-22T09:49:12.327Z",
+  "sha": "039904a6024fbd766791fda0908845b648aefa041ba58819d4eed45bc19bbe58"
+}

@@ -1,0 +1,11 @@
+{
+  "juror": "juror-d",
+  "onFundamentals": "approve",
+  "basis": "如果时长是结构决定的，那么争论「20 还是 30 分钟」本身就是错的问法，该问的是每回合里规则的密度。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "录入顺序有误：我先立了书状与争议点，再录初判；这五票是在看到书状之后形成的，接受审计按 late 披露，不得当作读书状前形成的证据。",
+  "at": "2026-11-15T12:55:44.825Z",
+  "sha": "fd7d0f83f5598b68dc134010dcd4086748573c4c7475e8054028b97bd12fc26d"
+}

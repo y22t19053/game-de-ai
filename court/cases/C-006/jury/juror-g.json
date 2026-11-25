@@ -1,0 +1,17 @@
+{
+  "juror": "juror-g",
+  "onFundamentals": "conditional",
+  "reason": "接受甲案但必须写死未验收前不得宣称兼容，并给有效期",
+  "minority": "若移动端列为首发平台则甲案不足",
+  "contextId": "unknown",
+  "supports": [
+    "E002"
+  ],
+  "against": [
+    "E001"
+  ],
+  "noCounter": null,
+  "wouldChange": "真机失败率超过 10% 或两周无数据则改判乙案",
+  "at": "2026-11-15T15:15:21.241Z",
+  "sha": "1bdad7ff7a2f60310a3782bd57dc5c458e4f961e4bc98e3e20b29bdc449a0544"
+}

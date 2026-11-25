@@ -1,0 +1,18 @@
+{
+  "juror": "c004-j4",
+  "onFundamentals": "conditional",
+  "reason": "玩家能感知的是页脚糊与识别锚点，不是一枚不存在的章",
+  "minority": "清单缺第一眼验收，每条改动须附 25% 与 100% 对照图",
+  "contextId": "unknown",
+  "supports": [
+    "E006",
+    "E001"
+  ],
+  "against": [
+    "E002"
+  ],
+  "noCounter": null,
+  "wouldChange": "用户曾点名要章、或章将上线则准 B 只调色试点",
+  "at": "2026-11-15T10:06:33.109Z",
+  "sha": "a9606bb069a962c3a2cbfa6a0667c0bfcd56d41aa56cd36b1df101df77045f5f"
+}

@@ -1,0 +1,11 @@
+{
+  "juror": "j5",
+  "onFundamentals": "approve",
+  "basis": "依据 E001 的行号级复现与 E002 的可重跑结果判断：修复点与失败路径对应，且未引入词库耦合到规则层，边界可接受。",
+  "contextId": "unknown",
+  "beforeBriefs": false,
+  "late": true,
+  "lateReason": "先读过 E001 与 E002 后作出判断，入卷顺序在书状之后，如实披露",
+  "at": "2026-11-16T16:09:27.314Z",
+  "sha": "91b67ff19735437e2e851785f909a2553512d3583ee9c4aa82036d734a0249aa"
+}

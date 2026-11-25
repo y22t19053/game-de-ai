@@ -1,0 +1,99 @@
+{
+  "id": "C-011",
+  "title": "两端一致与秘密隔离：界面层证据",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\remote-ui-check.mjs",
+  "proposalSha": "0debfb619892e8d21ac0a8a1a37fcbd938a98cd6df00ffe76a29756c9daa86c7",
+  "stage": "opened",
+  "openedAt": "2026-11-17T05:30:46.722Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "S001",
+      "state": "submitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:30:46.807Z",
+      "kind": "run",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\L4-ui-duel.log",
+      "version": null,
+      "claim": "两个独立浏览器从公网地址进入同一房间、各写一词、出手后双端挂起同一提问、账本条数一致、双方均看不到对方密词",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": null,
+      "registeredAt": null,
+      "sourceRef": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "decisionReason": null
+    }
+  ],
+  "disputes": [],
+  "briefs": [],
+  "cross": [],
+  "jury": [],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:47.358Z",
+      "sha": "7fd710259c87c108645cafc7e1db421dd7468819a873b2c146151af3bd6b34b7"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:47.440Z",
+      "sha": "534eac98f3543cba6a1a8e48365974022350949ed4776a9afe8578a3c5ae4568"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:47.532Z",
+      "sha": "06cad9c5466253a61cd11264ae98ebc52df4bce3ea65ff6c6d5267591dbc26c4"
+    }
+  ],
+  "redteam": [],
+  "ruling": null,
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

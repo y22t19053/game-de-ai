@@ -1,0 +1,1 @@
+本轮实测结论：tools/remote-check.mjs 在 trycloudflare 公网地址上 13 项全过：建房、入座、双向状态、开枪事件回包、重复 actionId 不重复执行

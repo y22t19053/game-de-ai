@@ -1,0 +1,99 @@
+{
+  "id": "C-012",
+  "title": "远程证据可信度：这些证据能证明到哪一级",
+  "type": "ordinary",
+  "schema": "v0.1.1",
+  "project": "1-6",
+  "author": "lead",
+  "summary": "本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+  "proposalPath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\EVIDENCE-LEVELS.md",
+  "proposalSha": "1878b9396168a91e40df9b3bda88374d7f58e10527a0acde3a632f8a16bc1e9b",
+  "stage": "opened",
+  "openedAt": "2026-11-17T05:30:47.934Z",
+  "closedAt": null,
+  "evidence": [
+    {
+      "id": "S001",
+      "state": "submitted",
+      "submittedBy": "author",
+      "submittedAt": "2026-11-17T05:30:48.016Z",
+      "kind": "judgment",
+      "source": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\remote\\EVIDENCE-LEVELS.md",
+      "version": null,
+      "claim": "本轮为 L3 通过、L3+ 通过；L4/L5/L6 未验证，Quick Tunnel 无固定域名与 uptime 保证",
+      "confidence": "high",
+      "verified": false,
+      "conflict": null,
+      "scope": "case",
+      "counter": null,
+      "note": null,
+      "registeredBy": null,
+      "registeredAt": null,
+      "sourceRef": null,
+      "decidedBy": null,
+      "decidedAt": null,
+      "decisionReason": null
+    }
+  ],
+  "disputes": [],
+  "briefs": [],
+  "cross": [],
+  "jury": [],
+  "juryInitial": [
+    {
+      "juror": "rj1",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 1 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:48.565Z",
+      "sha": "c92123b8eb0cee7a96b7b6bc3cb2451c557f21d8cc9ec79266fd29a514079336"
+    },
+    {
+      "juror": "rj2",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 2 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:48.653Z",
+      "sha": "f0c9b59e945352cdd866a31a1a078dc3bfa7c538f6e1c633d794d04f3c9d869c"
+    },
+    {
+      "juror": "rj3",
+      "onFundamentals": "conditional",
+      "basis": "按卷内证据与反方质询，我认为结论方向成立但覆盖面需限定，理由见争点与质询记录（第 3 票）。",
+      "contextId": "unknown",
+      "beforeBriefs": true,
+      "late": false,
+      "lateReason": null,
+      "at": "2026-11-17T05:30:48.742Z",
+      "sha": "442c889442b2ca4ec5da816a9aa321fdb66c32a151153665647e06dab7a71498"
+    }
+  ],
+  "redteam": [],
+  "ruling": null,
+  "tasks": [],
+  "citedPrecedents": [],
+  "history": [],
+  "cost": {
+    "tokens": null,
+    "tokensSource": null,
+    "calls": 0,
+    "apiCostCNY": null,
+    "humanSteps": null,
+    "humanMinutes": null,
+    "maintenanceMinutes": null,
+    "unavailable": [
+      "tokens",
+      "apiCostCNY",
+      "humanSteps",
+      "humanMinutes",
+      "maintenanceMinutes"
+    ],
+    "notes": []
+  }
+}

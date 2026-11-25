@@ -1,0 +1,15 @@
+{
+  "juror": "juror-a",
+  "onFundamentals": "approve",
+  "reason": "据 E002 与 E003：现有结构下加深 Boss 会把推断时长推到 16.5–19.0 分钟，已经贴住上限，而结构上限由 15 抉择点钉死。主张 A 给出的是「不涨时长也能加深」的路径，可验收。",
+  "minority": null,
+  "contextId": "unknown",
+  "supports": [
+    "E001"
+  ],
+  "against": [],
+  "noCounter": "E002/E004 只是测量，不构成对「结构决定时长」的反证；没有证据显示调平衡能把上限拉高。",
+  "wouldChange": "若出现 B站 Toy 首周真实时长中位数 ≥18 分钟且第三幕 Boss 到达率 ≥60%，我会改投支持加深战斗的方案。",
+  "at": "2026-11-15T12:55:58.951Z",
+  "sha": "9f01f43c8ecc6b43efd8bab5b7ccde5a597bc141650c4981ee301f4af9bea496"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "game-de-ai",
+  "version": "0.2.0",
+  "description": "让 AI 参与做的游戏少一点 AI 味：视觉/文案工作流 + 零依赖的交付法庭",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y22t19053/game-de-ai.git"
+  },
+  "homepage": "https://github.com/y22t19053/game-de-ai#readme",
+  "bin": {
+    "court": "court/bin/court.mjs"
+  },
+  "scripts": {
+    "court": "node court/bin/court.mjs",
+    "test": "node --test court/test/court.test.mjs court/test/g2_check.test.mjs court/test/verifier.test.mjs",
+    "test:redteam": "cd court && node test/redteam.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "court",
+    "skills",
+    "docs",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "THIRD_PARTY.md"
+  ]
+}
