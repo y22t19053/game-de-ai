@@ -362,7 +362,7 @@
       "owner": "lead",
       "deadline": "2026-11-18T00:00:00.000Z",
       "acceptance": "脚本对三份故意造错样本（缺交接行、交接 sha 晚于 UI 首次提交、class 无 reviewer）各返回非零并打印失败行号，对一份合规样本返回 0，且由非 lead 的验收人独立复跑一次留档",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ledger_check_evidence.txt",
+      "evidencePath": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ledger_check_evidence.txt",
       "status": "verified",
       "createdAt": "2026-11-15T09:29:34.756Z",
       "submittedAt": "2026-11-15T09:30:48.078Z",
@@ -382,51 +382,51 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\tools\\g2_ledger_check.mjs",
+          "path": "<workspace>/game-de-ai-court\\tools\\g2_ledger_check.mjs",
           "sha256": "ee0c19af40ad7be13a36dd18080ee5ed9a4e4af84266a36f984a598bcf3c6188"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ledger.jsonl",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ledger.jsonl",
           "sha256": "0ada02986fc8be82ff7f42fb1e8cf32fc2e7ba5877bf3c3dcc8d04dcca2a8107"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ledger_check_evidence.txt",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ledger_check_evidence.txt",
           "sha256": "a0b30e5b1442a86c43f5b048d267883424eaad522ccfc69e4b4e6ab59b3468dc"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\case.json",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\case.json",
           "sha256": "d03c17fbfdf61598aeca349eb8f34047e10357e51bd7ce1b09d6ab02e1817a8d"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ledger_good.jsonl",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ledger_good.jsonl",
           "sha256": "f1edb6c2230ab9ae889b2bcebaeca82608e8696420bf3d9afea46dcf780ba486"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ledger_missing_handoff.jsonl",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ledger_missing_handoff.jsonl",
           "sha256": "75ac273614726059804b06bae40251cc69542fb6b3254b4367a21e8ac7493eed"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ledger_handoff_late.jsonl",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ledger_handoff_late.jsonl",
           "sha256": "8eb816ece5f6148bf71da7c7e131696b06b892598c68c28a40c868327645e560"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ledger_class_no_reviewer.jsonl",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ledger_class_no_reviewer.jsonl",
           "sha256": "698ed16cf3c2a0294ecc1becb923e31be2aaef0d0b4514cb1e66842011784ced"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ledger_blocking_event.jsonl",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ledger_blocking_event.jsonl",
           "sha256": "b72414819c4492cb237aeb98e0f7b41b969593023bb712e64fd92dabb898fabf"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\fixtures\\ui_commits.json",
+          "path": "<workspace>/_research\\court_case_c002\\fixtures\\ui_commits.json",
           "sha256": "c34406462e79877ec99fcf23564e4d2fef12f797b710f5c46a672b6385275fcb"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\ruling.md",
+          "path": "<workspace>/_research\\court_case_c002\\ruling.md",
           "sha256": "38cd4551b3a61a40905ad985713366ee9c45cddc859036983ec61105590f09f4"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\verify\\VERIFY_T01_T02.md",
+          "path": "<workspace>/_research\\court_case_c002\\verify\\VERIFY_T01_T02.md",
           "sha256": "77233a2dbe8a05d080a52fb2e1aba9c934bdcf2845c360904daa803d9e2879a0"
         }
       ],
@@ -438,7 +438,7 @@
       "owner": "clerk-ci",
       "deadline": "2026-11-17T00:00:00.000Z",
       "acceptance": "表内至少 6 行禁止表述与允许表述对照，覆盖已补足 R1 第 14 条、3 条记录判同款率达标、探针通过即三案不同三类，每行可被 grep 定位且与裁定第五第七节一致",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ban.md",
+      "evidencePath": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ban.md",
       "status": "verified",
       "createdAt": "2026-11-15T09:29:34.835Z",
       "submittedAt": "2026-11-15T09:30:48.180Z",
@@ -458,27 +458,27 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ban.md",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ban.md",
           "sha256": "785efcd027a5bec90f9667b24255884ba0fc5eca0fa629efa64250c758e510cf"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\g2_ledger.jsonl",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\g2_ledger.jsonl",
           "sha256": "0ada02986fc8be82ff7f42fb1e8cf32fc2e7ba5877bf3c3dcc8d04dcca2a8107"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\cases\\C-002\\case.json",
+          "path": "<workspace>/game-de-ai-court\\cases\\C-002\\case.json",
           "sha256": "78c1979bd11b1cab8588887662c0226c0e1b534091c66c1b2b4b87e3c5372050"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\docs\\CASE_REPORT_C002.md",
+          "path": "<workspace>/game-de-ai-court\\docs\\CASE_REPORT_C002.md",
           "sha256": "4d288c8a6f7977a929af0bb32c8b88b5237068087e3315b09e56beec5580792d"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\ruling.md",
+          "path": "<workspace>/_research\\court_case_c002\\ruling.md",
           "sha256": "38cd4551b3a61a40905ad985713366ee9c45cddc859036983ec61105590f09f4"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\_research\\court_case_c002\\verify\\VERIFY_T01_T02.md",
+          "path": "<workspace>/_research\\court_case_c002\\verify\\VERIFY_T01_T02.md",
           "sha256": "77233a2dbe8a05d080a52fb2e1aba9c934bdcf2845c360904daa803d9e2879a0"
         }
       ],

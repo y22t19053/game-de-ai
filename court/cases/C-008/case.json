@@ -331,15 +331,15 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\e2e.mjs",
+          "path": "<workspace>/1-6\\tools\\e2e.mjs",
           "sha256": "e1e5c33bb03c6c108e742e295ebcf62e95471e8fa85c50c115f903bca66f47d3"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\public\\app.js",
+          "path": "<workspace>/1-6\\public\\app.js",
           "sha256": "5b85ee5442fb91de37c6b01f7a5a9e88e04b8ac08f8696226e92893d0966f2fb"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\public\\view.js",
+          "path": "<workspace>/1-6\\public\\view.js",
           "sha256": "5b39a2c9372f1fd96d227f4cef4bd6b99cf3c2db78159735eb463b2e03e6cc40"
         }
       ],
@@ -370,11 +370,11 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
+          "path": "<workspace>/1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
           "sha256": "74638e1e01f7d97c79620cad812802be0161eed2c15c2a9029bb6367f6dc488f"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\_ask.mjs",
+          "path": "<workspace>/1-6\\tools\\_ask.mjs",
           "sha256": "b204e489186977f7f9d6008d085945504fe265f20751cc05425ac67a78415e7e"
         }
       ],
@@ -386,7 +386,7 @@
       "owner": "lead",
       "deadline": "2026-11-17T12:00:00.000Z",
       "acceptance": "e2e demo 全绿且删掉一个问法/混入拉丁名都会转红",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\e2e.mjs",
+      "evidencePath": "<workspace>/1-6\\tools\\e2e.mjs",
       "status": "failed",
       "createdAt": "2026-11-16T17:03:03.096Z",
       "submittedAt": "2026-11-16T17:03:06.591Z",
@@ -405,19 +405,19 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\COURT_C008_VERIFICATION_R2.md",
+          "path": "<workspace>/1-6\\docs\\reports\\COURT_C008_VERIFICATION_R2.md",
           "sha256": "be800d7580589f88f4d7538875d530b38507e0c81c62bc70ddb60bc5e6d48254"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\e2e.mjs",
+          "path": "<workspace>/1-6\\tools\\e2e.mjs",
           "sha256": "7639466513b4d775b0c92be2d870a67d28f31535c72235c41ce9b2fa1b1da79e"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\public\\app.js",
+          "path": "<workspace>/1-6\\public\\app.js",
           "sha256": "5c03156926a2ee7b5922eed21972a16f899b9e7277202dd70d48aff3f0b02e53"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\public\\view.js",
+          "path": "<workspace>/1-6\\public\\view.js",
           "sha256": "5b39a2c9372f1fd96d227f4cef4bd6b99cf3c2db78159735eb463b2e03e6cc40"
         }
       ],
@@ -429,7 +429,7 @@
       "owner": "lead",
       "deadline": "2026-11-17T12:00:00.000Z",
       "acceptance": "第 6 节写明 33 条实测数字、假断言原因与遗留缺口",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
+      "evidencePath": "<workspace>/1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
       "status": "failed",
       "createdAt": "2026-11-16T17:03:03.191Z",
       "submittedAt": "2026-11-16T17:03:06.686Z",
@@ -448,19 +448,19 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\COURT_C008_VERIFICATION_R2.md",
+          "path": "<workspace>/1-6\\docs\\reports\\COURT_C008_VERIFICATION_R2.md",
           "sha256": "be800d7580589f88f4d7538875d530b38507e0c81c62bc70ddb60bc5e6d48254"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
+          "path": "<workspace>/1-6\\docs\\reports\\ASK_PANEL_AUDIT.md",
           "sha256": "9ff31619808013782577d3f6d29050b28b7bc23bc0fd5fc22edd2fee8e6d5d46"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\src\\lexicon\\index.js",
+          "path": "<workspace>/1-6\\src\\lexicon\\index.js",
           "sha256": "4e93b3dd9354e447a6e1b4ad734091f8acb47c5bf0b394cfbb382bed8783ba65"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tools\\e2e.mjs",
+          "path": "<workspace>/1-6\\tools\\e2e.mjs",
           "sha256": "7639466513b4d775b0c92be2d870a67d28f31535c72235c41ce9b2fa1b1da79e"
         }
       ],
@@ -472,7 +472,7 @@
       "owner": "lead",
       "deadline": "2026-11-16T22:40:29.000Z",
       "acceptance": "从 src/lexicon/index.js 模板表删掉任意一条可问问法后 node tools/e2e.mjs demo 必须转红；恢复后全绿；tests/fixtures/askable-ids.json 与词库逐条一致",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\tests\\fixtures\\askable-ids.json",
+      "evidencePath": "<workspace>/1-6\\tests\\fixtures\\askable-ids.json",
       "status": "verified",
       "createdAt": "2026-11-16T19:40:29.377Z",
       "submittedAt": "2026-11-16T19:40:37.269Z",
@@ -491,7 +491,7 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\COURT_C008_VERIFICATION_R3.md",
+          "path": "<workspace>/1-6\\docs\\reports\\COURT_C008_VERIFICATION_R3.md",
           "sha256": "85a95f0a92e1fc5228d97aedf87581b9c82efb2bf64c05735b3677d57d3bd58d"
         }
       ],
@@ -503,7 +503,7 @@
       "owner": "lead",
       "deadline": "2026-11-20T00:00:00.000Z",
       "acceptance": "e2e demo 断言集覆盖：快照逐条在场、快照版本非空、三具名组条数之和等于全部、四签、拉丁名零容忍、重开复位至少一次且全为空；ASK_PANEL_AUDIT 的数字与当前词库一致；变异 M1/M2/M3/M4 任一组必红",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\1-6\\docs\\reports\\COURT_C008_VERIFICATION_R3.md",
+      "evidencePath": "<workspace>/1-6\\docs\\reports\\COURT_C008_VERIFICATION_R3.md",
       "status": "submitted",
       "createdAt": "2026-11-16T20:07:35.691Z",
       "submittedAt": "2026-11-16T20:07:40.569Z",

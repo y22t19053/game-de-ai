@@ -454,7 +454,7 @@
       "owner": "gongbu",
       "deadline": "2026-11-18T00:00:00.000Z",
       "acceptance": "1) 有重力异常的 Boss 战开局至少一整行 7 格不可站且留一个落脚点；2) noteRuleRead 只记第一次且记当时回合数；3) 单测覆盖以上两条并全绿；4) 构建通过",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\test\\c005.test.ts",
+      "evidencePath": "<workspace>/diceverse\\test\\c005.test.ts",
       "status": "verified",
       "createdAt": "2026-11-15T12:57:14.019Z",
       "submittedAt": "2026-11-15T12:57:20.340Z",
@@ -473,11 +473,11 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\src\\core\\combat.ts",
+          "path": "<workspace>/diceverse\\src\\core\\combat.ts",
           "sha256": "534dcb9127d58ff36314bb4a7010cff99d1bb5f9de67a26978a3a4d636d2bfc2"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\diceverse\\test\\c005.test.ts",
+          "path": "<workspace>/diceverse\\test\\c005.test.ts",
           "sha256": "4d32dd670bc084bebb44a9d01d0ff8ba3103d1dbea10153a2c13fb02784cc0da"
         }
       ],

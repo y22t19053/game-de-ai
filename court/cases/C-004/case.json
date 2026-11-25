@@ -486,7 +486,7 @@
       "owner": "lead",
       "deadline": "2026-11-19T00:00:00.000Z",
       "acceptance": "四图同机同 DPR 可在同目录打开；git -C little-zelensky-simulator status --porcelain 为空；改后 390 实测 scrollWidth==390 且三段末项不孤；不成立则交\"不改\"结论并停止",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
+      "evidencePath": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
       "status": "verified",
       "createdAt": "2026-11-15T10:09:48.330Z",
       "submittedAt": "2026-11-15T10:20:09.474Z",
@@ -505,31 +505,31 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\EVIDENCE.md",
           "sha256": "534177e51a9a62c714bbb9916aa176a831ff3e9f630c977811017d6a2ed1863f"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-before.png",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-before.png",
           "sha256": "ee1a9ba0b1811cd972936e8b5249901b04d1c6280b717acca64e5a7e77a42573"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-after.png",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\A1-390-after.png",
           "sha256": "27868ded411093c209ca5e31be6ef70fbfa17ae8180ac993cf7cfb2193abd9a5"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-before.png",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-before.png",
           "sha256": "519eae8d06b21fd510d640e5403cdef15ddd44c6d0a2ad7124d2400e355f5946"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-after.png",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\c004-shots\\A1-1440-after.png",
           "sha256": "519eae8d06b21fd510d640e5403cdef15ddd44c6d0a2ad7124d2400e355f5946"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator-visual-copy\\css\\v2.css",
+          "path": "<workspace>/little-zelensky-simulator-visual-copy\\css\\v2.css",
           "sha256": "aea926d49a117f57073a9a379ba9e6acbce74297ff0d8261190ffaf569a2a320"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\css\\v2.css",
+          "path": "<workspace>/little-zelensky-simulator\\css\\v2.css",
           "sha256": "aea926d49a117f57073a9a379ba9e6acbce74297ff0d8261190ffaf569a2a320"
         }
       ],
@@ -541,7 +541,7 @@
       "owner": "lead",
       "deadline": "2026-11-19T00:00:00.000Z",
       "acceptance": "每条数字可按所注\"文件:行\"复算（ΔL* 容差 ≤0.05）；GAME_DNA §4 明写\"章在 v2 未实装，加回须单独立案\"；ASSET_MANIFEST 不再把 #b99a5d 记为朱红；两份文件不含玩家可见文案或 CSS 改动",
-      "evidencePath": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
+      "evidencePath": "<workspace>/game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
       "status": "verified",
       "createdAt": "2026-11-15T10:09:48.332Z",
       "submittedAt": "2026-11-15T10:20:09.556Z",
@@ -560,27 +560,27 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
+          "path": "<workspace>/game-de-ai-court\\docs\\proposals\\C-004-lzx-copy-changes.md",
           "sha256": "9de4cd06802059d3c38e1e80f5b179f40ca2803fc09f2a07acdf1d008c34ddff"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\GAME_DNA.md",
+          "path": "<workspace>/little-zelensky-simulator\\visual\\GAME_DNA.md",
           "sha256": "24e7aa46f372a625d007f6e99334ac65c75f3c89206aa3a76fef9cca34c7191f"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\ASSET_MANIFEST.md",
+          "path": "<workspace>/little-zelensky-simulator\\visual\\ASSET_MANIFEST.md",
           "sha256": "4463169d1224f3792c80df1413fd5bd600e115e2c65843ff8e6969c1b7216dd3"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\assets\\visual\\archive\\dossier-stamp.svg",
+          "path": "<workspace>/little-zelensky-simulator\\assets\\visual\\archive\\dossier-stamp.svg",
           "sha256": "285522aae37685e4ba3ff2c5ae7755829eb3362309ea3ebdd4cff0d9d6b0cfd2"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\prototype\\styles.css",
+          "path": "<workspace>/little-zelensky-simulator\\visual\\prototype\\styles.css",
           "sha256": "b0bba6596b67d2c38ec6c7cf3ae42d6e550c1b83d0d7dc8f91ed588a31186ea2"
         },
         {
-          "path": "C:\\Users\\11ee11\\Documents\\deepseek-harness\\default-workspace\\little-zelensky-simulator\\visual\\prototype\\index.html",
+          "path": "<workspace>/little-zelensky-simulator\\visual\\prototype\\index.html",
           "sha256": "f26b7cc998a763b15732801930cd46114279020a4500569d2a4e95d43996debc"
         }
       ],
