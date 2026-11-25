@@ -57,7 +57,7 @@ Rules locked by tests (each test violates the rule first, then asserts the rejec
 
 20 cases (8 major / 10 ordinary / 2 high-risk), 53 evidence items, 31 cross-examination rounds, 65 jury ballots, 22 tasks, 43 recorded defects, 468 hash-chained log entries.
 
-**`audit verify` is red right now**: 73 problems = 9 overdue tasks + 9 tasks whose evidence file is gone (it lived in the author's private directory, not shipped here) + 55 late initial rulings (recorded after the briefs were filed). That is not a bug. The institution records "you did not do it on time" and "the thing you cited is gone" instead of hiding them; overdue is logged, not auto-collected. **An auditor that is always green is worth nothing.**
+**`audit verify` is red right now**: 75 problems = 11 tasks whose evidence file is gone (it lived in the author's private directory, not shipped here) + 9 overdue tasks + 55 late initial rulings (recorded after the briefs were filed). That is not a bug. The institution records "you did not do it on time" and "the thing you cited is gone" instead of hiding them; overdue is logged, not auto-collected. **An auditor that is always green is worth nothing.**
 
 Red team: 23 attacks, 21 blocked. The two that get through are documented and intentionally not fixed:
 

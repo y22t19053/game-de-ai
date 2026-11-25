@@ -6,7 +6,7 @@
   "project": "1-6",
   "author": "lead",
   "summary": "刑部审计发现两条引擎红线：G-2 玩家在行动四受限期内用猜测消耗下一次行动后 restrictions 不清理（旧 engine.js:282 提前 return 跳过清理），UI 可直接触发，玩家被多罚一回合且提示文案与实际合法行动自相矛盾；G-1 猜测提交不存在的 canonical_id 时按错猜结算并自罚（旧 :301-302），客户端伪造 id 可越权改变对局结算。本方案：guess 分支统一清理限制并补 restriction-cleared 事件；新增 validateEntity 注入钩子（规则层不 import 词库），服务端组装点 local.mjs 注入 entityById 校验；猜测日志文本 cleanLabel 截断清洗。",
-  "proposalPath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/src/rules/engine.js",
+  "proposalPath": "<workspace>/1-6/src/rules/engine.js",
   "proposalSha": "5e00c546b7f15006a2e221de696136eb2bc40d504a2e8c5462936a339711f62f",
   "stage": "executing",
   "openedAt": "2026-11-16T16:06:53.849Z",
@@ -18,7 +18,7 @@
       "submittedBy": "author",
       "submittedAt": "2026-11-16T16:07:20.333Z",
       "kind": "run",
-      "source": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/reports/ISOLATION_AUDIT.md",
+      "source": "<workspace>/1-6/docs/reports/ISOLATION_AUDIT.md",
       "version": null,
       "claim": "G-2 受限期内用猜测后 restrictions 不清理，玩家被多罚一次限制；G-1 不存在的 canonical_id 被当作错猜结算并自罚一枪",
       "confidence": "high",
@@ -41,7 +41,7 @@
       "submittedBy": "author",
       "submittedAt": "2026-11-16T16:07:35.973Z",
       "kind": "run",
-      "source": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+      "source": "<workspace>/1-6/tests/invariants.test.mjs",
       "version": null,
       "claim": "修复后可复现验证：tests/invariants.test.mjs 31/31 通过；注入 validateEntity 钩子（local.mjs 用 entityById）后伪造 canonical_id 报 bad-guess 且不改状态；guess 分支补 restriction-cleared，受限期内猜词不再遗留限制",
       "confidence": "high",
@@ -331,7 +331,7 @@
       "owner": "lead",
       "deadline": "2026-11-17T04:00:00.000Z",
       "acceptance": "node --test tests/invariants.test.mjs 全绿，且断言在删除 engine.js 的 cleanLabel 调用后会失败（可临时验证后还原）",
-      "evidencePath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+      "evidencePath": "<workspace>/1-6/tests/invariants.test.mjs",
       "status": "verified",
       "createdAt": "2026-11-16T16:09:37.259Z",
       "submittedAt": "2026-11-16T16:10:26.842Z",
@@ -350,15 +350,15 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+          "path": "<workspace>/1-6/tests/invariants.test.mjs",
           "sha256": "7f2bc5f416f8ddd35b617f38bd084f38d5a355f01c3e7c166ecff28507dc9a86"
         },
         {
-          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/src/rules/engine.js",
+          "path": "<workspace>/1-6/src/rules/engine.js",
           "sha256": "0412618e24c72de19b439bba8c20f2291f3b39514e3da4c46861e33f9d4a3f07"
         },
         {
-          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/reports/COURT_C007_VERIFICATION.md",
+          "path": "<workspace>/1-6/docs/reports/COURT_C007_VERIFICATION.md",
           "sha256": "868397f1536358efd74ab062714a9c2cd71699b704fd22208b29c4bd06759572"
         }
       ],
@@ -370,7 +370,7 @@
       "owner": "lead",
       "deadline": "2026-11-18T04:00:00.000Z",
       "acceptance": "测试文件包含 I4-f/I4-g 且全绿；GAME_STATE_MACHINE.md 不再把该偏差列为未修",
-      "evidencePath": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/GAME_STATE_MACHINE.md",
+      "evidencePath": "<workspace>/1-6/docs/GAME_STATE_MACHINE.md",
       "status": "verified",
       "createdAt": "2026-11-16T16:09:37.354Z",
       "submittedAt": "2026-11-16T16:10:26.938Z",
@@ -389,11 +389,11 @@
       },
       "verifyArtifacts": [
         {
-          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/docs/GAME_STATE_MACHINE.md",
+          "path": "<workspace>/1-6/docs/GAME_STATE_MACHINE.md",
           "sha256": "013868eabb1139aa38f06f2e29896fb7a04cc1926002a2c8fc03a2bcc6d7edfd"
         },
         {
-          "path": "C:/Users/11ee11/Documents/deepseek-harness/default-workspace/1-6/tests/invariants.test.mjs",
+          "path": "<workspace>/1-6/tests/invariants.test.mjs",
           "sha256": "7f2bc5f416f8ddd35b617f38bd084f38d5a355f01c3e7c166ecff28507dc9a86"
         }
       ],
